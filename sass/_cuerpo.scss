@@ -1,0 +1,125 @@
+main{
+  width: 100%;
+  .nuestros-programas{
+    width: 100%;
+    background: $principal;
+    .contenedor{
+      width: 90%;
+      max-width: 1200px;
+      margin:auto;
+      display: grid;
+      &.contenedor-nuestros-programas{
+        padding: 45px 0;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: "titulo    titulo    titulo"
+                              "carta-1  carta-2   carta-3";
+        grid-gap: 20px;
+        grid-row-gap: 50px;
+        .nuestros-programas-titulo{
+          grid-area:titulo;
+          justify-self: center;    
+          color: $letrasSecundario;
+          font-family: "Righteous", Sans-serif;
+          font-size: 24px;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+        .carta{
+          width: 100%;
+          position:relative;
+          transform-style: preserve-3d;
+          transition: all 1s ease;
+          height: 545px;
+          .carta-frente{
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            position: absolute;
+            display: flex;
+            justify-content: center;    
+            background-image: url(../img/cara-1.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            backface-visibility: hidden;
+            .carta-titulo{
+              display: hidden;
+              align-self: center;
+              color: $letrasPrimario;
+              font-family: "Righteous", Sans-serif;
+              font-size: 34px;
+              font-weight: 400;
+              line-height: 1.2em;
+              text-transform: uppercase;
+              text-align: center;
+            }
+          }
+          .carta-atras{
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            position: absolute;
+            transform:rotateY(180deg);
+            background-image: url(../img/cara-1.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: grid;
+            grid-template-columns: 80%;
+            justify-content: center;
+            align-content: space-around;
+            &:before{
+              content: "";
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top:0;
+              left:0;
+              background-color: #000000;
+              opacity: .80;
+              z-index: -1;
+            }
+            .carta-titulo-atras{
+              align-self: center;
+              text-align: center;
+              color: #fbe23c;
+              font-family: "Righteous", Sans-serif;
+              font-size: 34px;
+              font-weight: 400;
+              text-transform: uppercase;
+              line-height: 1.2em;
+            }
+            .carta-descripcion{
+              text-align: center;
+              color: rgba(255,255,255,0.64);
+              font-family: "Raleway", Sans-serif;
+              font-size: 14px;
+              padding: 0px 27px 0px 27px;
+            }
+            .btn-leer-mas{
+              align-self: end;
+              justify-self: center;
+              .btn{
+                padding:15px 50px;
+                background-color: $principal;
+                color:$letrasSecundario;
+                border:none;
+                font-weight: 800;
+                transition:all .35s ease;
+                &:hover{
+                  cursor:pointer;
+                  color:$principal;
+                  background-color: $secundario;
+                }
+              }
+            }
+          }
+          &:hover{
+            cursor:pointer;
+            transform: rotateY(180deg);
+          }
+        }
+      }
+    }
+  }
+}
