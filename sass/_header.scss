@@ -97,4 +97,62 @@ header{
       }
     }
   }
+  .banner{
+    width: 100%;
+    background-color: $tercero;
+    height: 100%;
+    .contenedor{
+      width: 90%;
+      max-width: 1200px;
+      margin:auto;
+      display: grid;
+      &.contenedor-banner{
+        padding:12.50% 0;
+        height: 100%;
+        grid-template-columns: 850px;
+        grid-template-rows: 60px 290px 120px 80px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .bienvenida{
+          color:$letrasPrimario;
+          font-family: "Montserrat", Sans-serif;
+          font-size: 50px;
+          font-weight: 200;
+          text-transform: uppercase;
+        }
+        .nombre-gym{
+          .titulo-gym{
+            color:$principal;
+            font-family: "Righteous", Sans-serif;
+            font-size: 120px;
+            font-weight: 400;
+          }
+        }
+        .descripcion{
+          color:$letrasPrimario;      
+          font-family: "Raleway", Sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 30px;
+        }
+        .btn-leer-mas{
+          align-self: end;
+          .btn{
+            padding:15px 50px;
+            background-color: $principal;
+            color:$letrasSecundario;
+            border:none;
+            font-weight: 800;
+            transition:all .35s ease;
+            &:hover{
+              cursor:pointer;
+              color:$principal;
+              background-color: $secundario;
+            }
+          }
+        }
+      }
+    }
+  }
 }
