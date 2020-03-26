@@ -559,4 +559,53 @@ main{
       }
     }
   }
+  .galeria{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    .galeria-foto{
+      width: auto;
+      min-height: 100px;
+      position: relative;
+      .foto{
+        width: 100%;
+        height: 100%;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &:hover{
+        .foto-hover{
+          opacity: 1;
+          i{
+            cursor: pointer;
+          }
+        }
+      }
+      .foto-hover{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(84,89,95,.6);
+        position: absolute;
+        top:0;
+        left:0;
+        color:$principal;
+        transition: all .5s ease-in-out;
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+        i{
+          text-align: center;
+          font-size: 50px;
+          align-self: center;
+          background-color: rgba(250,225,60,0.33);
+          width: 66px;
+          height: 66px;
+          border-radius: 50px 50px 50px 50px;
+          line-height: 66px;
+        }
+      }
+    }
+  }
 }
