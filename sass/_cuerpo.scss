@@ -30,14 +30,22 @@ main{
           transform-style: preserve-3d;
           transition: all 1s ease;
           height: 545px;
+          #carta-frente-1{
+            background-image: url(../img/cara-1.jpg);
+          }
+          #carta-frente-2{
+            background-image: url(../img/cara-2.jpg);
+          }
+          #carta-frente-3{
+            background-image: url(../img/cara-3.jpg);
+          }
           .carta-frente{
             width: 100%;
             height: 100%;
             backface-visibility: hidden;
             position: absolute;
             display: flex;
-            justify-content: center;    
-            background-image: url(../img/cara-1.jpg);
+            justify-content: center;
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -54,13 +62,21 @@ main{
               text-align: center;
             }
           }
+          #carta-atras-1{
+            background-image: url(../img/cara-1.jpg);
+          }
+          #carta-atras-2{
+            background-image: url(../img/cara-2.jpg);
+          }
+          #carta-atras-3{
+            background-image: url(../img/cara-3.jpg);
+          }
           .carta-atras{
             width: 100%;
             height: 100%;
             backface-visibility: hidden;
             position: absolute;
             transform:rotateY(180deg);
-            background-image: url(../img/cara-1.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
