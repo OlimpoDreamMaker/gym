@@ -5,12 +5,14 @@
 
 header {
   width: 100%;
-  min-height: 100vh; }
+  min-height: 100vh;
+  max-height: 100vh;
+  background-image: url(../img/fondo-banner.jpg);
+  background-position: center center; }
   header .nav {
     width: 100%;
     height: 150px;
-    border-bottom: 1px solid #33393e;
-    background-color: #191919; }
+    border-bottom: 1px solid #33393e; }
     header .nav .contenedor {
       width: 90%;
       max-width: 1200px;
@@ -18,14 +20,19 @@ header {
       display: grid; }
       header .nav .contenedor.contenedor-nav {
         height: 100%;
-        grid-template-columns: 120px 850px 35px 100px;
+        grid-template-columns: 125px 850px 35px 100px;
         align-content: center;
         align-items: center;
         justify-items: center; }
         header .nav .contenedor.contenedor-nav .logo {
-          border: 0.5px solid #33393e;
-          width: 120px;
-          height: 60px; }
+          width: 125px;
+          height: 24px; }
+          header .nav .contenedor.contenedor-nav .logo h2 {
+            color: #fbe23c;
+            font-family: "Righteous", Sans-serif;
+            font-size: 22px;
+            line-height: 26px;
+            text-transform: uppercase; }
         header .nav .contenedor.contenedor-nav .menu {
           display: grid;
           grid-template-columns: minmax(45px, 60px) minmax(155px, 180px) repeat(2, minmax(110px, 125px)) repeat(2, 90px) 75px 80px;
@@ -86,7 +93,6 @@ header {
                 color: #fbe23c; }
   header .banner {
     width: 100%;
-    background-color: #191919;
     height: 100%; }
     header .banner .contenedor {
       width: 90%;
@@ -97,7 +103,7 @@ header {
         padding: 12.50% 0;
         height: 100%;
         grid-template-columns: 850px;
-        grid-template-rows: 60px 290px 120px 80px;
+        grid-template-rows: 60px minmax(150px, 290px) 180px 80px;
         align-items: center;
         justify-content: center;
         text-align: center; }
@@ -108,6 +114,7 @@ header {
           font-weight: 200;
           text-transform: uppercase; }
         header .banner .contenedor.contenedor-banner .nombre-gym .titulo-gym {
+          text-transform: uppercase;
           color: #fbe23c;
           font-family: "Righteous", Sans-serif;
           font-size: 120px;
