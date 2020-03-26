@@ -122,4 +122,99 @@ main{
       }
     }
   }
+  .entrenadores{
+    width: 100%;
+    background-color: $tercero;
+    .contenedor{
+      width: 90%;
+      max-width: 1200px;
+      margin:auto;
+      display: grid;
+      &.contenedor-entrenadores{
+        padding: 45px 0;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+        .entrenadores-titulo{
+          grid-column: span 2;
+          text-align: center;
+        }
+        .entrenador{
+          background: $secundario;
+          height: 420px;
+          display: grid;
+          grid-template-columns: 270px auto;
+          .entrenador-foto{
+            width: 270px;
+            height: 100%;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .entrenador-informacion{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 70px 15px 145px 50px;
+            justify-content: start;
+            justify-items: start;
+            align-content: space-evenly;
+            padding-top: 10px;
+            padding-left:10px;
+            .entrenador-nombre{
+              color: $principal;
+              font-family: "Righteous", Sans-serif;
+              font-size: 34px;
+              font-weight: 400;
+              line-height: 40px;
+              text-align: start;
+              text-transform: uppercase;
+            }
+            .entrenador-roll{
+              color: $letrasPrimario;
+              font-family: "Montserrat", Sans-serif;
+              font-size: 16px;
+              font-weight: 700;
+              line-height: 10px;
+              text-align: left;
+            }
+            .entrenador-descripcion{
+              color: #aaaaaa;
+              font-family: "Raleway", Sans-serif;
+              font-size: 14px;
+              padding-right:29px;
+              text-align: left;
+              line-height: 22px;
+            }
+            .entrenador-redes{
+              display: grid;
+              grid-template-columns: repeat(3,50px);
+              grid-gap: 20px;
+              li{
+                width: 50px;
+                height: 50px;
+                background-color: #51575b;
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                transition:all .35s ease-in-out;
+                a{
+                  align-self: center;
+                  text-decoration: none;
+                  color:$principal;
+                  transition:all .35s ease-in-out;
+                }
+                &:hover{
+                  cursor: pointer;
+                  background: $principal;
+                  a{
+                    color:#51575b;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
