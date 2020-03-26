@@ -626,31 +626,30 @@ main{
         grid-gap: 40px;
         align-content: space-around;
         .especial-titulo{
-          font-family: "Righteous", Sans-serif;
-          font-size: 70px;
-          font-weight: 400;
-          text-transform: uppercase;
-          line-height: 110px;
-          letter-spacing: 2px;
           h2{
             color:$principal;
+            font-family: "Righteous", Sans-serif;
+            font-size: 100px;
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: 110px;
+            letter-spacing: 2px;
           }
         }
         .especial-subtitulo{
-          font-family: "Montserrat", Sans-serif;
-          font-size: 50px;
-          font-weight: 200;
-          text-transform: uppercase;
-          line-height: 0.9em;
           h3{
-            color: $letrasPrimario;
+            color: $letrasPrimario;font-family: "Montserrat", Sans-serif;
+            font-size: 50px;
+            font-weight: 200;
+            text-transform: uppercase;
+            line-height: 0.9em;
           }
         }
         .especial-descripcion{
-          font-family: "Raleway", Sans-serif;
-          font-size: 18px;
-          font-weight: 400;
-          p{
+          p{  
+            font-family: "Raleway", Sans-serif;
+            font-size: 18px;
+            font-weight: 400;
             color: $letrasPrimario;
           }
         }
@@ -672,5 +671,8 @@ main{
         }
       }
     }
+  }
+  .contacto{
+
   }
 }
