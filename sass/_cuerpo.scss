@@ -564,8 +564,9 @@ main{
     display: grid;
     grid-template-columns: repeat(4,25%);
     .galeria-foto{
-      width: auto;
+      width: 100%;
       min-height: 100px;
+      height: 100%;
       position: relative;
       .foto{
         width: 100%;
@@ -613,7 +614,7 @@ main{
     background: $tercero;
     .contenedor{
       width: 90%;
-      min-width: 1200px;
+      max-width: 1200px;
       margin: auto;
       display: grid;
       &.contenedor-especial{
@@ -673,6 +674,117 @@ main{
     }
   }
   .contacto{
-
+    width: 100%;
+    background-color: $principal;
+    .contenedor{
+      width: 90%;
+      max-width: 1200px;
+      margin:auto;
+      display: grid;
+      &.contenedor-contacto{
+        padding: 45px 0;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        .direccion{
+          display: grid;
+          grid-template-columns: 40px 1fr;
+          grid-template-rows: 25px 25px;
+          grid-gap: 5px;
+          .contacto-icono{
+            color: #272b2d;
+            width:  40px;
+            height: 40px;
+            grid-row: span 2;
+            align-self: center;
+            i{
+              font-size:  40px;
+              line-height: 40px;
+            }
+          }
+          .contacto-titulo{
+            p{
+              color: #272b2d;
+              font-family: "Raleway", Sans-serif;
+              font-size: 18px;
+              font-weight: 700;
+            }
+          }
+          .contacto-info{
+            p{
+              color: #272b2d;
+              font-family: "Raleway", Sans-serif;
+              font-size: 18px;
+              font-weight: 700;
+            }
+          }
+        }
+        .telefono{
+          display: grid;
+          grid-template-columns: 40px 1fr;
+          grid-template-rows: 25px 25px;
+          grid-gap: 5px;
+          .contacto-icono{
+            color: #272b2d;
+            width:  40px;
+            height: 40px;
+            grid-row: span 2;
+            align-self: center;
+            i{
+              font-size:  40px;
+              line-height: 40px;
+            }
+          }
+          .contacto-titulo{
+            p{
+              color: #272b2d;
+              font-family: "Raleway", Sans-serif;
+              font-size: 18px;
+              font-weight: 700;
+            }
+          }
+          .contacto-info{
+            p{
+              color: #272b2d;
+              font-family: "Raleway", Sans-serif;
+              font-size: 18px;
+              font-weight: 700;
+            }
+          }
+        }
+        .tiempo{
+          display: grid;
+          grid-template-columns: 40px 1fr;
+          grid-template-rows: 25px 25px;
+          grid-gap: 5px;
+          .contacto-icono{
+            color: #272b2d;
+            width:  40px;
+            height: 40px;
+            grid-row: span 2;
+            align-self: center;
+            i{
+              font-size:  40px;
+              line-height: 40px;
+            }
+          }
+          .contacto-titulo{
+            p{
+              color: #272b2d;
+              font-family: "Raleway", Sans-serif;
+              font-size: 18px;
+              font-weight: 700;
+            }
+          }
+          .contacto-info{
+            p{
+              color: #272b2d;
+              font-family: "Raleway", Sans-serif;
+              font-size: 18px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
   }
 }
