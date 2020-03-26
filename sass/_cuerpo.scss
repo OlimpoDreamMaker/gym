@@ -327,4 +327,236 @@ main{
       }
     }
   }
+  .testimonios{
+    width: 100%;
+    background-color: $principal;
+    .contenedor{
+      width: 90%;
+      max-width: 1200px;
+      margin:auto;
+      display: grid;
+      &.contenedor-testimonios{
+        padding: 45px 0;
+        grid-template-columns: repeat(6,1fr);
+        grid-gap: 20px;
+        .testimonio-titulo{
+          grid-column: span 6;
+          text-align: center;
+          h3{
+            font-family: "Righteous", Sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            text-transform: uppercase;
+          }
+        }
+        .testimonio-dos-tercios{
+          grid-column: span 4;
+          .testimonio-comillas{
+            width: 60px;
+            height: 60px;
+            color: $secundario;
+            font-size: 40px;
+            text-align: center;
+            margin: 5px;
+            margin-bottom: 2px;
+          }
+          .testimonio-titulo{
+            h5{
+              text-align:left;
+              font-family: "Righteous", sans-serif;
+              font-size: 24px;
+              font-weight: 400;
+              line-height: 35px;
+            }
+          }
+          .testimonio{
+            position: relative;
+            .texto-testimonio{
+              text-align: left;
+              color: #7a7a7a;
+              font-family: "Raleway", Sans-serif;
+              font-size: 14px;
+              line-height: 1.6em;
+              background-color: $secundario;
+              padding: 46px 10px 39px 20px;
+            }
+            &::before{
+              content: "";
+              display: block;
+              width: 0; 
+              height: 0; 
+              border-right: 15px solid transparent;
+              border-top: 15px solid transparent;
+              border-left: 15px solid $secundario;
+              border-bottom: 15px solid $secundario
+              ;
+              transform: rotate(90deg);
+              position: absolute;
+              bottom: -22.5px;
+              left: 10px;
+              z-index: 0;
+            }
+          }
+          .testimonio-nombre{
+            p{
+              text-align: left;
+              color: #000000;
+              font-family: "Montserrat", Sans-serif;
+              font-size: 14px;
+              font-weight: 700;
+              text-transform: uppercase;
+              line-height: 2em;
+              margin: 15px 0px 0px 0px;
+            }
+          }
+          .testimonio-fecha{
+            text-align: left;
+            color: $letrasSecundario;
+            font-family: "Raleway", Sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+          }
+        }
+        .testimonio-un-tercio{
+          grid-column: span 2;
+          .testimonio-comillas{
+            width: 60px;
+            height: 60px;
+            color: $secundario;
+            font-size: 40px;
+            text-align: center;
+            margin: 5px;
+            margin-bottom: 2px;
+          }
+          .testimonio-titulo{
+            h5{
+              text-align:left;
+              font-family: "Righteous", sans-serif;
+              font-size: 24px;
+              font-weight: 400;
+              line-height: 35px;
+            }
+          }
+          .testimonio{
+            position: relative;
+            .texto-testimonio{
+              text-align: left;
+              color: #7a7a7a;
+              font-family: "Raleway", Sans-serif;
+              font-size: 14px;
+              line-height: 1.6em;
+              background-color: #33393e;
+              padding: 46px 10px 39px 20px;
+            }
+            &::before{
+              content: "";
+              display: block;
+              width: 0; 
+              height: 0; 
+              border-right: 15px solid transparent;
+              border-top: 15px solid transparent;
+              border-left: 15px solid $secundario;
+              border-bottom: 15px solid $secundario
+              ;
+              transform: rotate(90deg);
+              position: absolute;
+              bottom: -22.5px;
+              left: 10px;
+              z-index: 0;
+            }
+          }
+          .testimonio-nombre{
+            p{
+              text-align: left;
+              color: #000000;
+              font-family: "Montserrat", Sans-serif;
+              font-size: 14px;
+              font-weight: 700;
+              text-transform: uppercase;
+              line-height: 2em;
+              margin: 15px 0px 0px 0px;
+            }
+          }
+          .testimonio-fecha{
+            text-align: left;
+            color: $letrasSecundario;
+            font-family: "Raleway", Sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+          }
+        }
+        .testimonio-mitad{
+          grid-column:span 3;
+          .testimonio-comillas{
+            width: 60px;
+            height: 60px;
+            color: $secundario;
+            font-size: 40px;
+            text-align: center;
+            margin: 5px;
+            margin-bottom: 2px;
+          }
+          .testimonio-titulo{
+            h5{
+              text-align:left;
+              font-family: "Righteous", sans-serif;
+              font-size: 24px;
+              font-weight: 400;
+              line-height: 35px;
+            }
+          }
+          .testimonio{
+            position: relative;
+            .texto-testimonio{
+              text-align: left;
+              color: #7a7a7a;
+              font-family: "Raleway", Sans-serif;
+              font-size: 14px;
+              line-height: 1.6em;
+              background-color: $secundario;
+              padding: 46px 10px 39px 20px;
+            }
+            &::before{
+              content: "";
+              display: block;
+              width: 0; 
+              height: 0; 
+              border-right: 15px solid transparent;
+              border-top: 15px solid transparent;
+              border-left: 15px solid $secundario;
+              border-bottom: 15px solid $secundario
+              ;
+              transform: rotate(90deg);
+              position: absolute;
+              bottom: -22.5px;
+              left: 10px;
+              z-index: 0;
+            }
+          }
+          .testimonio-nombre{
+            p{
+              text-align: left;
+              color: #000000;
+              font-family: "Montserrat", Sans-serif;
+              font-size: 14px;
+              font-weight: 700;
+              text-transform: uppercase;
+              line-height: 2em;
+              margin: 15px 0px 0px 0px;
+            }
+          }
+          .testimonio-fecha{
+            text-align: left;
+            color: $letrasSecundario;
+            font-family: "Raleway", Sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
 }
