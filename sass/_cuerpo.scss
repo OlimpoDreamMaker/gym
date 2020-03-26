@@ -608,4 +608,69 @@ main{
       }
     }
   }
+  .especial{
+    width: 100%;
+    background: $tercero;
+    .contenedor{
+      width: 90%;
+      min-width: 1200px;
+      margin: auto;
+      display: grid;
+      &.contenedor-especial{
+        padding: 30px 0;
+        padding-bottom: 45px;
+        grid-template-columns: 80%;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        grid-gap: 40px;
+        align-content: space-around;
+        .especial-titulo{
+          font-family: "Righteous", Sans-serif;
+          font-size: 70px;
+          font-weight: 400;
+          text-transform: uppercase;
+          line-height: 110px;
+          letter-spacing: 2px;
+          h2{
+            color:$principal;
+          }
+        }
+        .especial-subtitulo{
+          font-family: "Montserrat", Sans-serif;
+          font-size: 50px;
+          font-weight: 200;
+          text-transform: uppercase;
+          line-height: 0.9em;
+          h3{
+            color: $letrasPrimario;
+          }
+        }
+        .especial-descripcion{
+          font-family: "Raleway", Sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          p{
+            color: $letrasPrimario;
+          }
+        }
+        .btn-leer-mas{
+          align-self: end;
+          .btn{
+            padding:15px 50px;
+            background-color: $principal;
+            color:$letrasSecundario;
+            border:none;
+            font-weight: 800;
+            transition:all .35s ease;
+            &:hover{
+              cursor:pointer;
+              color:$principal;
+              background-color: $secundario;
+            }
+          }
+        }
+      }
+    }
+  }
 }
