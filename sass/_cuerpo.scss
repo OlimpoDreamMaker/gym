@@ -140,7 +140,7 @@ main{
   }
   .entrenadores{
     width: 100%;
-    background-color: $secundario;
+    background-color: $tercero;
     .contenedor{
       width: 90%;
       max-width: 1200px;
@@ -153,6 +153,13 @@ main{
         .entrenadores-titulo{
           grid-column: span 2;
           text-align: center;
+            h3{
+              color: $letrasPrimario;
+              font-family: "Righteous", Sans-serif;
+              font-size: 24px;
+              font-weight: 400;
+              text-transform: uppercase;
+            }
         }
         .entrenador{
           background: $secundario;
@@ -190,7 +197,7 @@ main{
               font-family: "Montserrat", Sans-serif;
               font-size: 16px;
               font-weight: 700;
-              line-height: 10px;
+              line-height: 18px;
               text-align: left;
             }
             .entrenador-descripcion{

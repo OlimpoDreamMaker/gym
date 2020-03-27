@@ -259,7 +259,7 @@ main {
             transform: rotateY(180deg); }
   main .entrenadores {
     width: 100%;
-    background-color: #33393e; }
+    background-color: #191919; }
     main .entrenadores .contenedor {
       width: 90%;
       max-width: 1200px;
@@ -272,6 +272,12 @@ main {
         main .entrenadores .contenedor.contenedor-entrenadores .entrenadores-titulo {
           grid-column: span 2;
           text-align: center; }
+          main .entrenadores .contenedor.contenedor-entrenadores .entrenadores-titulo h3 {
+            color: #fff;
+            font-family: "Righteous", Sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            text-transform: uppercase; }
         main .entrenadores .contenedor.contenedor-entrenadores .entrenador {
           background: #33393e;
           height: 420px;
@@ -305,7 +311,7 @@ main {
               font-family: "Montserrat", Sans-serif;
               font-size: 16px;
               font-weight: 700;
-              line-height: 10px;
+              line-height: 18px;
               text-align: left; }
             main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-descripcion {
               color: #aaaaaa;
