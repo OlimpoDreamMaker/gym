@@ -14,9 +14,15 @@ footer{
         align-self: center;
         border-bottom: 1.5px solid $secundario;
         .logo{
-          height: 60px;
-          width: 180px;
-          border:0.5px solid white;
+          margin-bottom: 10px;
+          height: 32px;
+          h2{
+            color:$principal;
+            font-family: "Righteous", Sans-serif;
+            font-size: 28px;
+            line-height: 30px;
+            text-transform: uppercase;
+          }
         }
       }
       .footer-fila-2{

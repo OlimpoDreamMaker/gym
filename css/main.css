@@ -808,9 +808,14 @@ footer {
         align-self: center;
         border-bottom: 1.5px solid #33393e; }
         footer .contenedor.contenedor-footer .footer-fila-1 .logo {
-          height: 60px;
-          width: 180px;
-          border: 0.5px solid white; }
+          margin-bottom: 10px;
+          height: 32px; }
+          footer .contenedor.contenedor-footer .footer-fila-1 .logo h2 {
+            color: #fbe23c;
+            font-family: "Righteous", Sans-serif;
+            font-size: 28px;
+            line-height: 30px;
+            text-transform: uppercase; }
       footer .contenedor.contenedor-footer .footer-fila-2 {
         display: flex;
         justify-content: space-between; }
