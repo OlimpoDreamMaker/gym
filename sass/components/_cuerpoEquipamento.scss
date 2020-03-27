@@ -1,0 +1,109 @@
+main{
+  .equipamento{
+    @include rectangulo(100%,659px);
+    background-color: $tercero;
+    position:relative;
+    &:hover{
+      .izquierda{
+        opacity:1;
+      }
+      .derecha{
+        opacity: 1;
+      }
+    }
+    .izquierda{
+      @include rectangulo(50px,50px);
+      position: absolute;
+      z-index: 99999999999999999;
+      top:45%;
+      left:20px;
+      background-color: $secundario;
+      opacity: 0;
+      transition: all .5s ease-in-out;
+      cursor: pointer;
+      text-align: center;
+      color:$principal;
+      font-size: 30px;
+      line-height: 50px;
+      &:hover{
+        background-color: $principal;
+        color: $secundario;
+      }
+    }
+    .derecha{
+      @include rectangulo(50px,50px);
+      position: absolute;
+      z-index: 99999999999999999;
+      top:45%;
+      right:20px;
+      background-color: $secundario;
+      opacity: 0;
+      transition: all .5s ease-in-out;
+      cursor: pointer;
+      text-align: center;
+      color:$principal;
+      font-size: 30px;
+      line-height: 50px;
+      &:hover{
+        background-color: $principal;
+        color: $secundario;
+      }
+    }
+    .equipamento-slider{
+      img{
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 659px;
+      }
+      .contenedor{
+        width: 90%;
+        max-width: 1200px;
+        margin:auto;
+        display: grid;
+        &.contenedor-slider{
+          position: absolute;
+          top:15%;
+          left:5%;
+          grid-template-columns: repeat(2,1fr);
+          .slider-titulo{
+            .titulo-slider{
+              text-transform: uppercase;
+              color: $principal;
+              font-family: $Roboto;
+              font-size: 100px;
+              font-weight: 400;
+            }
+            .subtitulo-slider{
+              text-transform: uppercase;
+              color:$letrasPrimario;
+              font-family: $Roboto;
+              font-size: 52px;
+              font-weight: 400;
+            }
+          }
+          .slider-contenido{
+            .contenido-descripcion{
+              color: $letrasPrimario;
+              font-family: $Raleway;
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 29px;
+            }
+            .equipamento-lista{
+              margin-top: 10px;
+              li{
+                list-style: none;
+                font-family: $Raleway;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 34px;
+                color:$principal;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

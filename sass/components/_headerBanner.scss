@@ -1,0 +1,47 @@
+header{
+  .banner{
+    width: 100%;
+    height: 100%;
+    .contenedor{
+      @extend %contenedor;
+      &.contenedor-banner{
+        padding:12.50% 0;
+        height: 100%;
+        grid-template-columns: 850px;
+        grid-template-rows: 60px minmax(150px,290px) 180px 80px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .bienvenida{
+          color:$letrasPrimario;
+          font-family: $Montserrat;
+          font-size: 50px;
+          font-weight: 200;
+          text-transform: uppercase;
+        }
+        .nombre-gym{
+          .titulo-gym{
+            text-transform: uppercase;
+            color:$principal;
+            font-family: $Righteous;
+            font-size: 120px;
+            font-weight: 400;
+          }
+        }
+        .descripcion{
+          color:$letrasPrimario;      
+          font-family: $Raleway;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 30px;
+        }
+        .btn-leer-mas{
+          align-self: end;
+          .btn{
+            @extend %boton;
+          }
+        }
+      }
+    }
+  }
+}

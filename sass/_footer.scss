@@ -3,10 +3,7 @@ footer{
   background-color: $tercero;
   padding-top: 10px;
   .contenedor{
-    width: 90%;
-    max-width: 1200px;
-    margin:auto;
-    display: grid;
+    @extend %contenedor;
     &.contenedor-footer{
       grid-template-columns: 1fr;
       grid-template-rows: repeat(2, 100px);
@@ -18,7 +15,7 @@ footer{
           height: 32px;
           h2{
             color:$principal;
-            font-family: "Righteous", Sans-serif;
+            font-family: $Righteous;
             font-size: 28px;
             line-height: 30px;
             text-transform: uppercase;
@@ -30,8 +27,8 @@ footer{
         justify-content: space-between;
         .copyright{
           p{
-            color: #9aa0a4;
-            font-family: "Montserrat", Sans-serif;
+            color: $sexto;
+            font-family: $Montserrat;
             font-size: 16px;
             font-weight: 600;
             line-height: 28px;
@@ -50,7 +47,7 @@ footer{
             a{
               color:$letrasPrimario;
               text-decoration: none;
-              font-family: 'Montserrat', sans-serif;
+              font-family: $Montserrat;
               font-size:14px;
               font-weight: 600;
               letter-spacing: 0.56px;

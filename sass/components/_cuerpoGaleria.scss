@@ -1,0 +1,47 @@
+main{
+  .galeria{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    .galeria-foto{
+      @include rectangulo(100%,100%);
+      min-height: 100px;
+      position: relative;
+      .foto{
+        @include rectangulo(100%,100%);
+        img{
+          @include rectangulo(100%,100%);
+        }
+      }
+      &:hover{
+        .foto-hover{
+          opacity: 1;
+          i{
+            cursor: pointer;
+          }
+        }
+      }
+      .foto-hover{
+        @include rectangulo(100%,100%);
+        background-color: $fondoSecundario;
+        position: absolute;
+        top:0;
+        left:0;
+        color:$principal;
+        transition: all .5s ease-in-out;
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+        i{
+          @include rectangulo(66px,66px);
+          text-align: center;
+          font-size: 50px;
+          align-self: center;
+          background-color: $fondoPrincipal;
+          border-radius: 50px;
+          line-height: 66px;
+        }
+      }
+    }
+  }
+}

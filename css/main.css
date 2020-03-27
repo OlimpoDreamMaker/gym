@@ -1,3 +1,21 @@
+header .nav .contenedor, header .banner .contenedor, main .nuestros-programas .contenedor, main .entrenadores .contenedor, main .testimonios .contenedor, main .especial .contenedor, main .contacto .contenedor, footer .contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid; }
+
+header .banner .contenedor.contenedor-banner .btn-leer-mas .btn, main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta .carta-atras .btn-leer-mas .btn, main .especial .contenedor.contenedor-especial .btn-leer-mas .btn {
+  padding: 15px 50px;
+  background-color: #fbe23c;
+  color: #000;
+  border: none;
+  font-weight: 800;
+  transition: all .35s ease; }
+  header .banner .contenedor.contenedor-banner .btn-leer-mas .btn:hover, main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta .carta-atras .btn-leer-mas .btn:hover, main .especial .contenedor.contenedor-especial .btn-leer-mas .btn:hover {
+    cursor: pointer;
+    color: #fbe23c;
+    background-color: #33393e; }
+
 * {
   margin: 0;
   padding: 0;
@@ -9,842 +27,777 @@ header {
   max-height: 100vh;
   background-image: url(../img/fondo-banner.jpg);
   background-position: center center; }
-  header .nav {
-    width: 100%;
-    height: 150px;
-    border-bottom: 1px solid #33393e; }
-    header .nav .contenedor {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-      display: grid; }
-      header .nav .contenedor.contenedor-nav {
-        height: 100%;
-        grid-template-columns: 125px 850px 35px 100px;
-        align-content: center;
-        align-items: center;
-        justify-items: center; }
-        header .nav .contenedor.contenedor-nav .logo {
-          width: 125px;
-          height: 24px; }
-          header .nav .contenedor.contenedor-nav .logo h2 {
-            color: #fbe23c;
-            font-family: "Righteous", Sans-serif;
-            font-size: 22px;
-            line-height: 26px;
-            text-transform: uppercase; }
-        header .nav .contenedor.contenedor-nav .menu {
-          display: grid;
-          grid-template-columns: minmax(45px, 60px) minmax(155px, 180px) repeat(2, minmax(110px, 125px)) repeat(2, 90px) 75px 80px;
-          justify-items: center;
-          align-items: center; }
-          header .nav .contenedor.contenedor-nav .menu li {
-            list-style: none; }
-            header .nav .contenedor.contenedor-nav .menu li a {
-              color: #fff;
-              text-decoration: none;
-              font-family: 'Montserrat', sans-serif;
-              font-size: 14px;
-              font-weight: 600;
-              letter-spacing: 0.56px;
-              transition: all .35s ease; }
-            header .nav .contenedor.contenedor-nav .menu li:hover {
-              cursor: pointer; }
-              header .nav .contenedor.contenedor-nav .menu li:hover a {
-                color: #fbe23c; }
-        header .nav .contenedor.contenedor-nav .buscar {
-          width: 25px;
-          height: 25px;
-          border-right: 0.5px solid #fff;
-          text-align: center;
-          padding-right: 1.5px; }
-          header .nav .contenedor.contenedor-nav .buscar a {
-            color: #fff;
-            text-decoration: none;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 0.56px;
-            transition: all .35s ease;
-            line-height: 25px; }
-          header .nav .contenedor.contenedor-nav .buscar:hover {
-            border-color: #fbe23c;
-            cursor: pointer; }
-            header .nav .contenedor.contenedor-nav .buscar:hover a {
-              cursor: pointer;
-              color: #fbe23c; }
-        header .nav .contenedor.contenedor-nav .redes {
-          display: grid;
-          grid-template-columns: repeat(3, 30px);
-          justify-items: center; }
-          header .nav .contenedor.contenedor-nav .redes li {
-            list-style: none; }
-            header .nav .contenedor.contenedor-nav .redes li a {
-              color: #fff;
-              text-decoration: none;
-              font-family: 'Montserrat', sans-serif;
-              font-size: 14px;
-              font-weight: 600;
-              letter-spacing: 0.56px;
-              transition: all .35s ease; }
-            header .nav .contenedor.contenedor-nav .redes li:hover {
-              cursor: pointer; }
-              header .nav .contenedor.contenedor-nav .redes li:hover a {
-                color: #fbe23c; }
-  header .banner {
-    width: 100%;
-    height: 100%; }
-    header .banner .contenedor {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-      display: grid; }
-      header .banner .contenedor.contenedor-banner {
-        padding: 12.50% 0;
-        height: 100%;
-        grid-template-columns: 850px;
-        grid-template-rows: 60px minmax(150px, 290px) 180px 80px;
-        align-items: center;
-        justify-content: center;
-        text-align: center; }
-        header .banner .contenedor.contenedor-banner .bienvenida {
-          color: #fff;
-          font-family: "Montserrat", Sans-serif;
-          font-size: 50px;
-          font-weight: 200;
-          text-transform: uppercase; }
-        header .banner .contenedor.contenedor-banner .nombre-gym .titulo-gym {
-          text-transform: uppercase;
-          color: #fbe23c;
-          font-family: "Righteous", Sans-serif;
-          font-size: 120px;
-          font-weight: 400; }
-        header .banner .contenedor.contenedor-banner .descripcion {
-          color: #fff;
-          font-family: "Raleway", Sans-serif;
-          font-size: 18px;
-          font-weight: 400;
-          line-height: 30px; }
-        header .banner .contenedor.contenedor-banner .btn-leer-mas {
-          align-self: end; }
-          header .banner .contenedor.contenedor-banner .btn-leer-mas .btn {
-            padding: 15px 50px;
-            background-color: #fbe23c;
-            color: #000;
-            border: none;
-            font-weight: 800;
-            transition: all .35s ease; }
-            header .banner .contenedor.contenedor-banner .btn-leer-mas .btn:hover {
-              cursor: pointer;
-              color: #fbe23c;
-              background-color: #33393e; }
 
 main {
   width: 100%; }
-  main .nuestros-programas {
-    width: 100%;
-    background: #fbe23c; }
-    main .nuestros-programas .contenedor {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-      display: grid; }
-      main .nuestros-programas .contenedor.contenedor-nuestros-programas {
-        padding: 45px 0;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: "titulo    titulo    titulo" "carta-1  carta-2   carta-3";
-        grid-gap: 20px;
-        grid-row-gap: 50px; }
-        main .nuestros-programas .contenedor.contenedor-nuestros-programas .nuestros-programas-titulo {
-          grid-area: titulo;
-          justify-self: center;
-          color: #000;
-          font-family: "Righteous", Sans-serif;
-          font-size: 24px;
-          font-weight: 400;
-          text-transform: uppercase; }
-        main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta {
-          width: 100%;
-          position: relative;
-          transform-style: preserve-3d;
-          transition: all 1s ease;
-          height: 545px; }
-          main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta #carta-frente-1 {
-            background-image: url(../img/cara-1.jpg); }
-          main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta #carta-frente-2 {
-            background-image: url(../img/cara-2.jpg); }
-          main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta #carta-frente-3 {
-            background-image: url(../img/cara-3.jpg); }
-          main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta .carta-frente {
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            position: absolute;
-            display: flex;
-            justify-content: center;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            backface-visibility: hidden; }
-            main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta .carta-frente .carta-titulo {
-              display: hidden;
-              align-self: center;
-              color: #fff;
-              font-family: "Righteous", Sans-serif;
-              font-size: 34px;
-              font-weight: 400;
-              line-height: 1.2em;
-              text-transform: uppercase;
-              text-align: center; }
-          main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta #carta-atras-1 {
-            background-image: url(../img/cara-1.jpg); }
-          main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta #carta-atras-2 {
-            background-image: url(../img/cara-2.jpg); }
-          main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta #carta-atras-3 {
-            background-image: url(../img/cara-3.jpg); }
-          main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta .carta-atras {
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            position: absolute;
-            transform: rotateY(180deg);
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: grid;
-            grid-template-columns: 80%;
-            justify-content: center;
-            align-content: space-around; }
-            main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta .carta-atras:before {
-              content: "";
-              width: 100%;
-              height: 100%;
-              position: absolute;
-              top: 0;
-              left: 0;
-              background-color: #000000;
-              opacity: .80;
-              z-index: -1; }
-            main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta .carta-atras .carta-titulo-atras {
-              align-self: center;
-              text-align: center;
-              color: #fbe23c;
-              font-family: "Righteous", Sans-serif;
-              font-size: 34px;
-              font-weight: 400;
-              text-transform: uppercase;
-              line-height: 1.2em; }
-            main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta .carta-atras .carta-descripcion {
-              text-align: center;
-              color: rgba(255, 255, 255, 0.64);
-              font-family: "Raleway", Sans-serif;
-              font-size: 14px;
-              padding: 0px 27px 0px 27px; }
-            main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta .carta-atras .btn-leer-mas {
-              align-self: end;
-              justify-self: center; }
-              main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta .carta-atras .btn-leer-mas .btn {
-                padding: 15px 50px;
-                background-color: #fbe23c;
-                color: #000;
-                border: none;
-                font-weight: 800;
-                transition: all .35s ease; }
-                main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta .carta-atras .btn-leer-mas .btn:hover {
-                  cursor: pointer;
-                  color: #fbe23c;
-                  background-color: #33393e; }
-          main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta:hover {
-            cursor: pointer;
-            transform: rotateY(180deg); }
-  main .entrenadores {
-    width: 100%;
-    background-color: #191919; }
-    main .entrenadores .contenedor {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-      display: grid; }
-      main .entrenadores .contenedor.contenedor-entrenadores {
-        padding: 45px 0;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px; }
-        main .entrenadores .contenedor.contenedor-entrenadores .entrenadores-titulo {
-          grid-column: span 2;
-          text-align: center; }
-          main .entrenadores .contenedor.contenedor-entrenadores .entrenadores-titulo h3 {
-            color: #fff;
-            font-family: "Righteous", Sans-serif;
-            font-size: 24px;
-            font-weight: 400;
-            text-transform: uppercase; }
-        main .entrenadores .contenedor.contenedor-entrenadores .entrenador {
-          background: #33393e;
-          height: 420px;
-          display: grid;
-          grid-template-columns: 270px auto; }
-          main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-foto {
-            width: 270px;
-            height: 100%; }
-            main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-foto img {
-              width: 100%;
-              height: 100%; }
-          main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 70px 15px 145px 50px;
-            justify-content: start;
-            justify-items: start;
-            align-content: space-evenly;
-            padding-top: 10px;
-            padding-left: 10px; }
-            main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-nombre {
-              color: #fbe23c;
-              font-family: "Righteous", Sans-serif;
-              font-size: 34px;
-              font-weight: 400;
-              line-height: 40px;
-              text-align: start;
-              text-transform: uppercase; }
-            main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-roll {
-              color: #fff;
-              font-family: "Montserrat", Sans-serif;
-              font-size: 16px;
-              font-weight: 700;
-              line-height: 18px;
-              text-align: left; }
-            main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-descripcion {
-              color: #aaaaaa;
-              font-family: "Raleway", Sans-serif;
-              font-size: 14px;
-              padding-right: 29px;
-              text-align: left;
-              line-height: 22px; }
-            main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-redes {
-              display: grid;
-              grid-template-columns: repeat(3, 50px);
-              grid-gap: 20px; }
-              main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-redes li {
-                width: 50px;
-                height: 50px;
-                background-color: #51575b;
-                list-style: none;
-                display: flex;
-                justify-content: center;
-                transition: all .35s ease-in-out; }
-                main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-redes li a {
-                  align-self: center;
-                  text-decoration: none;
-                  color: #fbe23c;
-                  transition: all .35s ease-in-out; }
-                main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-redes li:hover {
-                  cursor: pointer;
-                  background: #fbe23c; }
-                  main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-redes li:hover a {
-                    color: #51575b; }
-  main .equipamento {
-    width: 100%;
-    height: 659px;
-    background-color: #191919;
-    position: relative; }
-    main .equipamento:hover .izquierda {
-      opacity: 1; }
-    main .equipamento:hover .derecha {
-      opacity: 1; }
-    main .equipamento .izquierda {
-      position: absolute;
-      z-index: 99999999999999999;
-      top: 45%;
-      left: 20px;
-      width: 50px;
-      height: 50px;
-      background-color: #33393e;
-      opacity: 0;
-      transition: all .5s ease-in-out;
-      cursor: pointer;
-      text-align: center;
-      color: #fbe23c;
-      font-size: 30px;
-      line-height: 50px; }
-      main .equipamento .izquierda:hover {
-        background-color: #fbe23c;
-        color: #33393e; }
-    main .equipamento .derecha {
-      position: absolute;
-      z-index: 99999999999999999;
-      top: 45%;
-      right: 20px;
-      width: 50px;
-      height: 50px;
-      background-color: #33393e;
-      opacity: 0;
-      transition: all .5s ease-in-out;
-      cursor: pointer;
-      text-align: center;
-      color: #fbe23c;
-      font-size: 30px;
-      line-height: 50px; }
-      main .equipamento .derecha:hover {
-        background-color: #fbe23c;
-        color: #33393e; }
-    main .equipamento .equipamento-slider img {
-      position: relative;
-      display: block;
-      width: 100%;
-      height: 659px; }
-    main .equipamento .equipamento-slider .contenedor {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-      display: grid; }
-      main .equipamento .equipamento-slider .contenedor.contenedor-slider {
-        position: absolute;
-        top: 15%;
-        left: 5%;
-        grid-template-columns: repeat(2, 1fr); }
-        main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-titulo .titulo-slider {
-          text-transform: uppercase;
-          color: #fbe23c;
-          font-family: "Roboto", Sans-serif;
-          font-size: 100px;
-          font-weight: 400; }
-        main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-titulo .subtitulo-slider {
-          text-transform: uppercase;
+
+header .nav {
+  width: 100%;
+  height: 150px;
+  border-bottom: 1px solid #33393e; }
+  header .nav .contenedor.contenedor-nav {
+    height: 100%;
+    grid-template-columns: 125px 850px 35px 100px;
+    align-content: center;
+    align-items: center;
+    justify-items: center; }
+    header .nav .contenedor.contenedor-nav .logo {
+      width: 125px;
+      height: 24px; }
+      header .nav .contenedor.contenedor-nav .logo h2 {
+        color: #fbe23c;
+        font-family: "Righteous", sans-serif;
+        font-size: 22px;
+        line-height: 26px;
+        text-transform: uppercase; }
+    header .nav .contenedor.contenedor-nav .menu {
+      display: grid;
+      grid-template-columns: minmax(45px, 60px) minmax(155px, 180px) repeat(2, minmax(110px, 125px)) repeat(2, 90px) 75px 80px;
+      justify-items: center;
+      align-items: center; }
+      header .nav .contenedor.contenedor-nav .menu li {
+        list-style: none; }
+        header .nav .contenedor.contenedor-nav .menu li a {
           color: #fff;
-          font-family: "Roboto", Sans-serif;
-          font-size: 52px;
-          font-weight: 400; }
-        main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-contenido .contenido-descripcion {
-          color: #ffffff;
-          font-family: "Raleway", Sans-serif;
-          font-size: 18px;
-          font-weight: 400;
-          line-height: 29px; }
-        main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-contenido .equipamento-lista {
-          margin-top: 10px; }
-          main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-contenido .equipamento-lista li {
-            list-style: none;
-            font-family: "Raleway", Sans-serif;
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 34px;
-            color: #fbe23c; }
-  main .testimonios {
-    width: 100%;
-    background-color: #fbe23c; }
-    main .testimonios .contenedor {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-      display: grid; }
-      main .testimonios .contenedor.contenedor-testimonios {
-        padding: 45px 0;
-        grid-template-columns: repeat(6, 1fr);
-        grid-gap: 20px; }
-        main .testimonios .contenedor.contenedor-testimonios .testimonio-titulo {
-          grid-column: span 6;
-          text-align: center; }
-          main .testimonios .contenedor.contenedor-testimonios .testimonio-titulo h3 {
-            font-family: "Righteous", Sans-serif;
-            font-size: 24px;
-            font-weight: 400;
-            text-transform: uppercase; }
-        main .testimonios .contenedor.contenedor-testimonios .testimonio-dos-tercios {
-          grid-column: span 4; }
-          main .testimonios .contenedor.contenedor-testimonios .testimonio-dos-tercios .testimonio-comillas {
-            width: 60px;
-            height: 60px;
-            color: #33393e;
-            font-size: 40px;
-            text-align: center;
-            margin: 5px;
-            margin-bottom: 2px; }
-          main .testimonios .contenedor.contenedor-testimonios .testimonio-dos-tercios .testimonio-titulo h5 {
-            text-align: left;
-            font-family: "Righteous", sans-serif;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 35px; }
-          main .testimonios .contenedor.contenedor-testimonios .testimonio-dos-tercios .testimonio {
-            position: relative; }
-            main .testimonios .contenedor.contenedor-testimonios .testimonio-dos-tercios .testimonio .texto-testimonio {
-              text-align: left;
-              color: #7a7a7a;
-              font-family: "Raleway", Sans-serif;
-              font-size: 14px;
-              line-height: 1.6em;
-              background-color: #33393e;
-              padding: 46px 10px 39px 20px; }
-            main .testimonios .contenedor.contenedor-testimonios .testimonio-dos-tercios .testimonio::before {
-              content: "";
-              display: block;
-              width: 0;
-              height: 0;
-              border-right: 15px solid transparent;
-              border-top: 15px solid transparent;
-              border-left: 15px solid #33393e;
-              border-bottom: 15px solid #33393e;
-              transform: rotate(90deg);
-              position: absolute;
-              bottom: -22.5px;
-              left: 10px;
-              z-index: 0; }
-          main .testimonios .contenedor.contenedor-testimonios .testimonio-dos-tercios .testimonio-nombre p {
-            text-align: left;
-            color: #000000;
-            font-family: "Montserrat", Sans-serif;
-            font-size: 14px;
-            font-weight: 700;
-            text-transform: uppercase;
-            line-height: 2em;
-            margin: 15px 0px 0px 0px; }
-          main .testimonios .contenedor.contenedor-testimonios .testimonio-dos-tercios .testimonio-fecha {
-            text-align: left;
-            color: #000;
-            font-family: "Raleway", Sans-serif;
-            font-size: 14px;
-            font-weight: 500;
-            text-transform: uppercase; }
-        main .testimonios .contenedor.contenedor-testimonios .testimonio-un-tercio {
-          grid-column: span 2; }
-          main .testimonios .contenedor.contenedor-testimonios .testimonio-un-tercio .testimonio-comillas {
-            width: 60px;
-            height: 60px;
-            color: #33393e;
-            font-size: 40px;
-            text-align: center;
-            margin: 5px;
-            margin-bottom: 2px; }
-          main .testimonios .contenedor.contenedor-testimonios .testimonio-un-tercio .testimonio-titulo h5 {
-            text-align: left;
-            font-family: "Righteous", sans-serif;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 35px; }
-          main .testimonios .contenedor.contenedor-testimonios .testimonio-un-tercio .testimonio {
-            position: relative; }
-            main .testimonios .contenedor.contenedor-testimonios .testimonio-un-tercio .testimonio .texto-testimonio {
-              text-align: left;
-              color: #7a7a7a;
-              font-family: "Raleway", Sans-serif;
-              font-size: 14px;
-              line-height: 1.6em;
-              background-color: #33393e;
-              padding: 46px 10px 39px 20px; }
-            main .testimonios .contenedor.contenedor-testimonios .testimonio-un-tercio .testimonio::before {
-              content: "";
-              display: block;
-              width: 0;
-              height: 0;
-              border-right: 15px solid transparent;
-              border-top: 15px solid transparent;
-              border-left: 15px solid #33393e;
-              border-bottom: 15px solid #33393e;
-              transform: rotate(90deg);
-              position: absolute;
-              bottom: -22.5px;
-              left: 10px;
-              z-index: 0; }
-          main .testimonios .contenedor.contenedor-testimonios .testimonio-un-tercio .testimonio-nombre p {
-            text-align: left;
-            color: #000000;
-            font-family: "Montserrat", Sans-serif;
-            font-size: 14px;
-            font-weight: 700;
-            text-transform: uppercase;
-            line-height: 2em;
-            margin: 15px 0px 0px 0px; }
-          main .testimonios .contenedor.contenedor-testimonios .testimonio-un-tercio .testimonio-fecha {
-            text-align: left;
-            color: #000;
-            font-family: "Raleway", Sans-serif;
-            font-size: 14px;
-            font-weight: 500;
-            text-transform: uppercase; }
-        main .testimonios .contenedor.contenedor-testimonios .testimonio-mitad {
-          grid-column: span 3; }
-          main .testimonios .contenedor.contenedor-testimonios .testimonio-mitad .testimonio-comillas {
-            width: 60px;
-            height: 60px;
-            color: #33393e;
-            font-size: 40px;
-            text-align: center;
-            margin: 5px;
-            margin-bottom: 2px; }
-          main .testimonios .contenedor.contenedor-testimonios .testimonio-mitad .testimonio-titulo h5 {
-            text-align: left;
-            font-family: "Righteous", sans-serif;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 35px; }
-          main .testimonios .contenedor.contenedor-testimonios .testimonio-mitad .testimonio {
-            position: relative; }
-            main .testimonios .contenedor.contenedor-testimonios .testimonio-mitad .testimonio .texto-testimonio {
-              text-align: left;
-              color: #7a7a7a;
-              font-family: "Raleway", Sans-serif;
-              font-size: 14px;
-              line-height: 1.6em;
-              background-color: #33393e;
-              padding: 46px 10px 39px 20px; }
-            main .testimonios .contenedor.contenedor-testimonios .testimonio-mitad .testimonio::before {
-              content: "";
-              display: block;
-              width: 0;
-              height: 0;
-              border-right: 15px solid transparent;
-              border-top: 15px solid transparent;
-              border-left: 15px solid #33393e;
-              border-bottom: 15px solid #33393e;
-              transform: rotate(90deg);
-              position: absolute;
-              bottom: -22.5px;
-              left: 10px;
-              z-index: 0; }
-          main .testimonios .contenedor.contenedor-testimonios .testimonio-mitad .testimonio-nombre p {
-            text-align: left;
-            color: #000000;
-            font-family: "Montserrat", Sans-serif;
-            font-size: 14px;
-            font-weight: 700;
-            text-transform: uppercase;
-            line-height: 2em;
-            margin: 15px 0px 0px 0px; }
-          main .testimonios .contenedor.contenedor-testimonios .testimonio-mitad .testimonio-fecha {
-            text-align: left;
-            color: #000;
-            font-family: "Raleway", Sans-serif;
-            font-size: 14px;
-            font-weight: 500;
-            text-transform: uppercase; }
-  main .galeria {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 25%); }
-    main .galeria .galeria-foto {
-      width: 100%;
-      min-height: 100px;
-      height: 100%;
-      position: relative; }
-      main .galeria .galeria-foto .foto {
-        width: 100%;
-        height: 100%; }
-        main .galeria .galeria-foto .foto img {
-          width: 100%;
-          height: 100%; }
-      main .galeria .galeria-foto:hover .foto-hover {
-        opacity: 1; }
-        main .galeria .galeria-foto:hover .foto-hover i {
+          text-decoration: none;
+          font-family: "Montserrat", sans-serif;
+          font-size: 14px;
+          font-weight: 600;
+          letter-spacing: 0.56px;
+          transition: all .35s ease; }
+        header .nav .contenedor.contenedor-nav .menu li:hover {
           cursor: pointer; }
-      main .galeria .galeria-foto .foto-hover {
+          header .nav .contenedor.contenedor-nav .menu li:hover a {
+            color: #fbe23c; }
+    header .nav .contenedor.contenedor-nav .buscar {
+      width: 25px;
+      height: 25px;
+      border-right: 0.5px solid #fff;
+      text-align: center;
+      padding-right: 1.5px; }
+      header .nav .contenedor.contenedor-nav .buscar a {
+        color: #fff;
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.56px;
+        transition: all .35s ease;
+        line-height: 25px; }
+      header .nav .contenedor.contenedor-nav .buscar:hover {
+        border-color: #fbe23c;
+        cursor: pointer; }
+        header .nav .contenedor.contenedor-nav .buscar:hover a {
+          cursor: pointer;
+          color: #fbe23c; }
+    header .nav .contenedor.contenedor-nav .redes {
+      display: grid;
+      grid-template-columns: repeat(3, 30px);
+      justify-items: center; }
+      header .nav .contenedor.contenedor-nav .redes li {
+        list-style: none; }
+        header .nav .contenedor.contenedor-nav .redes li a {
+          color: #fff;
+          text-decoration: none;
+          font-family: "Montserrat", sans-serif;
+          font-size: 14px;
+          font-weight: 600;
+          letter-spacing: 0.56px;
+          transition: all .35s ease; }
+        header .nav .contenedor.contenedor-nav .redes li:hover {
+          cursor: pointer; }
+          header .nav .contenedor.contenedor-nav .redes li:hover a {
+            color: #fbe23c; }
+
+header .banner {
+  width: 100%;
+  height: 100%; }
+  header .banner .contenedor.contenedor-banner {
+    padding: 12.50% 0;
+    height: 100%;
+    grid-template-columns: 850px;
+    grid-template-rows: 60px minmax(150px, 290px) 180px 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    header .banner .contenedor.contenedor-banner .bienvenida {
+      color: #fff;
+      font-family: "Montserrat", sans-serif;
+      font-size: 50px;
+      font-weight: 200;
+      text-transform: uppercase; }
+    header .banner .contenedor.contenedor-banner .nombre-gym .titulo-gym {
+      text-transform: uppercase;
+      color: #fbe23c;
+      font-family: "Righteous", sans-serif;
+      font-size: 120px;
+      font-weight: 400; }
+    header .banner .contenedor.contenedor-banner .descripcion {
+      color: #fff;
+      font-family: "Raleway", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px; }
+    header .banner .contenedor.contenedor-banner .btn-leer-mas {
+      align-self: end; }
+
+main .nuestros-programas {
+  width: 100%;
+  background: #fbe23c; }
+  main .nuestros-programas .contenedor.contenedor-nuestros-programas {
+    padding: 45px 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "titulo    titulo    titulo" "carta-1  carta-2   carta-3";
+    grid-gap: 20px;
+    grid-row-gap: 50px; }
+    main .nuestros-programas .contenedor.contenedor-nuestros-programas .nuestros-programas-titulo {
+      grid-area: titulo;
+      justify-self: center;
+      color: #000;
+      font-family: "Righteous", sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      text-transform: uppercase; }
+    main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta {
+      width: 100%;
+      height: 545px;
+      transition: all 1s ease;
+      position: relative;
+      transform-style: preserve-3d; }
+      main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta #carta-frente-1 {
+        background-image: url(../img/cara-1.jpg); }
+      main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta #carta-frente-2 {
+        background-image: url(../img/cara-2.jpg); }
+      main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta #carta-frente-3 {
+        background-image: url(../img/cara-3.jpg); }
+      main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta .carta-frente {
         width: 100%;
         height: 100%;
-        background-color: rgba(84, 89, 95, 0.6);
+        backface-visibility: hidden;
         position: absolute;
-        top: 0;
-        left: 0;
-        color: #fbe23c;
-        transition: all .5s ease-in-out;
         display: flex;
         justify-content: center;
-        opacity: 0; }
-        main .galeria .galeria-foto .foto-hover i {
-          text-align: center;
-          font-size: 50px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        backface-visibility: hidden; }
+        main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta .carta-frente .carta-titulo {
           align-self: center;
-          background-color: rgba(250, 225, 60, 0.33);
-          width: 66px;
-          height: 66px;
-          border-radius: 50px 50px 50px 50px;
-          line-height: 66px; }
-  main .especial {
-    width: 100%;
-    background: #191919; }
-    main .especial .contenedor {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-      display: grid; }
-      main .especial .contenedor.contenedor-especial {
-        padding: 30px 0;
-        padding-bottom: 45px;
+          color: #fff;
+          font-family: "Righteous", sans-serif;
+          font-size: 34px;
+          font-weight: 400;
+          line-height: 1.2em;
+          text-transform: uppercase;
+          text-align: center; }
+      main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta #carta-atras-1 {
+        background-image: url(../img/cara-1.jpg); }
+      main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta #carta-atras-2 {
+        background-image: url(../img/cara-2.jpg); }
+      main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta #carta-atras-3 {
+        background-image: url(../img/cara-3.jpg); }
+      main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta .carta-atras {
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        position: absolute;
+        transform: rotateY(180deg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
         grid-template-columns: 80%;
         justify-content: center;
-        justify-items: center;
-        text-align: center;
-        grid-gap: 40px;
         align-content: space-around; }
-        main .especial .contenedor.contenedor-especial .especial-titulo h2 {
+        main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta .carta-atras:before {
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: #000;
+          opacity: .80;
+          z-index: -1; }
+        main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta .carta-atras .carta-titulo-atras {
+          align-self: center;
+          text-align: center;
           color: #fbe23c;
-          font-family: "Righteous", Sans-serif;
-          font-size: 100px;
+          font-family: "Righteous", sans-serif;
+          font-size: 34px;
           font-weight: 400;
           text-transform: uppercase;
-          line-height: 110px;
-          letter-spacing: 2px; }
-        main .especial .contenedor.contenedor-especial .especial-subtitulo h3 {
+          line-height: 1.2em; }
+        main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta .carta-atras .carta-descripcion {
+          text-align: center;
+          color: rgba(255, 255, 255, 0.64);
+          font-family: "Raleway", sans-serif;
+          font-size: 14px;
+          padding: 0px 27px; }
+        main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta .carta-atras .btn-leer-mas {
+          align-self: end;
+          justify-self: center; }
+      main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta:hover {
+        cursor: pointer;
+        transform: rotateY(180deg); }
+
+main .entrenadores {
+  width: 100%;
+  background-color: #191919; }
+  main .entrenadores .contenedor.contenedor-entrenadores {
+    padding: 45px 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px; }
+    main .entrenadores .contenedor.contenedor-entrenadores .entrenadores-titulo {
+      grid-column: span 2;
+      text-align: center; }
+      main .entrenadores .contenedor.contenedor-entrenadores .entrenadores-titulo h3 {
+        color: #fff;
+        font-family: "Righteous", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase; }
+    main .entrenadores .contenedor.contenedor-entrenadores .entrenador {
+      background: #33393e;
+      height: 420px;
+      display: grid;
+      grid-template-columns: 270px auto; }
+      main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-foto {
+        width: 270px;
+        height: 100%; }
+        main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-foto img {
+          width: 100%;
+          height: 100%; }
+      main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 15px 145px 50px;
+        justify-content: start;
+        justify-items: start;
+        align-content: space-evenly;
+        padding-top: 10px;
+        padding-left: 10px; }
+        main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-nombre {
+          color: #fbe23c;
+          font-family: "Righteous", sans-serif;
+          font-size: 34px;
+          font-weight: 400;
+          line-height: 40px;
+          text-align: start;
+          text-transform: uppercase; }
+        main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-roll {
           color: #fff;
-          font-family: "Montserrat", Sans-serif;
-          font-size: 50px;
-          font-weight: 200;
-          text-transform: uppercase;
-          line-height: 0.9em; }
-        main .especial .contenedor.contenedor-especial .especial-descripcion p {
-          font-family: "Raleway", Sans-serif;
-          font-size: 18px;
-          font-weight: 400;
-          color: #fff; }
-        main .especial .contenedor.contenedor-especial .btn-leer-mas {
-          align-self: end; }
-          main .especial .contenedor.contenedor-especial .btn-leer-mas .btn {
-            padding: 15px 50px;
-            background-color: #fbe23c;
-            color: #000;
-            border: none;
-            font-weight: 800;
-            transition: all .35s ease; }
-            main .especial .contenedor.contenedor-especial .btn-leer-mas .btn:hover {
-              cursor: pointer;
+          font-family: "Montserrat", sans-serif;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 18px;
+          text-align: left; }
+        main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-descripcion {
+          color: #aaaaaa;
+          font-family: "Raleway", sans-serif;
+          font-size: 14px;
+          padding-right: 29px;
+          text-align: left;
+          line-height: 22px; }
+        main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-redes {
+          display: grid;
+          grid-template-columns: repeat(3, 50px);
+          grid-gap: 20px; }
+          main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-redes li {
+            width: 50px;
+            height: 50px;
+            background-color: #51575b;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            transition: all .35s ease-in-out; }
+            main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-redes li a {
+              align-self: center;
+              text-decoration: none;
               color: #fbe23c;
-              background-color: #33393e; }
-  main .contacto {
+              transition: all .35s ease-in-out; }
+            main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-redes li:hover {
+              cursor: pointer;
+              background: #fbe23c; }
+              main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-redes li:hover a {
+                color: #51575b; }
+
+main .equipamento {
+  width: 100%;
+  height: 659px;
+  background-color: #191919;
+  position: relative; }
+  main .equipamento:hover .izquierda {
+    opacity: 1; }
+  main .equipamento:hover .derecha {
+    opacity: 1; }
+  main .equipamento .izquierda {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 99999999999999999;
+    top: 45%;
+    left: 20px;
+    background-color: #33393e;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    color: #fbe23c;
+    font-size: 30px;
+    line-height: 50px; }
+    main .equipamento .izquierda:hover {
+      background-color: #fbe23c;
+      color: #33393e; }
+  main .equipamento .derecha {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 99999999999999999;
+    top: 45%;
+    right: 20px;
+    background-color: #33393e;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    color: #fbe23c;
+    font-size: 30px;
+    line-height: 50px; }
+    main .equipamento .derecha:hover {
+      background-color: #fbe23c;
+      color: #33393e; }
+  main .equipamento .equipamento-slider img {
+    position: relative;
+    display: block;
     width: 100%;
-    background-color: #fbe23c; }
-    main .contacto .contenedor {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-      display: grid; }
-      main .contacto .contenedor.contenedor-contacto {
-        padding: 45px 0;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px; }
-        main .contacto .contenedor.contenedor-contacto .direccion {
-          display: grid;
-          grid-template-columns: 40px 1fr;
-          grid-template-rows: 25px 25px;
-          grid-gap: 5px; }
-          main .contacto .contenedor.contenedor-contacto .direccion .contacto-icono {
-            color: #272b2d;
-            width: 40px;
-            height: 40px;
-            grid-row: span 2;
-            align-self: center; }
-            main .contacto .contenedor.contenedor-contacto .direccion .contacto-icono i {
-              font-size: 40px;
-              line-height: 40px; }
-          main .contacto .contenedor.contenedor-contacto .direccion .contacto-titulo p {
-            color: #272b2d;
-            font-family: "Raleway", Sans-serif;
-            font-size: 18px;
-            font-weight: 700; }
-          main .contacto .contenedor.contenedor-contacto .direccion .contacto-info p {
-            color: #272b2d;
-            font-family: "Raleway", Sans-serif;
-            font-size: 18px;
-            font-weight: 700; }
-        main .contacto .contenedor.contenedor-contacto .telefono {
-          display: grid;
-          grid-template-columns: 40px 1fr;
-          grid-template-rows: 25px 25px;
-          grid-gap: 5px; }
-          main .contacto .contenedor.contenedor-contacto .telefono .contacto-icono {
-            color: #272b2d;
-            width: 40px;
-            height: 40px;
-            grid-row: span 2;
-            align-self: center; }
-            main .contacto .contenedor.contenedor-contacto .telefono .contacto-icono i {
-              font-size: 40px;
-              line-height: 40px; }
-          main .contacto .contenedor.contenedor-contacto .telefono .contacto-titulo p {
-            color: #272b2d;
-            font-family: "Raleway", Sans-serif;
-            font-size: 18px;
-            font-weight: 700; }
-          main .contacto .contenedor.contenedor-contacto .telefono .contacto-info p {
-            color: #272b2d;
-            font-family: "Raleway", Sans-serif;
-            font-size: 18px;
-            font-weight: 700; }
-        main .contacto .contenedor.contenedor-contacto .tiempo {
-          display: grid;
-          grid-template-columns: 40px 1fr;
-          grid-template-rows: 25px 25px;
-          grid-gap: 5px; }
-          main .contacto .contenedor.contenedor-contacto .tiempo .contacto-icono {
-            color: #272b2d;
-            width: 40px;
-            height: 40px;
-            grid-row: span 2;
-            align-self: center; }
-            main .contacto .contenedor.contenedor-contacto .tiempo .contacto-icono i {
-              font-size: 40px;
-              line-height: 40px; }
-          main .contacto .contenedor.contenedor-contacto .tiempo .contacto-titulo p {
-            color: #272b2d;
-            font-family: "Raleway", Sans-serif;
-            font-size: 18px;
-            font-weight: 700; }
-          main .contacto .contenedor.contenedor-contacto .tiempo .contacto-info p {
-            color: #272b2d;
-            font-family: "Raleway", Sans-serif;
-            font-size: 18px;
-            font-weight: 700; }
+    height: 659px; }
+  main .equipamento .equipamento-slider .contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid; }
+    main .equipamento .equipamento-slider .contenedor.contenedor-slider {
+      position: absolute;
+      top: 15%;
+      left: 5%;
+      grid-template-columns: repeat(2, 1fr); }
+      main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-titulo .titulo-slider {
+        text-transform: uppercase;
+        color: #fbe23c;
+        font-family: "Roboto", sans-serif;
+        font-size: 100px;
+        font-weight: 400; }
+      main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-titulo .subtitulo-slider {
+        text-transform: uppercase;
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        font-size: 52px;
+        font-weight: 400; }
+      main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-contenido .contenido-descripcion {
+        color: #fff;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 29px; }
+      main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-contenido .equipamento-lista {
+        margin-top: 10px; }
+        main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-contenido .equipamento-lista li {
+          list-style: none;
+          font-family: "Raleway", sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 34px;
+          color: #fbe23c; }
+
+main .testimonios {
+  width: 100%;
+  background-color: #fbe23c; }
+  main .testimonios .contenedor.contenedor-testimonios {
+    padding: 45px 0;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px; }
+    main .testimonios .contenedor.contenedor-testimonios .testimonio-titulo {
+      grid-column: span 6;
+      text-align: center; }
+      main .testimonios .contenedor.contenedor-testimonios .testimonio-titulo h3 {
+        font-family: "Righteous", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase; }
+    main .testimonios .contenedor.contenedor-testimonios .testimonio-dos-tercios {
+      grid-column: span 4; }
+      main .testimonios .contenedor.contenedor-testimonios .testimonio-dos-tercios .testimonio-comillas {
+        width: 60px;
+        height: 60px;
+        color: #33393e;
+        font-size: 40px;
+        text-align: center;
+        margin: 5px;
+        margin-bottom: 2px; }
+      main .testimonios .contenedor.contenedor-testimonios .testimonio-dos-tercios .testimonio-titulo h5 {
+        text-align: left;
+        font-family: "Righteous", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 35px; }
+      main .testimonios .contenedor.contenedor-testimonios .testimonio-dos-tercios .testimonio {
+        position: relative; }
+        main .testimonios .contenedor.contenedor-testimonios .testimonio-dos-tercios .testimonio .texto-testimonio {
+          text-align: left;
+          color: #7a7a7a;
+          font-family: "Raleway", sans-serif;
+          font-size: 14px;
+          line-height: 1.6em;
+          background-color: #33393e;
+          padding: 46px 10px 39px 20px; }
+        main .testimonios .contenedor.contenedor-testimonios .testimonio-dos-tercios .testimonio::before {
+          content: "";
+          display: block;
+          width: 0;
+          height: 0;
+          border-right: 15px solid transparent;
+          border-top: 15px solid transparent;
+          border-left: 15px solid #33393e;
+          border-bottom: 15px solid #33393e;
+          transform: rotate(90deg);
+          position: absolute;
+          bottom: -22.5px;
+          left: 10px;
+          z-index: 0; }
+      main .testimonios .contenedor.contenedor-testimonios .testimonio-dos-tercios .testimonio-nombre p {
+        text-align: left;
+        color: #000;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 2em;
+        margin-top: 15px; }
+      main .testimonios .contenedor.contenedor-testimonios .testimonio-dos-tercios .testimonio-fecha {
+        text-align: left;
+        color: #000;
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase; }
+    main .testimonios .contenedor.contenedor-testimonios .testimonio-un-tercio {
+      grid-column: span 2; }
+      main .testimonios .contenedor.contenedor-testimonios .testimonio-un-tercio .testimonio-comillas {
+        width: 60px;
+        height: 60px;
+        color: #33393e;
+        font-size: 40px;
+        text-align: center;
+        margin: 5px;
+        margin-bottom: 2px; }
+      main .testimonios .contenedor.contenedor-testimonios .testimonio-un-tercio .testimonio-titulo h5 {
+        text-align: left;
+        font-family: "Righteous", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 35px; }
+      main .testimonios .contenedor.contenedor-testimonios .testimonio-un-tercio .testimonio {
+        position: relative; }
+        main .testimonios .contenedor.contenedor-testimonios .testimonio-un-tercio .testimonio .texto-testimonio {
+          text-align: left;
+          color: #7a7a7a;
+          font-family: "Raleway", sans-serif;
+          font-size: 14px;
+          line-height: 1.6em;
+          background-color: #33393e;
+          padding: 46px 10px 39px 20px; }
+        main .testimonios .contenedor.contenedor-testimonios .testimonio-un-tercio .testimonio::before {
+          content: "";
+          display: block;
+          width: 0;
+          height: 0;
+          border-right: 15px solid transparent;
+          border-top: 15px solid transparent;
+          border-left: 15px solid #33393e;
+          border-bottom: 15px solid #33393e;
+          transform: rotate(90deg);
+          position: absolute;
+          bottom: -22.5px;
+          left: 10px;
+          z-index: 0; }
+      main .testimonios .contenedor.contenedor-testimonios .testimonio-un-tercio .testimonio-nombre p {
+        text-align: left;
+        color: #000;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 2em;
+        margin-top: 15px; }
+      main .testimonios .contenedor.contenedor-testimonios .testimonio-un-tercio .testimonio-fecha {
+        text-align: left;
+        color: #000;
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase; }
+    main .testimonios .contenedor.contenedor-testimonios .testimonio-mitad {
+      grid-column: span 3; }
+      main .testimonios .contenedor.contenedor-testimonios .testimonio-mitad .testimonio-comillas {
+        width: 60px;
+        height: 60px;
+        color: #33393e;
+        font-size: 40px;
+        text-align: center;
+        margin: 5px;
+        margin-bottom: 2px; }
+      main .testimonios .contenedor.contenedor-testimonios .testimonio-mitad .testimonio-titulo h5 {
+        text-align: left;
+        font-family: "Righteous", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 35px; }
+      main .testimonios .contenedor.contenedor-testimonios .testimonio-mitad .testimonio {
+        position: relative; }
+        main .testimonios .contenedor.contenedor-testimonios .testimonio-mitad .testimonio .texto-testimonio {
+          text-align: left;
+          color: #7a7a7a;
+          font-family: "Raleway", sans-serif;
+          font-size: 14px;
+          line-height: 1.6em;
+          background-color: #33393e;
+          padding: 46px 10px 39px 20px; }
+        main .testimonios .contenedor.contenedor-testimonios .testimonio-mitad .testimonio::before {
+          content: "";
+          display: block;
+          width: 0;
+          height: 0;
+          border-right: 15px solid transparent;
+          border-top: 15px solid transparent;
+          border-left: 15px solid #33393e;
+          border-bottom: 15px solid #33393e;
+          transform: rotate(90deg);
+          position: absolute;
+          bottom: -22.5px;
+          left: 10px;
+          z-index: 0; }
+      main .testimonios .contenedor.contenedor-testimonios .testimonio-mitad .testimonio-nombre p {
+        text-align: left;
+        color: #000;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 2em;
+        margin-top: 15px; }
+      main .testimonios .contenedor.contenedor-testimonios .testimonio-mitad .testimonio-fecha {
+        text-align: left;
+        color: #000;
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase; }
+
+main .galeria {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%); }
+  main .galeria .galeria-foto {
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+    position: relative; }
+    main .galeria .galeria-foto .foto {
+      width: 100%;
+      height: 100%; }
+      main .galeria .galeria-foto .foto img {
+        width: 100%;
+        height: 100%; }
+    main .galeria .galeria-foto:hover .foto-hover {
+      opacity: 1; }
+      main .galeria .galeria-foto:hover .foto-hover i {
+        cursor: pointer; }
+    main .galeria .galeria-foto .foto-hover {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(84, 89, 95, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #fbe23c;
+      transition: all .5s ease-in-out;
+      display: flex;
+      justify-content: center;
+      opacity: 0; }
+      main .galeria .galeria-foto .foto-hover i {
+        width: 66px;
+        height: 66px;
+        text-align: center;
+        font-size: 50px;
+        align-self: center;
+        background-color: rgba(250, 225, 60, 0.33);
+        border-radius: 50px;
+        line-height: 66px; }
+
+main .especial {
+  width: 100%;
+  background: #191919; }
+  main .especial .contenedor.contenedor-especial {
+    padding: 30px 0;
+    padding-bottom: 45px;
+    grid-template-columns: 80%;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    grid-gap: 40px;
+    align-content: space-around; }
+    main .especial .contenedor.contenedor-especial .especial-titulo h2 {
+      color: #fbe23c;
+      font-family: "Righteous", sans-serif;
+      font-size: 100px;
+      font-weight: 400;
+      text-transform: uppercase;
+      line-height: 110px;
+      letter-spacing: 2px; }
+    main .especial .contenedor.contenedor-especial .especial-subtitulo h3 {
+      color: #fff;
+      font-family: "Montserrat", sans-serif;
+      font-size: 50px;
+      font-weight: 200;
+      text-transform: uppercase;
+      line-height: 0.9em; }
+    main .especial .contenedor.contenedor-especial .especial-descripcion p {
+      font-family: "Raleway", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      color: #fff; }
+    main .especial .contenedor.contenedor-especial .btn-leer-mas {
+      align-self: end; }
+
+main .contacto {
+  width: 100%;
+  background-color: #fbe23c; }
+  main .contacto .contenedor.contenedor-contacto {
+    padding: 45px 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; }
+    main .contacto .contenedor.contenedor-contacto .direccion {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      grid-template-rows: 25px 25px;
+      grid-gap: 5px; }
+      main .contacto .contenedor.contenedor-contacto .direccion .contacto-icono {
+        width: 40px;
+        height: 40px;
+        color: #272b2d;
+        grid-row: span 2;
+        align-self: center; }
+        main .contacto .contenedor.contenedor-contacto .direccion .contacto-icono i {
+          font-size: 40px;
+          line-height: 40px; }
+      main .contacto .contenedor.contenedor-contacto .direccion .contacto-titulo p {
+        color: #272b2d;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        font-weight: 700; }
+      main .contacto .contenedor.contenedor-contacto .direccion .contacto-info p {
+        color: #272b2d;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        font-weight: 700; }
+    main .contacto .contenedor.contenedor-contacto .telefono {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      grid-template-rows: 25px 25px;
+      grid-gap: 5px; }
+      main .contacto .contenedor.contenedor-contacto .telefono .contacto-icono {
+        color: #272b2d;
+        width: 40px;
+        height: 40px;
+        grid-row: span 2;
+        align-self: center; }
+        main .contacto .contenedor.contenedor-contacto .telefono .contacto-icono i {
+          font-size: 40px;
+          line-height: 40px; }
+      main .contacto .contenedor.contenedor-contacto .telefono .contacto-titulo p {
+        color: #272b2d;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        font-weight: 700; }
+      main .contacto .contenedor.contenedor-contacto .telefono .contacto-info p {
+        color: #272b2d;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        font-weight: 700; }
+    main .contacto .contenedor.contenedor-contacto .tiempo {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      grid-template-rows: 25px 25px;
+      grid-gap: 5px; }
+      main .contacto .contenedor.contenedor-contacto .tiempo .contacto-icono {
+        color: #272b2d;
+        width: 40px;
+        height: 40px;
+        grid-row: span 2;
+        align-self: center; }
+        main .contacto .contenedor.contenedor-contacto .tiempo .contacto-icono i {
+          font-size: 40px;
+          line-height: 40px; }
+      main .contacto .contenedor.contenedor-contacto .tiempo .contacto-titulo p {
+        color: #272b2d;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        font-weight: 700; }
+      main .contacto .contenedor.contenedor-contacto .tiempo .contacto-info p {
+        color: #272b2d;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        font-weight: 700; }
 
 footer {
   width: 100%;
   background-color: #191919;
   padding-top: 10px; }
-  footer .contenedor {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid; }
-    footer .contenedor.contenedor-footer {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(2, 100px); }
-      footer .contenedor.contenedor-footer .footer-fila-1 {
-        align-self: center;
-        border-bottom: 1.5px solid #33393e; }
-        footer .contenedor.contenedor-footer .footer-fila-1 .logo {
-          margin-bottom: 10px;
-          height: 32px; }
-          footer .contenedor.contenedor-footer .footer-fila-1 .logo h2 {
-            color: #fbe23c;
-            font-family: "Righteous", Sans-serif;
-            font-size: 28px;
-            line-height: 30px;
-            text-transform: uppercase; }
-      footer .contenedor.contenedor-footer .footer-fila-2 {
-        display: flex;
-        justify-content: space-between; }
-        footer .contenedor.contenedor-footer .footer-fila-2 .copyright p {
-          color: #9aa0a4;
-          font-family: "Montserrat", Sans-serif;
-          font-size: 16px;
-          font-weight: 600;
-          line-height: 28px; }
-          footer .contenedor.contenedor-footer .footer-fila-2 .copyright p a {
+  footer .contenedor.contenedor-footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 100px); }
+    footer .contenedor.contenedor-footer .footer-fila-1 {
+      align-self: center;
+      border-bottom: 1.5px solid #33393e; }
+      footer .contenedor.contenedor-footer .footer-fila-1 .logo {
+        margin-bottom: 10px;
+        height: 32px; }
+        footer .contenedor.contenedor-footer .footer-fila-1 .logo h2 {
+          color: #fbe23c;
+          font-family: "Righteous", sans-serif;
+          font-size: 28px;
+          line-height: 30px;
+          text-transform: uppercase; }
+    footer .contenedor.contenedor-footer .footer-fila-2 {
+      display: flex;
+      justify-content: space-between; }
+      footer .contenedor.contenedor-footer .footer-fila-2 .copyright p {
+        color: #9aa0a4;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 28px; }
+        footer .contenedor.contenedor-footer .footer-fila-2 .copyright p a {
+          text-decoration: none;
+          color: #fbe23c; }
+      footer .contenedor.contenedor-footer .footer-fila-2 .redes {
+        display: grid;
+        grid-template-columns: repeat(3, 30px);
+        justify-items: center; }
+        footer .contenedor.contenedor-footer .footer-fila-2 .redes li {
+          list-style: none; }
+          footer .contenedor.contenedor-footer .footer-fila-2 .redes li a {
+            color: #fff;
             text-decoration: none;
-            color: #fbe23c; }
-        footer .contenedor.contenedor-footer .footer-fila-2 .redes {
-          display: grid;
-          grid-template-columns: repeat(3, 30px);
-          justify-items: center; }
-          footer .contenedor.contenedor-footer .footer-fila-2 .redes li {
-            list-style: none; }
-            footer .contenedor.contenedor-footer .footer-fila-2 .redes li a {
-              color: #fff;
-              text-decoration: none;
-              font-family: 'Montserrat', sans-serif;
-              font-size: 14px;
-              font-weight: 600;
-              letter-spacing: 0.56px;
-              transition: all .35s ease; }
-            footer .contenedor.contenedor-footer .footer-fila-2 .redes li:hover {
-              cursor: pointer; }
-              footer .contenedor.contenedor-footer .footer-fila-2 .redes li:hover a {
-                color: #fbe23c; }
+            font-family: "Montserrat", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.56px;
+            transition: all .35s ease; }
+          footer .contenedor.contenedor-footer .footer-fila-2 .redes li:hover {
+            cursor: pointer; }
+            footer .contenedor.contenedor-footer .footer-fila-2 .redes li:hover a {
+              color: #fbe23c; }
 
 /*# sourceMappingURL=main.css.map */

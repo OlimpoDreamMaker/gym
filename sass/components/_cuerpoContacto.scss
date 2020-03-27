@@ -1,0 +1,112 @@
+main{
+  .contacto{
+    width: 100%;
+    background-color: $principal;
+    .contenedor{
+      @extend %contenedor;
+      &.contenedor-contacto{
+        padding: 45px 0;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        .direccion{
+          display: grid;
+          grid-template-columns: 40px 1fr;
+          grid-template-rows: 25px 25px;
+          grid-gap: 5px;
+          .contacto-icono{
+            @include rectangulo(40px,40px);
+            color: $cuarto;
+            grid-row: span 2;
+            align-self: center;
+            i{
+              font-size:  40px;
+              line-height: 40px;
+            }
+          }
+          .contacto-titulo{
+            p{
+              color: $cuarto;
+              font-family: $Raleway;
+              font-size: 18px;
+              font-weight: 700;
+            }
+          }
+          .contacto-info{
+            p{
+              color: $cuarto;
+              font-family: $Raleway;
+              font-size: 18px;
+              font-weight: 700;
+            }
+          }
+        }
+        .telefono{
+          display: grid;
+          grid-template-columns: 40px 1fr;
+          grid-template-rows: 25px 25px;
+          grid-gap: 5px;
+          .contacto-icono{
+            color: $cuarto;
+            width:  40px;
+            height: 40px;
+            grid-row: span 2;
+            align-self: center;
+            i{
+              font-size:  40px;
+              line-height: 40px;
+            }
+          }
+          .contacto-titulo{
+            p{
+              color: $cuarto;
+              font-family: $Raleway;
+              font-size: 18px;
+              font-weight: 700;
+            }
+          }
+          .contacto-info{
+            p{
+              color: $cuarto;
+              font-family: $Raleway;
+              font-size: 18px;
+              font-weight: 700;
+            }
+          }
+        }
+        .tiempo{
+          display: grid;
+          grid-template-columns: 40px 1fr;
+          grid-template-rows: 25px 25px;
+          grid-gap: 5px;
+          .contacto-icono{
+            color: $cuarto;
+            width:  40px;
+            height: 40px;
+            grid-row: span 2;
+            align-self: center;
+            i{
+              font-size:  40px;
+              line-height: 40px;
+            }
+          }
+          .contacto-titulo{
+            p{
+              color: $cuarto;
+              font-family: $Raleway;
+              font-size: 18px;
+              font-weight: 700;
+            }
+          }
+          .contacto-info{
+            p{
+              color: $cuarto;
+              font-family: $Raleway;
+              font-size: 18px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}

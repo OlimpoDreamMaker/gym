@@ -1,0 +1,24 @@
+%contenedor{
+  width:90%;
+  max-width: 1200px;
+  margin:auto;
+  display: grid;
+}
+@mixin rectangulo($ancho, $alto) {
+  width: $ancho;
+  height: $alto;
+}
+%boton{
+  padding:15px 50px;
+  background-color: $principal;
+  color:$letrasSecundario;
+  border:none;
+  font-weight: 800;
+  transition:all .35s ease;
+  &:hover{
+    cursor:pointer;
+    color:$principal;
+    background-color: $secundario;
+  }
+          
+}
