@@ -5,13 +5,16 @@ header{
     .contenedor{
       @extend %contenedor;
       &.contenedor-banner{
-        padding:12.50% 0;
-        height: 100%;
-        grid-template-columns: 850px;
-        grid-template-rows: 60px minmax(150px,290px) 180px 80px;
+        padding:25px 0;
+        height: auto;
+        min-height: 45px + 100px + 180px + 80px;
+        height: 60px + 300px + 200px + 100px;
+        // grid-template-columns: 850px;
+        grid-template-rows: minmax(45px,60px) minmax(100px,290px) 180px 80px;
         align-items: center;
         justify-content: center;
         text-align: center;
+        align-content: space-between;
         .bienvenida{
           color:$letrasPrimario;
           font-family: $Montserrat;
@@ -39,6 +42,61 @@ header{
           align-self: end;
           .btn{
             @extend %boton;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1025px){
+  header{
+    .banner{
+      .contenedor{
+        &.contenedor-banner{
+          grid-template-rows: 45px 100px 180px 80px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width:830px){
+  header{
+    .banner{
+      .contenedor{
+        &.contenedor-banner{
+          grid-template-rows: 40px 90px minmax(300px,auto) 50px;
+          // grid-template-columns:731px;
+          .bienvenida{
+            p{
+              font-size: 42px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width:767px){
+  header{
+    .banner{
+      .contenedor{
+        &.contenedor-banner{
+          grid-template-rows: 40px 65px minmax(300px,auto) 50px;
+          align-content: center;
+          .bienvenida{
+            p{
+              font-size: 38px;
+            }
+          }
+          .nombre-gym{
+            .titulo-gym{
+              font-size: 60px;
+            }
+          }
+          .descripcion{
+            .texto-descripcion{
+              font-size: 14px;
+            }
           }
         }
       }

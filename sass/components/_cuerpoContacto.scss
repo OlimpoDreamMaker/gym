@@ -14,30 +14,13 @@ main{
           grid-template-rows: 25px 25px;
           grid-gap: 5px;
           .contacto-icono{
-            @include rectangulo(40px,40px);
-            color: $cuarto;
-            grid-row: span 2;
-            align-self: center;
-            i{
-              font-size:  40px;
-              line-height: 40px;
-            }
+            @extend %contacto-icono;
           }
           .contacto-titulo{
-            p{
-              color: $cuarto;
-              font-family: $Raleway;
-              font-size: 18px;
-              font-weight: 700;
-            }
+            @extend %contacto-titulo;
           }
           .contacto-info{
-            p{
-              color: $cuarto;
-              font-family: $Raleway;
-              font-size: 18px;
-              font-weight: 700;
-            }
+            @extend %contacto-info;
           }
         }
         .telefono{
@@ -46,31 +29,13 @@ main{
           grid-template-rows: 25px 25px;
           grid-gap: 5px;
           .contacto-icono{
-            color: $cuarto;
-            width:  40px;
-            height: 40px;
-            grid-row: span 2;
-            align-self: center;
-            i{
-              font-size:  40px;
-              line-height: 40px;
-            }
+            @extend %contacto-icono;
           }
           .contacto-titulo{
-            p{
-              color: $cuarto;
-              font-family: $Raleway;
-              font-size: 18px;
-              font-weight: 700;
-            }
+            @extend %contacto-titulo;
           }
           .contacto-info{
-            p{
-              color: $cuarto;
-              font-family: $Raleway;
-              font-size: 18px;
-              font-weight: 700;
-            }
+            @extend %contacto-info;
           }
         }
         .tiempo{
@@ -79,30 +44,53 @@ main{
           grid-template-rows: 25px 25px;
           grid-gap: 5px;
           .contacto-icono{
-            color: $cuarto;
-            width:  40px;
-            height: 40px;
-            grid-row: span 2;
-            align-self: center;
-            i{
-              font-size:  40px;
-              line-height: 40px;
-            }
+            @extend %contacto-icono;
           }
           .contacto-titulo{
-            p{
-              color: $cuarto;
-              font-family: $Raleway;
-              font-size: 18px;
-              font-weight: 700;
-            }
+            @extend %contacto-titulo;
           }
           .contacto-info{
-            p{
-              color: $cuarto;
-              font-family: $Raleway;
-              font-size: 18px;
-              font-weight: 700;
+            @extend %contacto-info;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:767px){
+  main{
+    .contacto{
+      .contenedor{
+        &.contenedor-contacto{
+          grid-template-columns: 100%;
+          grid-template-rows: repeat(3,130px);
+          justify-content: center;
+          justify-items: center;
+          align-content: space-between;
+          align-items: center;
+          .direccion{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 25px);
+            justify-items: center;
+            .contacto-icono{
+              justify-self: center;
+            }
+          }
+          .telefono{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 25px);
+            justify-items: center;
+            .contacto-icono{
+              justify-self: center;
+            }
+          }
+          .tiempo{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 25px);
+            justify-items: center;
+            .contacto-icono{
+              justify-self: center;
             }
           }
         }

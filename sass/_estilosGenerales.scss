@@ -3,10 +3,12 @@
   padding:0;
   box-sizing: border-box;
 }
+.menu-mobile{
+  display: none;
+}
 header{
   width: 100%;
   min-height: 100vh;
-  max-height: 100vh;
   background-image: url(../img/fondo-banner.jpg);
   background-position: center center;
 }

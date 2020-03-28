@@ -20,5 +20,30 @@
     color:$principal;
     background-color: $secundario;
   }
-          
+}
+%contacto-icono{
+  @include rectangulo(40px,40px);
+  color: $cuarto;
+  grid-row: span 2;
+  align-self: center;
+  i{
+    font-size:  40px;
+    line-height: 40px;
+  }
+}
+%contacto-titulo{
+  p{
+    color: $cuarto;
+    font-family: $Raleway;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+%contacto-info{
+  p{
+    color: $cuarto;
+    font-family: $Raleway;
+    font-size: 18px;
+    font-weight: 700;
+  }
 }

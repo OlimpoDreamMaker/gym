@@ -24,11 +24,22 @@ main{
           height: 420px;
           display: grid;
           grid-template-columns: 270px auto;
+          &:nth-child(2) .entrenador-foto{
+            background-image: url(../../img/coach-1.jpg);
+          }
+          &:nth-child(3) .entrenador-foto{
+            background-image: url(../../img/coach-2.jpg);
+          }
+          &:nth-child(4) .entrenador-foto{
+            background-image: url(../../img/coach-3.jpg);
+          }
+          &:nth-child(5) .entrenador-foto{
+            background-image: url(../../img/coach-4.jpg);
+          }
           .entrenador-foto{
-            @include rectangulo(270px,100%);
-            img{
-              @include rectangulo(100%,100%);
-            }
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
           }
           .entrenador-informacion{
             display: grid;
@@ -89,6 +100,65 @@ main{
                   }
                 }
               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1025px){
+  main{
+   .entrenadores{
+     .contenedor{
+       &.contenedor-entrenadores{
+         grid-template-columns: 100%;
+         .entrenadores-titulo{
+           grid-column: span 1;
+         }
+       }
+     }
+   } 
+  }
+}
+@media only screen and (max-width: 767px){
+  main{
+    .entrenadores{
+      .contenedor{
+        &.contenedor-entrenadores{
+          .entrenador{
+            height: 755px;
+            grid-template-columns: 100%;
+            grid-template-rows: 60% 40% ;
+            &:nth-child(2) .entrenador-foto{
+              background-position: top;
+            }
+            &:nth-child(4) .entrenador-foto{
+              background-position: top;
+            }
+            &:nth-child(5) .entrenador-foto{
+              background-position: top;
+            }
+            .entrenador-informacion{    
+              grid-template-rows: 75px 20px 65px 50px;
+              align-content: space-evenly;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 557px){
+  main{
+    .entrenadores{
+      .contenedor{
+        &.contenedor-entrenadores{
+          .entrenador{
+            height: 800px;
+            .entrenador-informacion{    
+              grid-template-rows: 75px 20px 80px 50px;
+              align-content: space-evenly;
             }
           }
         }

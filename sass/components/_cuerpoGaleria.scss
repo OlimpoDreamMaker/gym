@@ -45,3 +45,22 @@ main{
     }
   }
 }
+@media only screen and (max-width: 1025px){
+  main{
+    .galeria{
+      .galeria-foto{
+        grid-column: span 2;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 557px){
+  main{
+    .galeria{
+      .galeria-foto{
+        grid-column: span 4;
+      }
+    }
+  }
+}
+

@@ -223,3 +223,38 @@ main{
     }
   }
 }
+@media only screen and (max-width: 1025px){
+  main{
+    .testimonios{
+      .contenedor{
+        &.contenedor-testimonios{
+          .testimonio-dos-tercios{
+            grid-column:span 3;
+          }
+          .testimonio-un-tercio{
+            grid-column:span 3;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px){
+  main{
+    .testimonios{
+      .contenedor{
+        &.contenedor-testimonios{
+          .testimonio-dos-tercios{
+            grid-column: span 6;
+          }
+          .testimonio-un-tercio{
+            grid-column: span 6;
+          }
+          .testimonio-mitad{
+            grid-column: span 6;
+          }
+        }
+      }
+    }
+  }
+}
