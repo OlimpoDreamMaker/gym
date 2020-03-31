@@ -32,17 +32,17 @@ window.onload = function(){
   left3.addEventListener("click",()=>{
     slider.style.marginLeft = "-100%"
   })
-  left.addEventListener("click",()=>{
-    let margin = window.getComputedStyle(slider).getPropertyValue("margin-left");
-    let ancho = window.getComputedStyle(slider1).getPropertyValue("width")
-    ancho = "-"+ancho.slice(0,ancho.length-2);
-    margin = margin.slice(0,margin.length-2);
-    if(ancho == margin){
-      slider.style.marginLeft = "0%"
-    }else if(margin == 0){
-      slider.style.marginLeft = "-200%"
-    }else{
-      slider.style.marginLeft = "-100%"
-    }
-  })
+  // left.addEventListener("click",()=>{
+  //   let margin = window.getComputedStyle(slider).getPropertyValue("margin-left");
+  //   let ancho = window.getComputedStyle(slider1).getPropertyValue("width")
+  //   ancho = "-"+ancho.slice(0,ancho.length-2);
+  //   margin = margin.slice(0,margin.length-2);
+  //   if(ancho == margin){
+  //     slider.style.marginLeft = "0%"
+  //   }else if(margin == 0){
+  //     slider.style.marginLeft = "-200%"
+  //   }else{
+  //     slider.style.marginLeft = "-100%"
+  //   }
+  // })
 }

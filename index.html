@@ -6,7 +6,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,600,700|Raleway:400,500,700|Righteous|Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/all.css">
   <link rel="stylesheet" href="./css/main.css">
-  <title>GYM</title>
+  <title>WONDER CLUB</title>
 </head>
 <body>
 
@@ -59,13 +59,19 @@
     </ul>
   </div>
 
+  <!--BTN-SCROLL-HOME-->
+  <div class="btn-scroll volver-suave">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+
+
   <!--HEADER-->
   <header>
     <!--NAV-->
     <nav class="nav">
       <div class="contenedor contenedor-nav">
         <div class="logo">
-          <h2>Style GYM</h2>
+          <h2>Wonder club</h2>
         </div>
         <ul class="menu">
           <li>
@@ -74,37 +80,37 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#nuestrosProgramas" class="scroll-suave">
               Nuestros Programas
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#entrenadores" class="scroll-suave">
               Entrenadores
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#equipamento" class="scroll-suave">
               Equipamento
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#testimonios" class="scroll-suave">
               Testimonios
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#especial" class="scroll-suave">
               Especial
             </a>
           </li>
           <li>
-            <a href="#">
-              Galeria
+            <a href="./html/blog.html">
+              Blog
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#contactos" class="scroll-suave">
               Contactos
             </a>
           </li>
@@ -126,7 +132,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.instagram.com/wonderclubrosario/">
               <i class="fab fa-instagram"></i>
             </a>
           </li>
@@ -147,15 +153,15 @@
         </div>
         <div class="nombre-gym">
           <h1 class="titulo-gym">
-            Style Gym
+            Wonder gym
           </h1>
         </div>
         <div class="descripcion">
           <p class="texto-descripcion">
-            Desde nuestro día inaugural en 2013, nuestras clases de gimnasia han brindado una bienvenida inspiradora para<br>
-            ¡todos! ¡Eso hace que todos los asistentes se sientan parte de una comunidad grande y apasionada!<br>
-            Con eso en mente, siempre puede comunicarse con nuestros instructores de acondicionamiento físico para cualquier tipo de asistencia. Su<br>
-            El objetivo final es hacerte tan fuerte y en forma como sea posible.
+            En principio Wonder hace referencia a Wonder Woman (Mujer Maravilla).
+            Wonder Woman es una superheroina que tiene una fuerza sobre humana, una facilidad de curación y de sobreponerse a los problemas, reflejos y resistencia impresionantes.<br>
+            En nuestra vida, cada unx de nosotrxs somos superhéroes y superheroinas. <br>Tenemos la capacidad de enfrentarnos a los cambios, la fortaleza para superar cualquier problema y desafío y la resistencia para llevar a cabo cada cosa que nos propongamos.<br>
+            Wonder sos vos, soy yo.
           </p>
         </div>
         <div class="btn-leer-mas">
@@ -170,7 +176,7 @@
   <main>
 
     <!--NUESTROS PROGRAMAS-->
-    <div class="nuestros-programas">
+    <div id="nuestrosProgramas" class="nuestros-programas">
       <div class="contenedor contenedor-nuestros-programas">
         <div class="nuestros-programas-titulo">
           <h4>Nuestros Programas</h4>
@@ -242,7 +248,7 @@
     </div>
 
     <!--Entrenadores-->
-    <div class="entrenadores">
+    <div id="entrenadores" class="entrenadores">
       <div class="contenedor contenedor-entrenadores">
         <div class="entrenadores-titulo">
           <h3>Entrenadores</h3>
@@ -357,7 +363,7 @@
     </div>
 
     <!--EQUIPAMENTO(SLIDER)-->
-    <div id="slider" class="equipamento">
+    <div id="equipamento" id="slider" class="equipamento">
       <div id="slider-1" class="equipamento-slider">  
         <div id="izq1" class="izquierda">
           <i class="fas fa-angle-left"></i>
@@ -518,7 +524,7 @@
     </div>
 
     <!--TESTIMONIOS-->
-    <div class="testimonios">
+    <div id="testimonios" class="testimonios">
       <div class="contenedor contenedor-testimonios">
         <div class="testimonio-titulo">
           <h3>Testimonios</h3>
@@ -687,7 +693,7 @@
     </div>
 
     <!--ESPECIAL-->
-    <div class="especial">
+    <div id="especial" class="especial">
       <div class="contenedor contenedor-especial">
         <div class="especial-titulo">
           <h2>Oferta Especial</h2>
@@ -705,10 +711,10 @@
           <button class="btn">Reserva una cita</button>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <!--CONTACTO-->
-    <div class="contacto">
+    <div id="contactos" class="contacto">
       <div class="contenedor contenedor-contacto">
         <div class="direccion">
           <div class="contacto-icono">
@@ -787,8 +793,9 @@
 
 
   <!--SCRIPTS-->
+  <script src="./js/jquery.js"></script>
   <script src="./js/slider.js"></script>
-
+  <script src="./js/scrollBtn.js"></script>
 
 
 </body>
