@@ -548,96 +548,99 @@ main .entrenadores {
     main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion {
       grid-template-rows: 75px 20px 80px 50px;
       align-content: space-evenly; } }
-main {
-  overflow: hidden; }
-  main .equipamento {
-    width: 100%;
-    height: 659px;
-    background-color: #191919;
-    display: flex;
+main .equipamento {
+  width: 100%;
+  height: 659px;
+  background-color: #191919;
+  position: relative; }
+  main .equipamento .slider {
     width: 300%;
-    margin-left: 00%;
-    transition: all .5s ease-in-out; }
-    main .equipamento .equipamento-slider {
+    display: flex;
+    flex-direction: row; }
+    main .equipamento .slider .equipamento-slider {
       position: relative;
       width: 100%; }
-      main .equipamento .equipamento-slider .izquierda {
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        z-index: 99999999999999999;
-        top: 45%;
-        left: 20px;
-        background-color: #33393e;
-        opacity: 1;
-        transition: all .5s ease-in-out;
-        cursor: pointer;
-        text-align: center;
-        color: #fbe23c;
-        font-size: 30px;
-        line-height: 50px; }
-        main .equipamento .equipamento-slider .izquierda:hover {
-          background-color: #fbe23c;
-          color: #33393e; }
-      main .equipamento .equipamento-slider .derecha {
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        z-index: 99999999999999999;
-        top: 45%;
-        right: 20px;
-        background-color: #33393e;
-        opacity: 1;
-        transition: all .5s ease-in-out;
-        cursor: pointer;
-        text-align: center;
-        color: #fbe23c;
-        font-size: 30px;
-        line-height: 50px; }
-        main .equipamento .equipamento-slider .derecha:hover {
-          background-color: #fbe23c;
-          color: #33393e; }
-      main .equipamento .equipamento-slider img {
+      main .equipamento .slider .equipamento-slider img {
         display: block;
         width: 100%;
         height: 659px; }
-      main .equipamento .equipamento-slider .contenedor {
+      main .equipamento .slider .equipamento-slider .contenedor {
         width: 90%;
         max-width: 1200px;
         margin: auto;
         display: grid; }
-        main .equipamento .equipamento-slider .contenedor.contenedor-slider {
+        main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider {
           position: absolute;
           top: 15%;
           left: 5%;
           grid-template-columns: repeat(2, 1fr); }
-          main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-titulo .titulo-slider {
+          main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-titulo .titulo-slider {
             text-transform: uppercase;
             color: #fbe23c;
             font-family: "Roboto", sans-serif;
             font-size: 100px;
             font-weight: 400; }
-          main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-titulo .subtitulo-slider {
+          main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-titulo .subtitulo-slider {
             text-transform: uppercase;
             color: #fff;
             font-family: "Roboto", sans-serif;
             font-size: 52px;
             font-weight: 400; }
-          main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-contenido .contenido-descripcion {
+          main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-contenido .contenido-descripcion {
             color: #fff;
             font-family: "Raleway", sans-serif;
             font-size: 18px;
             font-weight: 400;
             line-height: 29px; }
-          main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-contenido .equipamento-lista {
+          main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-contenido .equipamento-lista {
             margin-top: 10px; }
-            main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-contenido .equipamento-lista li {
+            main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-contenido .equipamento-lista li {
               list-style: none;
               font-family: "Raleway", sans-serif;
               font-size: 18px;
               font-weight: 500;
               line-height: 34px;
               color: #fbe23c; }
+  main .equipamento .izquierda {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    left: 2%;
+    opacity: 0;
+    background-color: #33393e;
+    transition: all .5s ease-in-out;
+    text-align: center;
+    color: #fbe23c;
+    font-size: 30px;
+    line-height: 50px; }
+    main .equipamento .izquierda:hover {
+      background-color: #fbe23c;
+      color: #33393e; }
+  main .equipamento .derecha {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    right: 2%;
+    opacity: 0;
+    background-color: #33393e;
+    transition: all .5s ease-in-out;
+    text-align: center;
+    color: #fbe23c;
+    font-size: 30px;
+    line-height: 50px; }
+    main .equipamento .derecha:hover {
+      background-color: #fbe23c;
+      color: #33393e; }
+  main .equipamento:hover .izquierda {
+    opacity: 1; }
+  main .equipamento:hover .derecha {
+    opacity: 1; }
 
 @keyframes desaparecer {
   0% {

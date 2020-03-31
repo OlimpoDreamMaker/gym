@@ -1,117 +1,119 @@
 main{
-  overflow: hidden;
   .equipamento{
     @include rectangulo(100%,659px);
     background-color: $tercero;
-    display: flex;
-    width: 300%;
-    margin-left:00%;
-    transition: all .5s ease-in-out;
-    // animation: desaparecer 5s ease infinite alternate-reverse;
-    // &:hover{
-    //   .izquierda{
-    //     opacity:1;
-    //   }
-    //   .derecha{
-    //     opacity: 1;
-    //   }
-    // }
-    
-    .equipamento-slider{
-      position: relative;
-      width: 100%;
-      .izquierda{
-        @include rectangulo(50px,50px);
-        position: absolute;
-        z-index: 99999999999999999;
-        top:45%;
-        left:20px;
-        background-color: $secundario;
-        opacity: 1;
-        transition: all .5s ease-in-out;
-        cursor: pointer;
-        text-align: center;
-        color:$principal;
-        font-size: 30px;
-        line-height: 50px;
-        &:hover{
-          background-color: $principal;
-          color: $secundario;
-        }
-      }
-      .derecha{
-        @include rectangulo(50px,50px);
-        position: absolute;
-        z-index: 99999999999999999;
-        top:45%;
-        right:20px;
-        background-color: $secundario;
-        opacity: 1;
-        transition: all .5s ease-in-out;
-        cursor: pointer;
-        text-align: center;
-        color:$principal;
-        font-size: 30px;
-        line-height: 50px;
-        &:hover{
-          background-color: $principal;
-          color: $secundario;
-        }
-      }
-      img{
-        display: block;
+    // overflow: hidden;
+    position: relative;
+    .slider{
+      width: 300%;
+      display: flex;
+      flex-direction: row;
+      .equipamento-slider{
+        position: relative;
         width: 100%;
-        height: 659px;
-      }
-      .contenedor{
-        width: 90%;
-        max-width: 1200px;
-        margin:auto;
-        display: grid;
-        &.contenedor-slider{
-          position: absolute;
-          top:15%;
-          left:5%;
-          grid-template-columns: repeat(2,1fr);
-          .slider-titulo{
-            .titulo-slider{
-              text-transform: uppercase;
-              color: $principal;
-              font-family: $Roboto;
-              font-size: 100px;
-              font-weight: 400;
+        img{
+          display: block;
+          width: 100%;
+          height: 659px;
+        }
+        .contenedor{
+          width: 90%;
+          max-width: 1200px;
+          margin:auto;
+          display: grid;
+          &.contenedor-slider{
+            position: absolute;
+            top:15%;
+            left:5%;
+            grid-template-columns: repeat(2,1fr);
+            .slider-titulo{
+              .titulo-slider{
+                text-transform: uppercase;
+                color: $principal;
+                font-family: $Roboto;
+                font-size: 100px;
+                font-weight: 400;
+              }
+              .subtitulo-slider{
+                text-transform: uppercase;
+                color:$letrasPrimario;
+                font-family: $Roboto;
+                font-size: 52px;
+                font-weight: 400;
+              }
             }
-            .subtitulo-slider{
-              text-transform: uppercase;
-              color:$letrasPrimario;
-              font-family: $Roboto;
-              font-size: 52px;
-              font-weight: 400;
-            }
-          }
-          .slider-contenido{
-            .contenido-descripcion{
-              color: $letrasPrimario;
-              font-family: $Raleway;
-              font-size: 18px;
-              font-weight: 400;
-              line-height: 29px;
-            }
-            .equipamento-lista{
-              margin-top: 10px;
-              li{
-                list-style: none;
+            .slider-contenido{
+              .contenido-descripcion{
+                color: $letrasPrimario;
                 font-family: $Raleway;
                 font-size: 18px;
-                font-weight: 500;
-                line-height: 34px;
-                color:$principal;
+                font-weight: 400;
+                line-height: 29px;
+              }
+              .equipamento-lista{
+                margin-top: 10px;
+                li{
+                  list-style: none;
+                  font-family: $Raleway;
+                  font-size: 18px;
+                  font-weight: 500;
+                  line-height: 34px;
+                  color:$principal;
+                }
               }
             }
           }
         }
       }
     }
+    .izquierda{
+      display: inline-block;
+      @include rectangulo(50px,50px);
+      cursor: pointer;
+      position: absolute;
+      top: 45%;
+      left: 2%;
+      opacity: 0;
+      background-color: $secundario;
+      transition: all .5s ease-in-out;
+      text-align: center;
+      color:$principal;
+      font-size: 30px;
+      line-height: 50px;
+      &:hover{
+        background-color: $principal;
+        color: $secundario;
+      }
+    }
+    .derecha{
+      display: inline-block;
+      @include rectangulo(50px,50px);
+      cursor: pointer;
+      position: absolute;
+      top:45%;
+      right:2%;
+      opacity: 0;
+      background-color: $secundario;
+      transition: all .5s ease-in-out;
+      text-align: center;
+      color:$principal;
+      font-size: 30px;
+      line-height: 50px;
+      &:hover{
+        background-color: $principal;
+        color: $secundario;
+      }
+    }
+    &:hover{
+      .izquierda{
+        opacity:1;
+      }
+      .derecha{
+        opacity: 1;
+      }
+    }
+    
+    
   }
 }
 @keyframes desaparecer{
