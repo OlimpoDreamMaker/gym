@@ -8,9 +8,13 @@
 }
 header{
   width: 100%;
-  min-height: 100vh;
-  background-image: url(../img/fondo-banner.jpg);
-  background-position: center center;
+  background-color: $tercero;
+  &.header-index{  
+    background-image: url(../img/fondo-banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
 }
 main{
   width: 100%;

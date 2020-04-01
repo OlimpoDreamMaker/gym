@@ -2,7 +2,7 @@ main{
   .equipamento{
     @include rectangulo(100%,659px);
     background-color: $tercero;
-    // overflow: hidden;
+    overflow: hidden;
     position: relative;
     .slider{
       width: 300%;

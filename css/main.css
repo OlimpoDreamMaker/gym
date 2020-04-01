@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header .nav .contenedor, header .banner .contenedor, main .nuestros-programas .contenedor, main .entrenadores .contenedor, main .testimonios .contenedor, main .especial .contenedor, main .contacto .contenedor, footer .contenedor {
   width: 90%;
   max-width: 1200px;
@@ -48,9 +49,12 @@ main .contacto .contenedor.contenedor-contacto .direccion .contacto-info p, main
 
 header {
   width: 100%;
-  min-height: 100vh;
-  background-image: url(../img/fondo-banner.jpg);
-  background-position: center center; }
+  background-color: #191919; }
+  header.header-index {
+    background-image: url(../img/fondo-banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh; }
 
 main {
   width: 100%; }
@@ -552,6 +556,7 @@ main .equipamento {
   width: 100%;
   height: 659px;
   background-color: #191919;
+  overflow: hidden;
   position: relative; }
   main .equipamento .slider {
     width: 300%;
@@ -1018,6 +1023,341 @@ main .contacto {
       justify-items: center; }
       main .contacto .contenedor.contenedor-contacto .tiempo .contacto-icono {
         justify-self: center; } }
+main {
+  width: 100%; }
+  main.blog {
+    width: 95%;
+    padding: 45px 0;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 35px;
+    margin: auto; }
+    main.blog .titulo-blog {
+      grid-column: span 12;
+      text-align: center;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      font-family: "Righteous", sans-serif;
+      letter-spacing: 0.02px;
+      color: #3b3d42; }
+    main.blog .contenido {
+      grid-column: span 8; }
+      main.blog .contenido .post-resumido {
+        padding-bottom: 28px;
+        border-bottom: 1px solid #ebeced; }
+        main.blog .contenido .post-resumido .titulo-post {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 34px;
+          font-family: "Righteous", sans-serif;
+          margin-bottom: 14px; }
+          main.blog .contenido .post-resumido .titulo-post a {
+            text-decoration: none;
+            color: #3b3d42;
+            transition: all .3s ease; }
+            main.blog .contenido .post-resumido .titulo-post a:hover {
+              color: #fbe23c; }
+        main.blog .contenido .post-resumido .datos-post {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 18px; }
+          main.blog .contenido .post-resumido .datos-post .autor {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 1.643;
+            font-family: "Raleway", sans-serif;
+            letter-spacing: 0px;
+            text-align: left;
+            color: #a1a2a4;
+            margin-right: 15px; }
+            main.blog .contenido .post-resumido .datos-post .autor a {
+              color: #fbe23c;
+              text-decoration: none;
+              transition: all .3s ease; }
+              main.blog .contenido .post-resumido .datos-post .autor a:hover {
+                color: #3b3d42; }
+          main.blog .contenido .post-resumido .datos-post .fecha {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 1.643;
+            font-family: "Raleway", sans-serif;
+            letter-spacing: 0px;
+            text-align: left;
+            color: #a1a2a4; }
+            main.blog .contenido .post-resumido .datos-post .fecha a {
+              color: #fbe23c;
+              text-decoration: none; }
+        main.blog .contenido .post-resumido .foto-portada {
+          width: 100%;
+          margin-bottom: 18px; }
+          main.blog .contenido .post-resumido .foto-portada img {
+            width: 100%; }
+        main.blog .contenido .post-resumido .descripcion-post {
+          margin-bottom: 18px; }
+          main.blog .contenido .post-resumido .descripcion-post p {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 24px;
+            font-family: "Raleway", sans-serif;
+            letter-spacing: 0px;
+            text-align: left;
+            color: #3b3d42; }
+        main.blog .contenido .post-resumido .tags-post {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 1.643;
+          font-family: "Raleway", sans-serif;
+          letter-spacing: 0px;
+          text-align: left;
+          color: #a1a2a4;
+          margin-bottom: 18px; }
+          main.blog .contenido .post-resumido .tags-post a {
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 5px 7px;
+            border: 0.5px solid #ebeced;
+            background-color: #fff;
+            color: #fbe23c;
+            transition: all .35s ease; }
+            main.blog .contenido .post-resumido .tags-post a:hover {
+              border-color: #ebeced;
+              color: #fff;
+              background-color: #3b3d42;
+              cursor: pointer; }
+        main.blog .contenido .post-resumido .ultima-fila-post {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between; }
+          main.blog .contenido .post-resumido .ultima-fila-post .comentarios {
+            border-radius: 5px;
+            width: 50px;
+            padding: 10px 12px;
+            font-size: 11px;
+            line-height: 1.2;
+            background-color: #f1f4f6;
+            color: #a1a2a4; }
+            main.blog .contenido .post-resumido .ultima-fila-post .comentarios .cantidad-de-comentarios {
+              margin-left: 8px;
+              text-decoration: none;
+              font-size: 12px;
+              color: #a1a2a4; }
+          main.blog .contenido .post-resumido .ultima-fila-post .leer-mas-post {
+            display: inline-block;
+            max-width: 100%;
+            padding: 12px 20px;
+            cursor: pointer;
+            text-align: center;
+            text-transform: uppercase;
+            border-radius: 4px;
+            transition: all .3s ease;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 11px;
+            line-height: 1;
+            font-family: "Roboto", sans-serif;
+            letter-spacing: 1px;
+            background-color: #fbe23c; }
+            main.blog .contenido .post-resumido .ultima-fila-post .leer-mas-post a {
+              color: #33393e;
+              text-decoration: none; }
+            main.blog .contenido .post-resumido .ultima-fila-post .leer-mas-post:hover {
+              cursor: pointer;
+              background-color: #33393e; }
+              main.blog .contenido .post-resumido .ultima-fila-post .leer-mas-post:hover a {
+                color: #fbe23c; }
+      main.blog .contenido .form-comentario {
+        width: 100%;
+        margin-top: 18px; }
+        main.blog .contenido .form-comentario .titulo-formulario {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 34px;
+          font-family: "Righteous", sans-serif;
+          margin-bottom: 14px;
+          color: #3b3d42; }
+        main.blog .contenido .form-comentario .subtitulo-formulario {
+          margin-bottom: 16px;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 1.643;
+          font-family: "Raleway", sans-serif;
+          letter-spacing: 0px;
+          text-align: left;
+          color: #3b3d42; }
+        main.blog .contenido .form-comentario textarea {
+          margin: 5px 0;
+          width: 100%;
+          padding: 8px 12px;
+          max-width: 100%;
+          min-height: 150px;
+          border-radius: 4px;
+          border: 1px solid #ebeced;
+          background-color: #fff; }
+        main.blog .contenido .form-comentario input[type="text"],
+        main.blog .contenido .form-comentario input[type="email"] {
+          border-radius: 4px;
+          width: 100%;
+          margin: 5px 0;
+          padding: 8px 12px;
+          border: 1px solid #ebeced;
+          background-color: #fff; }
+        main.blog .contenido .form-comentario input[type="checkbox"] {
+          display: none; }
+        main.blog .contenido .form-comentario label {
+          margin: 15px 0;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 1.643;
+          font-family: "Raleway", sans-serif;
+          letter-spacing: 0px;
+          text-align: left;
+          color: #3b3d42; }
+        main.blog .contenido .form-comentario input[type=ckeckbox] + label {
+          cursor: pointer; }
+        main.blog .contenido .form-comentario label:before {
+          content: '';
+          background: transparent;
+          border: 1px solid #ebeced;
+          border-radius: 5px;
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          text-align: center;
+          margin-right: 8px;
+          vertical-align: middle;
+          transition: all .35s ease; }
+        main.blog .contenido .form-comentario input[type=checkbox]:checked + label:before {
+          content: '✔';
+          color: #fff;
+          font-size: 16px;
+          background-color: #fbe23c;
+          line-height: 16px; }
+        main.blog .contenido .form-comentario input[type="submit"] {
+          border: none;
+          width: 100%;
+          margin: 10px 0;
+          padding: 12px 20px;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 11px;
+          line-height: 1;
+          font-family: "Roboto", sans-serif;
+          letter-spacing: 1px;
+          color: #33393e;
+          background-color: #fbe23c;
+          transition: all .5s ease; }
+          main.blog .contenido .form-comentario input[type="submit"]:hover {
+            cursor: pointer;
+            color: #fbe23c;
+            background-color: #33393e; }
+    main.blog .aside {
+      grid-column: span 4; }
+      main.blog .aside .buscador-widget {
+        width: 100%;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #ebeced; }
+        main.blog .aside .buscador-widget .titulo-buscador {
+          text-transform: uppercase;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 1.45;
+          font-family: "Righteous", sans-serif;
+          letter-spacing: 0.02px;
+          text-align: inherit;
+          color: #3b3d42;
+          margin-bottom: 16px; }
+        main.blog .aside .buscador-widget .widget-buscar {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          margin-bottom: 18px; }
+          main.blog .aside .buscador-widget .widget-buscar input {
+            width: auto;
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #ebeced;
+            background-color: #fff;
+            border-radius: 4px 0px 0px 4px; }
+          main.blog .aside .buscador-widget .widget-buscar .icono-buscar {
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            text-transform: uppercase;
+            border-radius: 0px 4px 4px 0px;
+            transition: all .3s ease;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 14px;
+            line-height: 35px;
+            font-family: Roboto, sans-serif;
+            letter-spacing: 1px;
+            background-color: #fbe23c; }
+            main.blog .aside .buscador-widget .widget-buscar .icono-buscar i {
+              color: #33393e;
+              text-decoration: none; }
+            main.blog .aside .buscador-widget .widget-buscar .icono-buscar:hover {
+              cursor: pointer;
+              background-color: #33393e; }
+              main.blog .aside .buscador-widget .widget-buscar .icono-buscar:hover i {
+                color: #fbe23c; }
+      main.blog .aside .calendario-widget {
+        width: 100%;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #ebeced; }
+        main.blog .aside .calendario-widget .titulo-calendario {
+          text-transform: uppercase;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 1.45;
+          font-family: "Righteous", sans-serif;
+          letter-spacing: 0.02px;
+          text-align: inherit;
+          color: #3b3d42;
+          margin-bottom: 16px; }
+        main.blog .aside .calendario-widget .widget-calendario {
+          height: 415px;
+          width: 100%;
+          border: 1px solid #ebeced; }
+      main.blog .aside .tags-widget {
+        width: 100%;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #ebeced; }
+        main.blog .aside .tags-widget .titulo-tags {
+          text-transform: uppercase;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 1.45;
+          font-family: "Righteous", sans-serif;
+          letter-spacing: 0.02px;
+          text-align: inherit;
+          color: #3b3d42;
+          margin-bottom: 16px; }
+        main.blog .aside .tags-widget .widget-tags .tag {
+          text-decoration: none;
+          border-radius: 5px;
+          padding: 5px 7px;
+          border: 0.5px solid #ebeced;
+          background-color: #fff;
+          color: #fbe23c;
+          transition: all .35s ease; }
+          main.blog .aside .tags-widget .widget-tags .tag:hover {
+            border-color: #ebeced;
+            color: #fff;
+            background-color: #3b3d42;
+            cursor: pointer; }
+
 footer {
   width: 100%;
   background-color: #191919;
