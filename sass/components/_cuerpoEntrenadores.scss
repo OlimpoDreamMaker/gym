@@ -6,10 +6,10 @@ main{
       @extend %contenedor;
       &.contenedor-entrenadores{
         padding: 45px 0;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(12,1fr);
         grid-gap: 30px;
         .entrenadores-titulo{
-          grid-column: span 2;
+          grid-column: span 12;
           text-align: center;
             h3{
               color: $letrasPrimario;
@@ -20,12 +20,14 @@ main{
             }
         }
         .entrenador{
+          grid-column-start: 4;
+          grid-column-end: 10;
           background: $secundario;
-          height: 420px;
+          height: 500px;
           display: grid;
           grid-template-columns: 270px auto;
           &:nth-child(2) .entrenador-foto{
-            background-image: url(../../img/coach-1.jpg);
+            background-image: url(../../img/entrenadora.jpeg);
           }
           &:nth-child(3) .entrenador-foto{
             background-image: url(../../img/coach-2.jpg);
@@ -44,10 +46,10 @@ main{
           .entrenador-informacion{
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 70px 15px 145px 50px;
+            grid-template-rows: 75px 15px 230px 50px;
             justify-content: start;
             justify-items: start;
-            align-content: space-evenly;
+            grid-row-gap: 15px;
             padding-top: 10px;
             padding-left:10px;
             .entrenador-nombre{
