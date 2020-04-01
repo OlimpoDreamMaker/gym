@@ -17,23 +17,23 @@ header .banner .contenedor.contenedor-banner .btn-leer-mas .btn, main .nuestros-
     color: #fbe23c;
     background-color: #33393e; }
 
-main .contacto .contenedor.contenedor-contacto .direccion .contacto-icono, main .contacto .contenedor.contenedor-contacto .telefono .contacto-icono, main .contacto .contenedor.contenedor-contacto .tiempo .contacto-icono {
+main .contacto .contenedor.contenedor-contacto .direccion .contacto-icono, main .contacto .contenedor.contenedor-contacto .telefono .contacto-icono, main .contacto .contenedor.contenedor-contacto .tiempo .titulo-tiempo .contacto-icono {
   width: 40px;
   height: 40px;
   color: #272b2d;
   grid-row: span 2;
   align-self: center; }
-  main .contacto .contenedor.contenedor-contacto .direccion .contacto-icono i, main .contacto .contenedor.contenedor-contacto .telefono .contacto-icono i, main .contacto .contenedor.contenedor-contacto .tiempo .contacto-icono i {
+  main .contacto .contenedor.contenedor-contacto .direccion .contacto-icono i, main .contacto .contenedor.contenedor-contacto .telefono .contacto-icono i, main .contacto .contenedor.contenedor-contacto .tiempo .titulo-tiempo .contacto-icono i {
     font-size: 40px;
     line-height: 40px; }
 
-main .contacto .contenedor.contenedor-contacto .direccion .contacto-titulo p, main .contacto .contenedor.contenedor-contacto .telefono .contacto-titulo p, main .contacto .contenedor.contenedor-contacto .tiempo .contacto-titulo p {
+main .contacto .contenedor.contenedor-contacto .direccion .contacto-titulo p, main .contacto .contenedor.contenedor-contacto .telefono .contacto-titulo p, main .contacto .contenedor.contenedor-contacto .tiempo .titulo-tiempo .contacto-titulo p {
   color: #272b2d;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700; }
 
-main .contacto .contenedor.contenedor-contacto .direccion .contacto-info p, main .contacto .contenedor.contenedor-contacto .telefono .contacto-info p, main .contacto .contenedor.contenedor-contacto .tiempo .contacto-info p {
+main .contacto .contenedor.contenedor-contacto .direccion .contacto-info p, main .contacto .contenedor.contenedor-contacto .telefono .contacto-info p {
   color: #272b2d;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -981,23 +981,85 @@ main .contacto {
   background-color: #fbe23c; }
   main .contacto .contenedor.contenedor-contacto {
     padding: 45px 0;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px; }
+    main .contacto .contenedor.contenedor-contacto .contacto-titulo {
+      grid-column: span 12;
+      text-align: center; }
+      main .contacto .contenedor.contenedor-contacto .contacto-titulo h3 {
+        font-family: "Righteous", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase; }
     main .contacto .contenedor.contenedor-contacto .direccion {
+      justify-self: center;
+      grid-column: span 6;
       display: grid;
       grid-template-columns: 40px 1fr;
       grid-template-rows: 25px 25px;
-      grid-gap: 5px; }
+      grid-template-areas: "icono titulo" "icono info";
+      grid-column-gap: 10px; }
+      main .contacto .contenedor.contenedor-contacto .direccion .contacto-icono {
+        grid-area: icono; }
+      main .contacto .contenedor.contenedor-contacto .direccion .contacto-titulo {
+        grid-area: titulo;
+        text-align: left; }
+      main .contacto .contenedor.contenedor-contacto .direccion .contacto-info {
+        grid-area: info;
+        text-align: left; }
     main .contacto .contenedor.contenedor-contacto .telefono {
+      justify-self: center;
+      grid-column: span 6;
       display: grid;
       grid-template-columns: 40px 1fr;
       grid-template-rows: 25px 25px;
-      grid-gap: 5px; }
+      grid-template-areas: "icono titulo" "icono info";
+      grid-column-gap: 10px; }
+      main .contacto .contenedor.contenedor-contacto .telefono .contacto-icono {
+        grid-area: icono; }
+      main .contacto .contenedor.contenedor-contacto .telefono .contacto-titulo {
+        grid-area: titulo;
+        text-align: left; }
+      main .contacto .contenedor.contenedor-contacto .telefono .contacto-info {
+        grid-area: info;
+        text-align: left; }
     main .contacto .contenedor.contenedor-contacto .tiempo {
+      grid-column-start: span 12;
       display: grid;
-      grid-template-columns: 40px 1fr;
-      grid-template-rows: 25px 25px;
-      grid-gap: 5px; }
+      grid-template-columns: 100%;
+      grid-template-rows: 50px 400px;
+      grid-template-areas: "titulo" "tabla";
+      grid-gap: 5px;
+      background-color: #7a7a7a; }
+      main .contacto .contenedor.contenedor-contacto .tiempo .titulo-tiempo {
+        grid-area: titulo;
+        padding: 5px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        line-height: 15px; }
+        main .contacto .contenedor.contenedor-contacto .tiempo .titulo-tiempo .contacto-titulo {
+          margin-left: 10px;
+          line-height: 40px; }
+      main .contacto .contenedor.contenedor-contacto .tiempo .horarios {
+        width: 100%;
+        grid-area: tabla;
+        display: table; }
+        main .contacto .contenedor.contenedor-contacto .tiempo .horarios td, main .contacto .contenedor.contenedor-contacto .tiempo .horarios th {
+          padding: 6px;
+          border: 1px solid #3b3d42;
+          text-align: center;
+          font-size: 20px;
+          color: #33393e; }
+        main .contacto .contenedor.contenedor-contacto .tiempo .horarios tr:nth-child(2n+3) {
+          background-color: #a1a2a4; }
+        main .contacto .contenedor.contenedor-contacto .tiempo .horarios th {
+          background-color: #33393e;
+          color: #fbe23c; }
+        main .contacto .contenedor.contenedor-contacto .tiempo .horarios .horario {
+          background-color: #fbe23c;
+          color: #33393e; }
 
 @media only screen and (max-width: 767px) {
   main .contacto .contenedor.contenedor-contacto {
