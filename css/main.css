@@ -85,13 +85,13 @@ header .nav {
   border-bottom: 1px solid #33393e; }
   header .nav .contenedor.contenedor-nav {
     height: 100%;
-    grid-template-columns: 125px minmax(650px, 850px) 35px minmax(60px, 90px);
+    grid-template-columns: 165px minmax(650px, 850px) 25px minmax(60px, 90px);
     align-content: center;
     align-items: center;
     justify-items: center;
     justify-content: space-between; }
     header .nav .contenedor.contenedor-nav .logo {
-      width: 125px;
+      width: 165px;
       height: 24px; }
       header .nav .contenedor.contenedor-nav .logo h2 {
         color: #fbe23c;
@@ -101,7 +101,7 @@ header .nav {
         text-transform: uppercase; }
     header .nav .contenedor.contenedor-nav .menu {
       display: grid;
-      grid-template-columns: minmax(45px, 60px) minmax(155px, 180px) repeat(2, minmax(110px, 125px)) repeat(2, 90px) minmax(60px, 75px) minmax(75px, 80px);
+      grid-template-columns: minmax(45px, 60px) minmax(155px, 180px) repeat(2, minmax(110px, 125px)) 90px minmax(75px, 90px) minmax(45px, 75px) minmax(75px, 80px);
       justify-items: center;
       align-items: center; }
       header .nav .contenedor.contenedor-nav .menu li {
@@ -163,12 +163,12 @@ header .nav {
 @media only screen and (max-width: 1133px) {
   header .nav .contenedor.contenedor-nav {
     width: 95%;
-    grid-template-columns: 125px minmax(650px, 850px) 30px 60px;
+    grid-template-columns: 165px minmax(650px, 840px) 30px 60px;
     justify-content: center; }
     header .nav .contenedor.contenedor-nav .redes {
       grid-template-columns: repeat(3, 20px); }
     header .nav .contenedor.contenedor-nav .menu {
-      grid-template-columns: minmax(45px, 60px) minmax(160px, 180px) repeat(2, minmax(110px, 125px)) 90px 82.5px 58.2px minmax(75px, 80px);
+      grid-template-columns: minmax(45px, 60px) minmax(160px, 180px) repeat(2, minmax(110px, 125px)) 90px 82.5px 50px minmax(75px, 80px);
       justify-content: space-between; } }
 @media only screen and (max-width: 1025px) {
   header .nav {
@@ -176,7 +176,7 @@ header .nav {
     header .nav .contenedor.contenedor-nav {
       width: 90%;
       grid-template-rows: 50% 50%;
-      grid-template-columns: minmax(125px, 150px) minmax(450px, 585px) 55px 100px;
+      grid-template-columns: 165px minmax(450px, 570px) 55px 100px;
       grid-template-areas: "titulo espacio buscador  redes" "menu   menu    menu      menu";
       justify-content: space-between; }
       header .nav .contenedor.contenedor-nav .logo {
@@ -187,7 +187,7 @@ header .nav {
         width: 100%;
         grid-area: menu;
         justify-content: space-between;
-        grid-template-columns: minmax(45px, 60px) minmax(155px, 180px) repeat(2, minmax(110px, 125px)) 90px minmax(65px, 90px) minmax(54.25px, 75px) minmax(72.5px, 80px); }
+        grid-template-columns: minmax(45px, 60px) minmax(150px, 180px) repeat(2, minmax(100px, 125px)) 90px minmax(50px, 90px) minmax(20px, 50px) minmax(72.5px, 80px); }
       header .nav .contenedor.contenedor-nav .buscar {
         grid-area: buscador;
         border: none;
@@ -198,7 +198,7 @@ header .nav {
         grid-template-columns: repeat(3, 30px); }
         header .nav .contenedor.contenedor-nav .redes li a {
           font-size: 16px; } }
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 868px) {
   .menu-mobile {
     display: block;
     display: none;
@@ -282,7 +282,7 @@ header .banner {
     height: auto;
     min-height: 405px;
     height: 660px;
-    grid-template-rows: minmax(45px, 60px) minmax(100px, 290px) 180px 80px;
+    grid-template-rows: minmax(45px, 60px) minmax(100px, 290px) 220px 80px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -310,10 +310,13 @@ header .banner {
 
 @media only screen and (max-width: 1025px) {
   header .banner .contenedor.contenedor-banner {
-    grid-template-rows: 45px 100px 180px 80px; } }
+    grid-template-rows: 45px 100px 220px 80px; } }
+@media only screen and (max-width: 945px) {
+  header .banner .contenedor.contenedor-banner {
+    grid-template-rows: 40px 240px 220px 50px; } }
 @media only screen and (max-width: 830px) {
   header .banner .contenedor.contenedor-banner {
-    grid-template-rows: 40px 90px minmax(300px, auto) 50px; }
+    grid-template-rows: 40px 240px 230px 50px; }
     header .banner .contenedor.contenedor-banner .bienvenida p {
       font-size: 42px; } }
 @media only screen and (max-width: 767px) {
@@ -462,7 +465,7 @@ main .entrenadores {
       background: #33393e;
       height: 500px;
       display: grid;
-      grid-template-columns: 270px auto; }
+      grid-template-columns: minmax(200px, 270px) auto; }
       main .entrenadores .contenedor.contenedor-entrenadores .entrenador:nth-child(2) .entrenador-foto {
         background-image: url(../../img/entrenadora.jpeg); }
       main .entrenadores .contenedor.contenedor-entrenadores .entrenador:nth-child(3) .entrenador-foto {
@@ -478,10 +481,10 @@ main .entrenadores {
       main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 75px 15px 230px 50px;
+        grid-template-rows: 75px 15px 270px 50px;
         justify-content: start;
         justify-items: start;
-        grid-row-gap: 15px;
+        grid-row-gap: 20px;
         padding-top: 10px;
         padding-left: 10px; }
         main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-nombre {
@@ -533,12 +536,14 @@ main .entrenadores {
   main .entrenadores .contenedor.contenedor-entrenadores {
     grid-template-columns: 100%; }
     main .entrenadores .contenedor.contenedor-entrenadores .entrenadores-titulo {
+      grid-column: span 1; }
+    main .entrenadores .contenedor.contenedor-entrenadores .entrenador {
       grid-column: span 1; } }
 @media only screen and (max-width: 767px) {
   main .entrenadores .contenedor.contenedor-entrenadores .entrenador {
     height: 755px;
     grid-template-columns: 100%;
-    grid-template-rows: 60% 40%; }
+    grid-template-rows: 50% 50%; }
     main .entrenadores .contenedor.contenedor-entrenadores .entrenador:nth-child(2) .entrenador-foto {
       background-position: top; }
     main .entrenadores .contenedor.contenedor-entrenadores .entrenador:nth-child(4) .entrenador-foto {
@@ -546,13 +551,13 @@ main .entrenadores {
     main .entrenadores .contenedor.contenedor-entrenadores .entrenador:nth-child(5) .entrenador-foto {
       background-position: top; }
     main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion {
-      grid-template-rows: 75px 20px 65px 50px;
+      grid-template-rows: 75px 20px 130px 50px;
       align-content: space-evenly; } }
 @media only screen and (max-width: 557px) {
   main .entrenadores .contenedor.contenedor-entrenadores .entrenador {
     height: 800px; }
     main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion {
-      grid-template-rows: 75px 20px 80px 50px;
+      grid-template-rows: 75px 20px 130px 50px;
       align-content: space-evenly; } }
 main .equipamento {
   width: 100%;
@@ -581,13 +586,15 @@ main .equipamento {
           top: 15%;
           left: 5%;
           grid-template-columns: repeat(2, 1fr); }
-          main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-titulo .titulo-slider {
-            text-transform: uppercase;
-            color: #fbe23c;
-            font-family: "Roboto", sans-serif;
-            font-size: 100px;
-            font-weight: 400; }
+          main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-titulo .logo {
+            margin: auto;
+            width: 400px;
+            height: 250px; }
+            main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-titulo .logo img {
+              width: 100%;
+              height: 100%; }
           main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-titulo .subtitulo-slider {
+            text-align: center;
             text-transform: uppercase;
             color: #fff;
             font-family: "Roboto", sans-serif;
@@ -656,28 +663,37 @@ main .equipamento {
     margin-left: -100%; }
   100% {
     margin-left: -200%; } }
-@media only screen and (max-width: 767px) {
-  main .equipamento .equipamento-slider .contenedor.contenedor-slider {
-    top: 5%;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%; }
-    main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-titulo .titulo-slider {
-      font-size: 51px;
-      line-height: 50px; }
-    main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-titulo .subtitulo-slider {
+@media only screen and (max-width: 800px) {
+  main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider {
+    top: 8%; }
+    main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-titulo .logo {
+      width: 380px;
+      height: 200px; }
+    main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-titulo .subtitulo-slider {
       font-size: 35px; }
-    main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-contenido .equipamento-lista li {
+    main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-contenido .contenido-descripcion p {
+      font-size: 16px; }
+    main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-contenido .equipamento-lista li {
+      line-height: 24px;
       font-size: 14px; } }
+@media only screen and (max-width: 710px) {
+  main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider {
+    top: 1%;
+    grid-template-columns: 1fr; }
+    main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-titulo .logo {
+      width: 365px;
+      height: 180px; } }
 @media only screen and (max-width: 557px) {
   main .equipamento .equipamento-slider .contenedor.contenedor-slider {
     top: 2%;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%; }
+    grid-template-columns: 100%; }
     main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-titulo .titulo-slider {
       font-size: 51px;
       line-height: 50px; }
     main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-titulo .subtitulo-slider {
-      font-size: 35px; }
+      font-size: 30px; }
+    main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-contenido .contenido-descripcion p {
+      font-size: 14px; }
     main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-contenido .equipamento-lista li {
       font-size: 14px; } }
 main .testimonios {
@@ -1061,32 +1077,29 @@ main .contacto {
           background-color: #fbe23c;
           color: #33393e; }
 
-@media only screen and (max-width: 767px) {
-  main .contacto .contenedor.contenedor-contacto {
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(3, 130px);
-    justify-content: center;
-    justify-items: center;
-    align-content: space-between;
-    align-items: center; }
-    main .contacto .contenedor.contenedor-contacto .direccion {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 25px);
-      justify-items: center; }
-      main .contacto .contenedor.contenedor-contacto .direccion .contacto-icono {
-        justify-self: center; }
-    main .contacto .contenedor.contenedor-contacto .telefono {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 25px);
-      justify-items: center; }
-      main .contacto .contenedor.contenedor-contacto .telefono .contacto-icono {
-        justify-self: center; }
+@media only screen and (max-width: 1085px) {
+  main .contacto .contenedor.contenedor-contacto .tiempo {
+    padding: 10px 5px; }
+    main .contacto .contenedor.contenedor-contacto .tiempo .horarios tr {
+      font-size: 18px; } }
+@media only screen and (max-width: 845px) {
+  main .contacto .contenedor {
+    width: 98%; }
     main .contacto .contenedor.contenedor-contacto .tiempo {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 25px);
-      justify-items: center; }
-      main .contacto .contenedor.contenedor-contacto .tiempo .contacto-icono {
-        justify-self: center; } }
+      padding: 10px 5px;
+      grid-template-rows: 50px auto; }
+      main .contacto .contenedor.contenedor-contacto .tiempo .horarios tr {
+        font-size: 16px; } }
+@media only screen and (max-width: 700px) {
+  main .contacto .contenedor.contenedor-contacto .tiempo {
+    padding: 5px 0; }
+    main .contacto .contenedor.contenedor-contacto .tiempo .horarios th, main .contacto .contenedor.contenedor-contacto .tiempo .horarios td {
+      font-size: 14px; } }
+@media only screen and (max-width: 600px) {
+  main .contacto .contenedor {
+    width: 100%; }
+    main .contacto .contenedor.contenedor-contacto .tiempo .horarios th, main .contacto .contenedor.contenedor-contacto .tiempo .horarios td {
+      font-size: 12px; } }
 main {
   width: 100%; }
   main.blog {

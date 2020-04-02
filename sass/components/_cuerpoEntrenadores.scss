@@ -25,7 +25,7 @@ main{
           background: $secundario;
           height: 500px;
           display: grid;
-          grid-template-columns: 270px auto;
+          grid-template-columns: minmax(200px,270px) auto;
           &:nth-child(2) .entrenador-foto{
             background-image: url(../../img/entrenadora.jpeg);
           }
@@ -46,10 +46,10 @@ main{
           .entrenador-informacion{
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 75px 15px 230px 50px;
+            grid-template-rows: 75px 15px 270px 50px;
             justify-content: start;
             justify-items: start;
-            grid-row-gap: 15px;
+            grid-row-gap: 20px;
             padding-top: 10px;
             padding-left:10px;
             .entrenador-nombre{
@@ -118,6 +118,9 @@ main{
          .entrenadores-titulo{
            grid-column: span 1;
          }
+         .entrenador{
+           grid-column: span 1;
+         }
        }
      }
    } 
@@ -131,7 +134,7 @@ main{
           .entrenador{
             height: 755px;
             grid-template-columns: 100%;
-            grid-template-rows: 60% 40% ;
+            grid-template-rows: 50% 50% ;
             &:nth-child(2) .entrenador-foto{
               background-position: top;
             }
@@ -142,7 +145,7 @@ main{
               background-position: top;
             }
             .entrenador-informacion{    
-              grid-template-rows: 75px 20px 65px 50px;
+              grid-template-rows: 75px 20px 130px 50px;
               align-content: space-evenly;
             }
           }
@@ -159,7 +162,7 @@ main{
           .entrenador{
             height: 800px;
             .entrenador-informacion{    
-              grid-template-rows: 75px 20px 80px 50px;
+              grid-template-rows: 75px 20px 130px 50px;
               align-content: space-evenly;
             }
           }

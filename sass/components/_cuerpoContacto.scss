@@ -121,39 +121,17 @@ main{
   }
 }
 
-@media only screen and (max-width:767px){
+@media only screen and (max-width:1085px){
   main{
     .contacto{
       .contenedor{
         &.contenedor-contacto{
-          grid-template-columns: 100%;
-          grid-template-rows: repeat(3,130px);
-          justify-content: center;
-          justify-items: center;
-          align-content: space-between;
-          align-items: center;
-          .direccion{
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(3, 25px);
-            justify-items: center;
-            .contacto-icono{
-              justify-self: center;
-            }
-          }
-          .telefono{
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(3, 25px);
-            justify-items: center;
-            .contacto-icono{
-              justify-self: center;
-            }
-          }
           .tiempo{
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(3, 25px);
-            justify-items: center;
-            .contacto-icono{
-              justify-self: center;
+            padding: 10px 5px;
+            .horarios{
+              tr{
+                font-size: 18px;
+              }
             }
           }
         }
@@ -161,3 +139,101 @@ main{
     }
   }
 }
+
+@media only screen and (max-width:845px){
+  main{
+    .contacto{
+      .contenedor{
+        width: 98%;
+        &.contenedor-contacto{
+          .tiempo{
+            padding: 10px 5px;
+            grid-template-rows: 50px auto;
+            .horarios{
+              tr{
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:700px){
+  main{
+    .contacto{
+      .contenedor{
+        &.contenedor-contacto{
+          .tiempo{
+            padding: 5px 0;
+            .horarios{
+              th,td{
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width:600px){
+  main{
+    .contacto{
+      .contenedor{
+        width: 100%;
+        &.contenedor-contacto{
+          .tiempo{
+            .horarios{
+              th,td{
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// @media only screen and (max-width:767px){
+//   main{
+//     .contacto{
+//       .contenedor{
+//         &.contenedor-contacto{
+//           grid-template-columns: 100%;
+//           grid-template-rows: repeat(3,130px);
+//           justify-content: center;
+//           justify-items: center;
+//           align-content: space-between;
+//           align-items: center;
+//           .direccion{
+//             grid-template-columns: 1fr;
+//             grid-template-rows: repeat(3, 25px);
+//             justify-items: center;
+//             .contacto-icono{
+//               justify-self: center;
+//             }
+//           }
+//           .telefono{
+//             grid-template-columns: 1fr;
+//             grid-template-rows: repeat(3, 25px);
+//             justify-items: center;
+//             .contacto-icono{
+//               justify-self: center;
+//             }
+//           }
+//           .tiempo{
+//             grid-template-columns: 1fr;
+//             grid-template-rows: repeat(3, 25px);
+//             justify-items: center;
+//             .contacto-icono{
+//               justify-self: center;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
