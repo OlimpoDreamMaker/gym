@@ -201,14 +201,14 @@ header .nav {
 @media only screen and (max-width: 868px) {
   .menu-mobile {
     display: block;
-    display: none;
     position: fixed;
     z-index: 9999999999999999999999999999999999999999999;
     top: 0;
-    right: 0;
+    right: -40%;
     width: 40%;
     min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8); }
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all .5s ease; }
     .menu-mobile .close {
       position: absolute;
       top: 10px;
