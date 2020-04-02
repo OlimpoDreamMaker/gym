@@ -1,0 +1,31 @@
+.modal{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999999999999999999999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    width: 90%;
+    max-width: 600px;
+  }
+  .btn-cerrar{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top:20px;
+    right: 20px;
+    background-color: $principal;
+    cursor: pointer;
+    text-align: center;
+    i{
+      color: $letrasPrimario;
+      font-size: 16px;
+      line-height: 50px;
+    }
+  }
+}
