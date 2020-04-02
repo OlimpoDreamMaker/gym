@@ -351,6 +351,8 @@ main{
           height: 415px;
           width: 100%;
           border:1px solid $once;
+          padding: 5px;
+          border-radius: 5px;
         }
       }
       .tags-widget{
@@ -389,4 +391,36 @@ main{
       }
     }
   }
+}
+#calendar {
+  font-family:Arial;
+  font-size:12px;
+}
+#calendar caption {
+  text-align:left;
+  padding:5px 10px;
+  background-color:$letrasPrimario;
+  color: $principal;
+  font-weight:bold;
+  font-size:medium;
+}
+#calendar caption div:nth-child(1) {float:left;}
+#calendar caption div:nth-child(2) {float:right;}
+#calendar caption div:nth-child(2) a {cursor:pointer;}
+#calendar th {
+  color:$principal;
+  width:40px;
+  padding: 5px;
+  font-size: 16px;
+}
+#calendar td {
+  font-family: $Raleway;
+  text-align:center;
+  padding:2px 5px;
+  background-color:white;
+}
+#calendar .hoy {
+  background-color:$principal;
+  font-weight: 800;
+  color: $letrasPrimario;
 }

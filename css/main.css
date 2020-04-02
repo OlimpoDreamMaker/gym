@@ -1433,7 +1433,9 @@ main {
         main.blog .aside .calendario-widget .widget-calendario {
           height: 415px;
           width: 100%;
-          border: 1px solid #ebeced; }
+          border: 1px solid #ebeced;
+          padding: 5px;
+          border-radius: 5px; }
       main.blog .aside .tags-widget {
         width: 100%;
         padding-bottom: 18px;
@@ -1462,6 +1464,44 @@ main {
             color: #fff;
             background-color: #3b3d42;
             cursor: pointer; }
+
+#calendar {
+  font-family: Arial;
+  font-size: 12px; }
+
+#calendar caption {
+  text-align: left;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #fbe23c;
+  font-weight: bold;
+  font-size: medium; }
+
+#calendar caption div:nth-child(1) {
+  float: left; }
+
+#calendar caption div:nth-child(2) {
+  float: right; }
+
+#calendar caption div:nth-child(2) a {
+  cursor: pointer; }
+
+#calendar th {
+  color: #fbe23c;
+  width: 40px;
+  padding: 5px;
+  font-size: 16px; }
+
+#calendar td {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  padding: 2px 5px;
+  background-color: white; }
+
+#calendar .hoy {
+  background-color: #fbe23c;
+  font-weight: 800;
+  color: #fff; }
 
 footer {
   width: 100%;
