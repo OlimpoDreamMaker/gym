@@ -293,6 +293,13 @@ header .banner {
       font-size: 50px;
       font-weight: 200;
       text-transform: uppercase; }
+    header .banner .contenedor.contenedor-banner .nombre-gym .logo {
+      margin: auto;
+      height: 220px;
+      width: 50%; }
+      header .banner .contenedor.contenedor-banner .nombre-gym .logo img {
+        width: 100%;
+        height: 100%; }
     header .banner .contenedor.contenedor-banner .nombre-gym .titulo-gym {
       text-transform: uppercase;
       color: #fbe23c;
@@ -1436,6 +1443,25 @@ main {
           border: 1px solid #ebeced;
           padding: 5px;
           border-radius: 5px; }
+          main.blog .aside .calendario-widget .widget-calendario caption {
+            text-align: center;
+            padding: 5px 10px;
+            background-color: #fff;
+            color: #fbe23c;
+            font-weight: bold;
+            font-size: medium; }
+            main.blog .aside .calendario-widget .widget-calendario caption div {
+              display: flex;
+              width: 100%;
+              flex-direction: row;
+              justify-content: space-between; }
+              main.blog .aside .calendario-widget .widget-calendario caption div p {
+                font-size: 22px; }
+              main.blog .aside .calendario-widget .widget-calendario caption div a {
+                cursor: pointer;
+                transition: all .35s ease; }
+                main.blog .aside .calendario-widget .widget-calendario caption div a:hover i {
+                  color: #33393e; }
       main.blog .aside .tags-widget {
         width: 100%;
         padding-bottom: 18px;
@@ -1464,27 +1490,6 @@ main {
             color: #fff;
             background-color: #3b3d42;
             cursor: pointer; }
-
-#calendar {
-  font-family: Arial;
-  font-size: 12px; }
-
-#calendar caption {
-  text-align: left;
-  padding: 5px 10px;
-  background-color: #fff;
-  color: #fbe23c;
-  font-weight: bold;
-  font-size: medium; }
-
-#calendar caption div:nth-child(1) {
-  float: left; }
-
-#calendar caption div:nth-child(2) {
-  float: right; }
-
-#calendar caption div:nth-child(2) a {
-  cursor: pointer; }
 
 #calendar th {
   color: #fbe23c;

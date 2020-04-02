@@ -23,6 +23,15 @@ header{
           text-transform: uppercase;
         }
         .nombre-gym{
+          .logo{
+            margin:auto;
+            height: 220px;
+            width: 50%;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
           .titulo-gym{
             text-transform: uppercase;
             color:$principal;
