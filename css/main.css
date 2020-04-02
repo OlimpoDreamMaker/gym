@@ -1438,7 +1438,7 @@ main {
           color: #3b3d42;
           margin-bottom: 16px; }
         main.blog .aside .calendario-widget .widget-calendario {
-          height: 415px;
+          height: 350px;
           width: 100%;
           border: 1px solid #ebeced;
           padding: 5px;
@@ -1462,6 +1462,20 @@ main {
                 transition: all .35s ease; }
                 main.blog .aside .calendario-widget .widget-calendario caption div a:hover i {
                   color: #33393e; }
+          main.blog .aside .calendario-widget .widget-calendario thead tr th {
+            color: #fbe23c;
+            width: 40px;
+            padding: 5px;
+            font-size: 16px; }
+          main.blog .aside .calendario-widget .widget-calendario tr td {
+            font-family: "Raleway", sans-serif;
+            text-align: center;
+            padding: 0;
+            background-color: white; }
+            main.blog .aside .calendario-widget .widget-calendario tr td.hoy {
+              background-color: #fbe23c;
+              font-weight: 800;
+              color: #fff; }
       main.blog .aside .tags-widget {
         width: 100%;
         padding-bottom: 18px;
@@ -1491,23 +1505,11 @@ main {
             background-color: #3b3d42;
             cursor: pointer; }
 
-#calendar th {
-  color: #fbe23c;
-  width: 40px;
-  padding: 5px;
-  font-size: 16px; }
-
-#calendar td {
-  font-family: "Raleway", sans-serif;
-  text-align: center;
-  padding: 2px 5px;
-  background-color: white; }
-
-#calendar .hoy {
-  background-color: #fbe23c;
-  font-weight: 800;
-  color: #fff; }
-
+@media only screen and (max-width: 938px) {
+  main.blog .contenido {
+    grid-column: span 12; }
+  main.blog .aside {
+    grid-column: span 12; } }
 footer {
   width: 100%;
   background-color: #191919;
