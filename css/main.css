@@ -1078,7 +1078,7 @@ main .contacto {
       grid-column-start: span 12;
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: 50px 400px;
+      grid-template-rows: 50px auto;
       grid-template-areas: "titulo" "tabla";
       grid-gap: 5px;
       background-color: #7a7a7a; }
