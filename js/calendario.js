@@ -1,5 +1,5 @@
 let actual = new Date()
-console.log(actual)
+const titulo = document.querySelector('.titulo-blog')
 
 function mostrarCalendario(year,month)
 {
@@ -64,6 +64,8 @@ function mostrarCalendario(year,month)
 		prevYear=year-1;
 	}
  
+	titulo.innerHTML= "Mes: "+meses[month-1];
+
 	document.getElementById("calendar").getElementsByTagName("caption")[0].innerHTML="<div><a class='calendario-izq' onclick='mostrarCalendario("+prevYear+","+prevMonth+")'><i class='fas fa-arrow-left'></i></a><p>"+meses[month-1]+" / "+year+"</p><a onclick='mostrarCalendario("+nextYear+","+nextMonth+")' class='calendario-der'><i class='fas fa-arrow-right'></i></a></div>";
 	document.getElementById("calendar").getElementsByTagName("tbody")[0].innerHTML=resultado;
 }

@@ -13,6 +13,17 @@
     width: 90%;
     max-width: 600px;
   }
+  input{
+    width: 30%;
+    height: 30px;
+    padding: 8px;
+    font-size: 20px;
+    color: $letrasPrimario;
+    border:none;
+    border-bottom: 1px solid $once;
+    background-color: $fondoSecundario;
+    outline: none;
+  }
   .btn-cerrar{
     position: fixed;
     width: 50px;

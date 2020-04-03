@@ -99,6 +99,9 @@ header .nav {
         font-size: 22px;
         line-height: 26px;
         text-transform: uppercase; }
+        header .nav .contenedor.contenedor-nav .logo h2 a {
+          text-decoration: none;
+          color: #fbe23c; }
     header .nav .contenedor.contenedor-nav .menu {
       display: grid;
       grid-template-columns: minmax(45px, 60px) minmax(155px, 180px) repeat(2, minmax(110px, 125px)) 90px minmax(75px, 90px) minmax(45px, 75px) minmax(75px, 80px);
@@ -960,6 +963,16 @@ main .galeria {
   .modal img {
     width: 90%;
     max-width: 600px; }
+  .modal input {
+    width: 30%;
+    height: 30px;
+    padding: 8px;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #ebeced;
+    background-color: rgba(84, 89, 95, 0.6);
+    outline: none; }
   .modal .btn-cerrar {
     position: fixed;
     width: 50px;

@@ -21,6 +21,10 @@ header{
             font-size: 22px;
             line-height: 26px;
             text-transform: uppercase;
+            a{
+              text-decoration: none;
+              color:$principal;
+            }
           }
         }
         .menu{
