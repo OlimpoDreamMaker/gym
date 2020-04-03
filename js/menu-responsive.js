@@ -7,5 +7,5 @@ btnMenu.addEventListener('click',()=>{
 })
 
 close.addEventListener('click',()=>{
-  menu.style.right = "-40%";
+  menu.style.right = "-60%";
 })

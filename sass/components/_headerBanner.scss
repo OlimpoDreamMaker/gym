@@ -9,7 +9,6 @@ header{
         height: auto;
         min-height: 45px + 100px + 180px + 80px;
         height: 60px + 300px + 200px + 100px;
-        // grid-template-columns: 850px;
         grid-template-rows: minmax(45px,60px) minmax(100px,290px) 220px 80px;
         align-items: center;
         justify-content: center;
@@ -116,6 +115,36 @@ header{
           .descripcion{
             .texto-descripcion{
               font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width:499px){
+  header{
+    min-height: 100vh;
+    height: auto;
+    .banner{
+      .contenedor{
+        &.contenedor-banner{
+          padding: 0;
+          grid-template-rows: 40px 120px minmax(300px,auto) 50px;
+          align-content: start;
+          .bienvenida{
+            p{
+              font-size: 30px;
+            }
+          }
+          .nombre-gym{
+            .titulo-gym{
+              font-size: 56px;
+            }
+          }
+          .descripcion{
+            .texto-descripcion{
+              font-size: 12px;
             }
           }
         }

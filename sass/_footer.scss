@@ -65,3 +65,36 @@ footer{
     }
   }
 }
+@media only screen and (max-width:760px){
+  footer{
+    .contenedor{
+      &.contenedor-footer{
+        grid-template-rows: repeat(2,100px);
+        .footer-fila-1{
+          .logo{
+            height: 26px;
+            h2{
+              font-size: 24px;
+              line-height: 26px;
+            }
+          }
+        }
+        .footer-fila-2{
+          .redes{
+            li{
+              a{
+                font-size: 12px;
+              }
+            }
+          }
+          .copyright{
+            p{
+              font-size: 14px;
+              line-height: 26px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

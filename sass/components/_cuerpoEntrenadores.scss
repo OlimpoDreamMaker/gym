@@ -161,9 +161,20 @@ main{
         &.contenedor-entrenadores{
           .entrenador{
             height: 800px;
-            .entrenador-informacion{    
-              grid-template-rows: 75px 20px 130px 50px;
+            .entrenador-informacion{   
+              grid-row-gap: 5px;
+              padding-top: 0; 
+              padding-left: 5px;
+              grid-template-rows: auto 20px auto 50px;
               align-content: space-evenly;
+              .entrenador-nombre{
+                font-size: 28px;
+              }
+              .entrenador-redes{
+                li{
+                  @include rectangulo(40px,40px);
+                }
+              }
             }
           }
         }

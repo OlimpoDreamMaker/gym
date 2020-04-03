@@ -197,43 +197,75 @@ main{
     }
   }
 }
-// @media only screen and (max-width:767px){
-//   main{
-//     .contacto{
-//       .contenedor{
-//         &.contenedor-contacto{
-//           grid-template-columns: 100%;
-//           grid-template-rows: repeat(3,130px);
-//           justify-content: center;
-//           justify-items: center;
-//           align-content: space-between;
-//           align-items: center;
-//           .direccion{
-//             grid-template-columns: 1fr;
-//             grid-template-rows: repeat(3, 25px);
-//             justify-items: center;
-//             .contacto-icono{
-//               justify-self: center;
-//             }
-//           }
-//           .telefono{
-//             grid-template-columns: 1fr;
-//             grid-template-rows: repeat(3, 25px);
-//             justify-items: center;
-//             .contacto-icono{
-//               justify-self: center;
-//             }
-//           }
-//           .tiempo{
-//             grid-template-columns: 1fr;
-//             grid-template-rows: repeat(3, 25px);
-//             justify-items: center;
-//             .contacto-icono{
-//               justify-self: center;
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+@media only screen and (max-width:499px){
+  main{
+    .contacto{
+      .contenedor{
+        &.contenedor-contacto{
+          .telefono{
+            grid-column: span 12;
+            .contacto-icono{
+              width: 30px;
+              height: 30px;
+              i{
+                font-size: 30px;
+                line-height: 30px;
+              }
+            }
+            .contacto-titulo{
+              p{
+                font-size: 14px;
+              }
+            }
+            .contacto-info{
+              p{
+                font-size: 14px;
+              }
+            }
+          }
+          .direccion{
+            grid-column: span 12;
+            .contacto-icono{
+              width: 30px;
+              height: 30px;
+              i{
+                font-size: 30px;
+                line-height: 30px;
+              }
+            }
+            .contacto-titulo{
+              p{
+                font-size: 14px;
+              }
+            }
+            .contacto-info{
+              p{
+                font-size: 14px;
+              }
+            }
+          }
+          .tiempo{
+            padding: 0;
+            .titulo-tiempo{
+              font-size: 20px;
+              .contacto-icono{
+                width: 30px;
+                height: 30px;
+                i{
+                  font-size: 30px;
+                  line-height: 30px;
+                }
+              }
+            }
+            .horarios{
+              th,td{
+                font-size: 10px;
+                padding:5px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

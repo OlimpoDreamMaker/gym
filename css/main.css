@@ -207,8 +207,8 @@ header .nav {
     position: fixed;
     z-index: 9999999999999999999999999999999999999999999;
     top: 0;
-    right: -40%;
-    width: 40%;
+    right: -60%;
+    width: 60%;
     min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
     transition: all .5s ease; }
@@ -249,7 +249,7 @@ header .nav {
   header .nav {
     height: 100px; }
     header .nav .contenedor.contenedor-nav {
-      grid-template-columns: repeat(2, minmax(100px, 200px));
+      grid-template-columns: 2fr 1fr;
       grid-template-areas: "logo   buscador" "redes  menu";
       justify-content: space-between; }
       header .nav .contenedor.contenedor-nav .logo {
@@ -339,6 +339,20 @@ header .banner {
       font-size: 60px; }
     header .banner .contenedor.contenedor-banner .descripcion .texto-descripcion {
       font-size: 14px; } }
+@media only screen and (max-width: 499px) {
+  header {
+    min-height: 100vh;
+    height: auto; }
+    header .banner .contenedor.contenedor-banner {
+      padding: 0;
+      grid-template-rows: 40px 120px minmax(300px, auto) 50px;
+      align-content: start; }
+      header .banner .contenedor.contenedor-banner .bienvenida p {
+        font-size: 30px; }
+      header .banner .contenedor.contenedor-banner .nombre-gym .titulo-gym {
+        font-size: 56px; }
+      header .banner .contenedor.contenedor-banner .descripcion .texto-descripcion {
+        font-size: 12px; } }
 main .nuestros-programas {
   width: 100%;
   background: #fbe23c; }
@@ -567,8 +581,16 @@ main .entrenadores {
   main .entrenadores .contenedor.contenedor-entrenadores .entrenador {
     height: 800px; }
     main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion {
-      grid-template-rows: 75px 20px 130px 50px;
-      align-content: space-evenly; } }
+      grid-row-gap: 5px;
+      padding-top: 0;
+      padding-left: 5px;
+      grid-template-rows: auto 20px auto 50px;
+      align-content: space-evenly; }
+      main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-nombre {
+        font-size: 28px; }
+      main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-redes li {
+        width: 40px;
+        height: 40px; } }
 main .equipamento {
   width: 100%;
   height: 659px;
@@ -694,18 +716,26 @@ main .equipamento {
       width: 365px;
       height: 180px; } }
 @media only screen and (max-width: 557px) {
-  main .equipamento .equipamento-slider .contenedor.contenedor-slider {
+  main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider {
     top: 2%;
+    width: 98%;
+    left: 1%;
     grid-template-columns: 100%; }
-    main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-titulo .titulo-slider {
+    main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-titulo .logo {
+      width: 100%; }
+    main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-titulo .titulo-slider {
       font-size: 51px;
       line-height: 50px; }
-    main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-titulo .subtitulo-slider {
+    main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-titulo .subtitulo-slider {
       font-size: 30px; }
-    main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-contenido .contenido-descripcion p {
-      font-size: 14px; }
-    main .equipamento .equipamento-slider .contenedor.contenedor-slider .slider-contenido .equipamento-lista li {
-      font-size: 14px; } }
+    main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-contenido .contenido-descripcion {
+      padding: 0 7.5px; }
+      main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-contenido .contenido-descripcion p {
+        font-size: 14px; }
+    main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-contenido .equipamento-lista {
+      padding-left: 15px; }
+      main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-contenido .equipamento-lista li {
+        font-size: 14px; } }
 main .testimonios {
   width: 100%;
   background-color: #fbe23c; }
@@ -1148,6 +1178,44 @@ main .contacto {
     width: 100%; }
     main .contacto .contenedor.contenedor-contacto .tiempo .horarios th, main .contacto .contenedor.contenedor-contacto .tiempo .horarios td {
       font-size: 12px; } }
+@media only screen and (max-width: 499px) {
+  main .contacto .contenedor.contenedor-contacto .telefono {
+    grid-column: span 12; }
+    main .contacto .contenedor.contenedor-contacto .telefono .contacto-icono {
+      width: 30px;
+      height: 30px; }
+      main .contacto .contenedor.contenedor-contacto .telefono .contacto-icono i {
+        font-size: 30px;
+        line-height: 30px; }
+    main .contacto .contenedor.contenedor-contacto .telefono .contacto-titulo p {
+      font-size: 14px; }
+    main .contacto .contenedor.contenedor-contacto .telefono .contacto-info p {
+      font-size: 14px; }
+  main .contacto .contenedor.contenedor-contacto .direccion {
+    grid-column: span 12; }
+    main .contacto .contenedor.contenedor-contacto .direccion .contacto-icono {
+      width: 30px;
+      height: 30px; }
+      main .contacto .contenedor.contenedor-contacto .direccion .contacto-icono i {
+        font-size: 30px;
+        line-height: 30px; }
+    main .contacto .contenedor.contenedor-contacto .direccion .contacto-titulo p {
+      font-size: 14px; }
+    main .contacto .contenedor.contenedor-contacto .direccion .contacto-info p {
+      font-size: 14px; }
+  main .contacto .contenedor.contenedor-contacto .tiempo {
+    padding: 0; }
+    main .contacto .contenedor.contenedor-contacto .tiempo .titulo-tiempo {
+      font-size: 20px; }
+      main .contacto .contenedor.contenedor-contacto .tiempo .titulo-tiempo .contacto-icono {
+        width: 30px;
+        height: 30px; }
+        main .contacto .contenedor.contenedor-contacto .tiempo .titulo-tiempo .contacto-icono i {
+          font-size: 30px;
+          line-height: 30px; }
+    main .contacto .contenedor.contenedor-contacto .tiempo .horarios th, main .contacto .contenedor.contenedor-contacto .tiempo .horarios td {
+      font-size: 10px;
+      padding: 5px 0; } }
 main {
   width: 100%; }
   main.blog {
@@ -1572,5 +1640,19 @@ footer {
             cursor: pointer; }
             footer .contenedor.contenedor-footer .footer-fila-2 .redes li:hover a {
               color: #fbe23c; }
+
+@media only screen and (max-width: 760px) {
+  footer .contenedor.contenedor-footer {
+    grid-template-rows: repeat(2, 100px); }
+    footer .contenedor.contenedor-footer .footer-fila-1 .logo {
+      height: 26px; }
+      footer .contenedor.contenedor-footer .footer-fila-1 .logo h2 {
+        font-size: 24px;
+        line-height: 26px; }
+    footer .contenedor.contenedor-footer .footer-fila-2 .redes li a {
+      font-size: 12px; }
+    footer .contenedor.contenedor-footer .footer-fila-2 .copyright p {
+      font-size: 14px;
+      line-height: 26px; } }
 
 /*# sourceMappingURL=main.css.map */
