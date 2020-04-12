@@ -1,0 +1,27 @@
+  #sacar fb y tw y sacar busqueda(nav)
+  justificar texto banner
+  #sacar leer mas de banner
+  #imgen de fondo amarillo con manchas negra
+  linea de los titulos
+  animaciones de nurestro programa
+  justificar textos 
+  #sacar leer mas de nuestros programas
+  agrandar fuentes
+  usar antonio de fuentes
+  en vez de contacto Ubicacion
+  sacar btn de tw de entrenadores
+  oferta especial = consegui tu rutina personalizada (en vez de especial Tu Rutina)
+    pedi tu rutina personalizada ahora mismo
+    rellena el form a continuacion y no estaremos comunicando con vos etc
+    quiero mi rutina
+    nombre, apellido, numero, email, altura, peso, meta (subir bajar de peso, uwu)
+  cambiar estilos de horario
+  editar horarios (admin) desde el index.html
+    agregar horarios 
+  blog = noticias que te mueva al index ej "Enterate de nuestras noticias" que te lleve a una pagina con dicha noticias
+  organizar noticas por mes
+  los post seran noticas 
+  Sacar comentarios
+  panel de admin editar los post y crear posts
+
+

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-header .nav .contenedor, header .banner .contenedor, main .nuestros-programas .contenedor, main .entrenadores .contenedor, main .testimonios .contenedor, main .especial .contenedor, main .contacto .contenedor, footer .contenedor {
+header .nav .contenedor, header .banner .contenedor, main .nuestros-programas .contenedor, main .entrenadores .contenedor, main .testimonios .contenedor, main .especial .contenedor, main .contacto .contenedor, main .horarios .contenedor, footer .contenedor {
   width: 90%;
   max-width: 1200px;
   margin: auto;
@@ -17,17 +17,17 @@ header .banner .contenedor.contenedor-banner .btn-leer-mas .btn, main .nuestros-
     color: #fbe23c;
     background-color: #33393e; }
 
-main .contacto .contenedor.contenedor-contacto .direccion .contacto-icono, main .contacto .contenedor.contenedor-contacto .telefono .contacto-icono, main .contacto .contenedor.contenedor-contacto .tiempo .titulo-tiempo .contacto-icono {
+main .contacto .contenedor.contenedor-contacto .direccion .contacto-icono, main .contacto .contenedor.contenedor-contacto .telefono .contacto-icono, main .horarios .contenedor.contenedor-horarios .tiempo .titulo-tiempo .contacto-icono {
   width: 40px;
   height: 40px;
   color: #272b2d;
   grid-row: span 2;
   align-self: center; }
-  main .contacto .contenedor.contenedor-contacto .direccion .contacto-icono i, main .contacto .contenedor.contenedor-contacto .telefono .contacto-icono i, main .contacto .contenedor.contenedor-contacto .tiempo .titulo-tiempo .contacto-icono i {
+  main .contacto .contenedor.contenedor-contacto .direccion .contacto-icono i, main .contacto .contenedor.contenedor-contacto .telefono .contacto-icono i, main .horarios .contenedor.contenedor-horarios .tiempo .titulo-tiempo .contacto-icono i {
     font-size: 40px;
     line-height: 40px; }
 
-main .contacto .contenedor.contenedor-contacto .direccion .contacto-titulo p, main .contacto .contenedor.contenedor-contacto .telefono .contacto-titulo p, main .contacto .contenedor.contenedor-contacto .tiempo .titulo-tiempo .contacto-titulo p {
+main .contacto .contenedor.contenedor-contacto .direccion .contacto-titulo p, main .contacto .contenedor.contenedor-contacto .telefono .contacto-titulo p, main .horarios .contenedor.contenedor-horarios .tiempo .titulo-tiempo .contacto-titulo p {
   color: #272b2d;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -85,14 +85,17 @@ header .nav {
   border-bottom: 1px solid #33393e; }
   header .nav .contenedor.contenedor-nav {
     height: 100%;
-    grid-template-columns: 165px minmax(650px, 850px) 25px minmax(60px, 90px);
+    grid-template-columns: 170px minmax(650px, 880px) minmax(50px, 60px);
     align-content: center;
     align-items: center;
     justify-items: center;
     justify-content: space-between; }
     header .nav .contenedor.contenedor-nav .logo {
-      width: 165px;
-      height: 24px; }
+      width: 170px;
+      height: 100%; }
+      header .nav .contenedor.contenedor-nav .logo img {
+        width: 100%;
+        height: 100%; }
       header .nav .contenedor.contenedor-nav .logo h2 {
         color: #fbe23c;
         font-family: "Righteous", sans-serif;
@@ -104,7 +107,7 @@ header .nav {
           color: #fbe23c; }
     header .nav .contenedor.contenedor-nav .menu {
       display: grid;
-      grid-template-columns: minmax(45px, 60px) minmax(155px, 180px) repeat(2, minmax(110px, 125px)) 90px minmax(75px, 90px) minmax(45px, 75px) minmax(75px, 80px);
+      grid-template-columns: minmax(45px, 65px) minmax(155px, 200px) minmax(110px, 125px) minmax(110px, 125px) 115px minmax(75px, 90px) minmax(45px, 55px) minmax(75px, 90px);
       justify-items: center;
       align-items: center; }
       header .nav .contenedor.contenedor-nav .menu li {
@@ -113,7 +116,7 @@ header .nav {
           color: #fff;
           text-decoration: none;
           font-family: "Montserrat", sans-serif;
-          font-size: 14px;
+          font-size: 16px;
           font-weight: 600;
           letter-spacing: 0.56px;
           transition: all .35s ease; }
@@ -144,7 +147,7 @@ header .nav {
           color: #fbe23c; }
     header .nav .contenedor.contenedor-nav .redes {
       display: grid;
-      grid-template-columns: repeat(3, 30px);
+      grid-template-columns: repeat(2, 30px);
       justify-items: center; }
       header .nav .contenedor.contenedor-nav .redes li {
         list-style: none; }
@@ -152,7 +155,7 @@ header .nav {
           color: #fff;
           text-decoration: none;
           font-family: "Montserrat", sans-serif;
-          font-size: 14px;
+          font-size: 16px;
           font-weight: 600;
           letter-spacing: 0.56px;
           transition: all .35s ease; }
@@ -166,7 +169,7 @@ header .nav {
 @media only screen and (max-width: 1133px) {
   header .nav .contenedor.contenedor-nav {
     width: 95%;
-    grid-template-columns: 165px minmax(650px, 840px) 30px 60px;
+    grid-template-columns: 180px minmax(650px, 840px) 30px 60px;
     justify-content: center; }
     header .nav .contenedor.contenedor-nav .redes {
       grid-template-columns: repeat(3, 20px); }
@@ -249,12 +252,17 @@ header .nav {
   header .nav {
     height: 100px; }
     header .nav .contenedor.contenedor-nav {
-      grid-template-columns: 2fr 1fr;
-      grid-template-areas: "logo   buscador" "redes  menu";
+      grid-template-columns: 65px 1fr 35px;
+      grid-template-areas: "redes logo menu" "redes logo menu";
       justify-content: space-between; }
       header .nav .contenedor.contenedor-nav .logo {
         grid-area: logo;
-        justify-self: start; }
+        justify-self: center;
+        width: 50%;
+        height: 100%; }
+        header .nav .contenedor.contenedor-nav .logo img {
+          width: 100%;
+          height: 100%; }
       header .nav .contenedor.contenedor-nav .menu {
         display: none; }
       header .nav .contenedor.contenedor-nav .buscar {
@@ -288,7 +296,7 @@ header .banner {
     grid-template-rows: minmax(45px, 60px) minmax(100px, 290px) 220px 80px;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: justify;
     align-content: space-between; }
     header .banner .contenedor.contenedor-banner .bienvenida {
       color: #fff;
@@ -355,7 +363,9 @@ header .banner {
         font-size: 12px; } }
 main .nuestros-programas {
   width: 100%;
-  background: #fbe23c; }
+  background: #fbe23c;
+  background-image: url(../../img/background-yellow.jpg);
+  background-position: center; }
   main .nuestros-programas .contenedor.contenedor-nuestros-programas {
     padding: 45px 0;
     grid-template-columns: repeat(3, 1fr);
@@ -365,11 +375,17 @@ main .nuestros-programas {
     main .nuestros-programas .contenedor.contenedor-nuestros-programas .nuestros-programas-titulo {
       grid-area: titulo;
       justify-self: center;
-      color: #000;
-      font-family: "Righteous", sans-serif;
-      font-size: 24px;
-      font-weight: 400;
-      text-transform: uppercase; }
+      color: #000; }
+      main .nuestros-programas .contenedor.contenedor-nuestros-programas .nuestros-programas-titulo h3 {
+        font-family: "Righteous", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase; }
+      main .nuestros-programas .contenedor.contenedor-nuestros-programas .nuestros-programas-titulo .linea-titulo {
+        margin: auto;
+        margin-top: 15px;
+        width: 27px;
+        border: 2px solid white; }
     main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta {
       width: 100%;
       height: 545px;
@@ -441,7 +457,7 @@ main .nuestros-programas {
           text-transform: uppercase;
           line-height: 1.2em; }
         main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta .carta-atras .carta-descripcion {
-          text-align: center;
+          text-align: justify;
           color: rgba(255, 255, 255, 0.64);
           font-family: "Raleway", sans-serif;
           font-size: 14px;
@@ -483,6 +499,11 @@ main .entrenadores {
         font-size: 24px;
         font-weight: 400;
         text-transform: uppercase; }
+      main .entrenadores .contenedor.contenedor-entrenadores .entrenadores-titulo .linea-titulo {
+        margin: auto;
+        margin-top: 15px;
+        width: 27px;
+        border: 2px solid white; }
     main .entrenadores .contenedor.contenedor-entrenadores .entrenador {
       grid-column-start: 4;
       grid-column-end: 10;
@@ -738,7 +759,10 @@ main .equipamento {
         font-size: 14px; } }
 main .testimonios {
   width: 100%;
-  background-color: #fbe23c; }
+  background-color: #fbe23c;
+  background-image: url(../../img/background-yellow.jpg);
+  background-position: center;
+  background-repeat: no-repeat; }
   main .testimonios .contenedor.contenedor-testimonios {
     padding: 45px 0;
     grid-template-columns: repeat(6, 1fr);
@@ -751,6 +775,11 @@ main .testimonios {
         font-size: 24px;
         font-weight: 400;
         text-transform: uppercase; }
+      main .testimonios .contenedor.contenedor-testimonios .testimonio-titulo .linea-titulo {
+        margin: auto;
+        margin-top: 15px;
+        width: 27px;
+        border: 2px solid white; }
     main .testimonios .contenedor.contenedor-testimonios .testimonio-dos-tercios {
       grid-column: span 4; }
       main .testimonios .contenedor.contenedor-testimonios .testimonio-dos-tercios .testimonio-comillas {
@@ -1072,10 +1101,13 @@ main .especial {
       font-size: 16px; } }
 main .contacto {
   width: 100%;
-  background-color: #fbe23c; }
+  background-color: #fbe23c;
+  background-image: url(../../img/background-yellow.jpg);
+  background-position: center; }
   main .contacto .contenedor.contenedor-contacto {
     padding: 45px 0;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 55px repeat(2, 1fr);
     grid-gap: 20px; }
     main .contacto .contenedor.contenedor-contacto .contacto-titulo {
       grid-column: span 12;
@@ -1085,9 +1117,22 @@ main .contacto {
         font-size: 24px;
         font-weight: 400;
         text-transform: uppercase; }
+      main .contacto .contenedor.contenedor-contacto .contacto-titulo .linea-titulo {
+        margin: auto;
+        margin-top: 15px;
+        width: 27px;
+        border: 2px solid white; }
+    main .contacto .contenedor.contenedor-contacto .mapa {
+      grid-column: span 6;
+      grid-row: span 2; }
+      main .contacto .contenedor.contenedor-contacto .mapa img {
+        width: 100%;
+        height: 100%; }
     main .contacto .contenedor.contenedor-contacto .direccion {
+      align-self: center;
       justify-self: center;
       grid-column: span 6;
+      grid-row: span 1;
       display: grid;
       grid-template-columns: 40px 1fr;
       grid-template-rows: 25px 25px;
@@ -1102,8 +1147,10 @@ main .contacto {
         grid-area: info;
         text-align: left; }
     main .contacto .contenedor.contenedor-contacto .telefono {
+      align-self: center;
       justify-self: center;
       grid-column: span 6;
+      grid-row: span 1;
       display: grid;
       grid-template-columns: 40px 1fr;
       grid-template-rows: 25px 25px;
@@ -1117,67 +1164,13 @@ main .contacto {
       main .contacto .contenedor.contenedor-contacto .telefono .contacto-info {
         grid-area: info;
         text-align: left; }
-    main .contacto .contenedor.contenedor-contacto .tiempo {
-      grid-column-start: span 12;
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: 50px auto;
-      grid-template-areas: "titulo" "tabla";
-      grid-gap: 5px;
-      background-color: #7a7a7a; }
-      main .contacto .contenedor.contenedor-contacto .tiempo .titulo-tiempo {
-        grid-area: titulo;
-        padding: 5px 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
-        line-height: 15px; }
-        main .contacto .contenedor.contenedor-contacto .tiempo .titulo-tiempo .contacto-titulo {
-          margin-left: 10px;
-          line-height: 40px; }
-      main .contacto .contenedor.contenedor-contacto .tiempo .horarios {
-        width: 100%;
-        grid-area: tabla;
-        display: table; }
-        main .contacto .contenedor.contenedor-contacto .tiempo .horarios td, main .contacto .contenedor.contenedor-contacto .tiempo .horarios th {
-          padding: 6px;
-          border: 1px solid #3b3d42;
-          text-align: center;
-          font-size: 20px;
-          color: #33393e; }
-        main .contacto .contenedor.contenedor-contacto .tiempo .horarios tr:nth-child(2n+3) {
-          background-color: #a1a2a4; }
-        main .contacto .contenedor.contenedor-contacto .tiempo .horarios th {
-          background-color: #33393e;
-          color: #fbe23c; }
-        main .contacto .contenedor.contenedor-contacto .tiempo .horarios .horario {
-          background-color: #fbe23c;
-          color: #33393e; }
 
-@media only screen and (max-width: 1085px) {
-  main .contacto .contenedor.contenedor-contacto .tiempo {
-    padding: 10px 5px; }
-    main .contacto .contenedor.contenedor-contacto .tiempo .horarios tr {
-      font-size: 18px; } }
-@media only screen and (max-width: 845px) {
-  main .contacto .contenedor {
-    width: 98%; }
-    main .contacto .contenedor.contenedor-contacto .tiempo {
-      padding: 10px 5px;
-      grid-template-rows: 50px auto; }
-      main .contacto .contenedor.contenedor-contacto .tiempo .horarios tr {
-        font-size: 16px; } }
-@media only screen and (max-width: 700px) {
-  main .contacto .contenedor.contenedor-contacto .tiempo {
-    padding: 5px 0; }
-    main .contacto .contenedor.contenedor-contacto .tiempo .horarios th, main .contacto .contenedor.contenedor-contacto .tiempo .horarios td {
-      font-size: 14px; } }
-@media only screen and (max-width: 600px) {
-  main .contacto .contenedor {
-    width: 100%; }
-    main .contacto .contenedor.contenedor-contacto .tiempo .horarios th, main .contacto .contenedor.contenedor-contacto .tiempo .horarios td {
-      font-size: 12px; } }
+@media only screen and (max-width: 867px) {
+  main .contacto .contenedor.contenedor-contacto {
+    grid-template-rows: 55px 1fr 60px; }
+    main .contacto .contenedor.contenedor-contacto .mapa {
+      grid-column: span 12;
+      grid-row: span 1; } }
 @media only screen and (max-width: 499px) {
   main .contacto .contenedor.contenedor-contacto .telefono {
     grid-column: span 12; }
@@ -1202,18 +1195,90 @@ main .contacto {
     main .contacto .contenedor.contenedor-contacto .direccion .contacto-titulo p {
       font-size: 14px; }
     main .contacto .contenedor.contenedor-contacto .direccion .contacto-info p {
-      font-size: 14px; }
-  main .contacto .contenedor.contenedor-contacto .tiempo {
+      font-size: 14px; } }
+main .horarios {
+  background-color: #191919; }
+  main .horarios .contenedor.contenedor-horarios {
+    padding: 35px 0; }
+    main .horarios .contenedor.contenedor-horarios .tiempo {
+      grid-column-start: span 12;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 50px auto;
+      grid-template-areas: "titulo" "tabla";
+      grid-gap: 5px;
+      box-shadow: 1.5px 10px 8px rgba(0, 0, 0, 0.75); }
+      main .horarios .contenedor.contenedor-horarios .tiempo .titulo-tiempo {
+        grid-area: titulo;
+        padding: 5px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        line-height: 15px; }
+        main .horarios .contenedor.contenedor-horarios .tiempo .titulo-tiempo .contacto-icono i {
+          color: #fff; }
+        main .horarios .contenedor.contenedor-horarios .tiempo .titulo-tiempo .contacto-titulo {
+          margin-left: 10px;
+          line-height: 40px; }
+          main .horarios .contenedor.contenedor-horarios .tiempo .titulo-tiempo .contacto-titulo p {
+            color: #fff; }
+      main .horarios .contenedor.contenedor-horarios .tiempo .tabla-horarios {
+        width: 100%;
+        grid-area: tabla;
+        display: table; }
+        main .horarios .contenedor.contenedor-horarios .tiempo .tabla-horarios td, main .horarios .contenedor.contenedor-horarios .tiempo .tabla-horarios th {
+          padding: 6px;
+          border: 1px solid #3b3d42;
+          text-align: center;
+          font-size: 20px;
+          color: #33393e; }
+        main .horarios .contenedor.contenedor-horarios .tiempo .tabla-horarios tr {
+          background-color: #7a7a7a; }
+        main .horarios .contenedor.contenedor-horarios .tiempo .tabla-horarios tr:nth-child(2n+3) {
+          background-color: #a1a2a4; }
+        main .horarios .contenedor.contenedor-horarios .tiempo .tabla-horarios th {
+          background-color: #33393e;
+          color: #fbe23c; }
+        main .horarios .contenedor.contenedor-horarios .tiempo .tabla-horarios .horario {
+          background-color: #fbe23c;
+          color: #33393e; }
+
+@media only screen and (max-width: 1085px) {
+  main .horarios .contenedor.contenedor-horarios .tiempo {
+    padding: 10px 5px; }
+    main .horarios .contenedor.contenedor-horarios .tiempo .tabla-horarios tr {
+      font-size: 18px; } }
+@media only screen and (max-width: 845px) {
+  main .horarios .contenedor {
+    width: 98%; }
+    main .horarios .contenedor.contenedor-horarios .tiempo {
+      padding: 10px 5px;
+      grid-template-rows: 50px auto; }
+      main .horarios .contenedor.contenedor-horarios .tiempo .tabla-horarios tr {
+        font-size: 16px; } }
+@media only screen and (max-width: 700px) {
+  main .horarios .contenedor.contenedor-horarios .tiempo {
+    padding: 5px 0; }
+    main .horarios .contenedor.contenedor-horarios .tiempo .tabla-horarios th, main .horarios .contenedor.contenedor-horarios .tiempo .tabla-horarios td {
+      font-size: 14px; } }
+@media only screen and (max-width: 600px) {
+  main .horarios .contenedor {
+    width: 100%; }
+    main .horarios .contenedor.contenedor-horarios .tiempo .tabla-horarios th, main .horarios .contenedor.contenedor-horarios .tiempo .tabla-horarios td {
+      font-size: 12px; } }
+@media only screen and (max-width: 499px) {
+  main .horarios .contenedor.contenedor-horarios .tiempo {
     padding: 0; }
-    main .contacto .contenedor.contenedor-contacto .tiempo .titulo-tiempo {
+    main .horarios .contenedor.contenedor-horarios .tiempo .titulo-tiempo {
       font-size: 20px; }
-      main .contacto .contenedor.contenedor-contacto .tiempo .titulo-tiempo .contacto-icono {
+      main .horarios .contenedor.contenedor-horarios .tiempo .titulo-tiempo .contacto-icono {
         width: 30px;
         height: 30px; }
-        main .contacto .contenedor.contenedor-contacto .tiempo .titulo-tiempo .contacto-icono i {
+        main .horarios .contenedor.contenedor-horarios .tiempo .titulo-tiempo .contacto-icono i {
           font-size: 30px;
           line-height: 30px; }
-    main .contacto .contenedor.contenedor-contacto .tiempo .horarios th, main .contacto .contenedor.contenedor-contacto .tiempo .horarios td {
+    main .horarios .contenedor.contenedor-horarios .tiempo .tabla-horarios th, main .horarios .contenedor.contenedor-horarios .tiempo .tabla-horarios td {
       font-size: 10px;
       padding: 5px 0; } }
 main {
@@ -1624,7 +1689,7 @@ footer {
           color: #fbe23c; }
       footer .contenedor.contenedor-footer .footer-fila-2 .redes {
         display: grid;
-        grid-template-columns: repeat(3, 30px);
+        grid-template-columns: repeat(2, 30px);
         justify-items: center; }
         footer .contenedor.contenedor-footer .footer-fila-2 .redes li {
           list-style: none; }

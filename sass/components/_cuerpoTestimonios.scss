@@ -2,6 +2,9 @@ main{
   .testimonios{
     width: 100%;
     background-color: $principal;
+    background-image: url(../../img/background-yellow.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
     .contenedor{
       @extend %contenedor;
       &.contenedor-testimonios{
@@ -16,6 +19,12 @@ main{
             font-size: 24px;
             font-weight: 400;
             text-transform: uppercase;
+          }
+          .linea-titulo{
+            margin:auto;
+            margin-top: 15px;
+            width: 27px;
+            border:2px solid white;
           }
         }
         .testimonio-dos-tercios{

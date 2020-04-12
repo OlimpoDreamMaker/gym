@@ -7,14 +7,18 @@ header{
       @extend %contenedor;
       &.contenedor-nav{
         height: 100%;
-        grid-template-columns: 165px minmax(650px,850px) 25px minmax(60px,90px);
+        grid-template-columns: 170px minmax(650px, 880px) minmax(50px,60px);
         align-content:center;
         align-items:center;
         justify-items: center;
         justify-content: space-between;
         .logo{
-          width: 165px;
-          height: 24px;
+          width: 170px;
+          height: 100%;
+          img{
+            width: 100%;
+            height: 100%;
+          }
           h2{
             color:$principal;
             font-family: $Righteous;
@@ -29,7 +33,7 @@ header{
         }
         .menu{
           display: grid;
-          grid-template-columns: minmax(45px,60px) minmax(155px,180px) repeat(2,minmax(110px,125px)) 90px minmax(75px,90px) minmax(45px,75px) minmax(75px,80px);
+          grid-template-columns: minmax(45px, 65px) minmax(155px, 200px) minmax(110px, 125px) minmax(110px, 125px) 115px minmax(75px, 90px) minmax(45px, 55px) minmax(75px, 90px);
           justify-items: center;
           align-items: center;
           li{
@@ -38,7 +42,7 @@ header{
               color:$letrasPrimario;
               text-decoration: none;
               font-family: $Montserrat;
-              font-size:14px;
+              font-size:16px;
               font-weight: 600;
               letter-spacing: 0.56px;
               transition: all .35s ease;
@@ -78,7 +82,7 @@ header{
         }
         .redes{
           display: grid;
-          grid-template-columns: repeat(3,30px);
+          grid-template-columns: repeat(2,30px);
           justify-items: center;
           li{
             list-style: none;
@@ -86,7 +90,7 @@ header{
               color:$letrasPrimario;
               text-decoration: none;
               font-family: $Montserrat;
-              font-size:14px;
+              font-size:16px;
               font-weight: 600;
               letter-spacing: 0.56px;
               transition: all .35s ease;
@@ -112,7 +116,7 @@ header{
       .contenedor{
         &.contenedor-nav{
           width: 95%;
-          grid-template-columns: 165px minmax(650px,840px) 30px 60px;
+          grid-template-columns: 180px minmax(650px,840px) 30px 60px;
           justify-content: center;
           .redes{
             grid-template-columns: repeat(3,20px);
@@ -229,13 +233,19 @@ header{
       height: 100px;
       .contenedor{
         &.contenedor-nav{
-          grid-template-columns: 2fr 1fr;
-          grid-template-areas:  "logo   buscador"
-                                "redes  menu";
+          grid-template-columns: 65px 1fr 35px;
+          grid-template-areas:  "redes logo menu"
+                                "redes logo menu";
           justify-content: space-between;
           .logo{
             grid-area: logo;
-            justify-self: start;
+            justify-self: center;
+            width: 50%;
+            height: 100%;
+            img{
+              width: 100%;
+              height: 100%;
+            }
           }
           .menu{
             display: none;

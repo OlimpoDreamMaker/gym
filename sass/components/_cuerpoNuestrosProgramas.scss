@@ -2,6 +2,8 @@ main{
   .nuestros-programas{
     width: 100%;
     background: $principal;
+    background-image: url(../../img/background-yellow.jpg);
+    background-position: center;
     .contenedor{
       @extend %contenedor;
       &.contenedor-nuestros-programas{
@@ -15,10 +17,18 @@ main{
           grid-area:titulo;
           justify-self: center;    
           color: $letrasSecundario;
-          font-family: $Righteous;
-          font-size: 24px;
-          font-weight: 400;
-          text-transform: uppercase;
+          h3{
+            font-family: $Righteous;
+            font-size: 24px;
+            font-weight: 400;
+            text-transform: uppercase;
+          }
+          .linea-titulo{
+            margin:auto;
+            margin-top: 15px;
+            width: 27px;
+            border:2px solid white;
+          }
         }
         .carta{
           @include rectangulo(100%,545px);
@@ -97,7 +107,7 @@ main{
               line-height: 1.2em;
             }
             .carta-descripcion{
-              text-align: center;
+              text-align: justify;
               color: $letrasEspecial;
               font-family: $Raleway;
               font-size: 14px;

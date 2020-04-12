@@ -11,13 +11,19 @@ main{
         .entrenadores-titulo{
           grid-column: span 12;
           text-align: center;
-            h3{
-              color: $letrasPrimario;
-              font-family: $Righteous;
-              font-size: 24px;
-              font-weight: 400;
-              text-transform: uppercase;
-            }
+          h3{
+            color: $letrasPrimario;
+            font-family: $Righteous;
+            font-size: 24px;
+            font-weight: 400;
+            text-transform: uppercase;
+          } 
+          .linea-titulo{
+            margin:auto;
+            margin-top: 15px;
+            width: 27px;
+            border:2px solid white;
+          }
         }
         .entrenador{
           grid-column-start: 4;
