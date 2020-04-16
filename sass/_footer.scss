@@ -15,7 +15,8 @@ footer{
           height: 32px;
           h2{
             color:$principal;
-            font-family: $Righteous;
+            // font-family: $Righteous;
+            font-family: $antonioBold;
             font-size: 28px;
             line-height: 30px;
             text-transform: uppercase;
@@ -28,8 +29,8 @@ footer{
         .copyright{
           p{
             color: $sexto;
-            font-family: $Montserrat;
-            font-size: 16px;
+            // font-family: $Montserrat;
+            font-size: 20px;
             font-weight: 600;
             line-height: 28px;
             a{

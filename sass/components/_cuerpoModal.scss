@@ -9,6 +9,110 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  .form-mi-rutina{
+    width: 70%;
+    height: 60%;
+    background-color: #fff;
+    padding: 5%;
+    .titulo-formulario{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.125rem;
+        font-family: $Righteous;
+        margin-bottom: 0.875rem;
+        color: $octavo;
+    }
+    .subtitulo-formulario{
+      margin-bottom: 1rem;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 0.875rem;
+      line-height: 1.643;
+      font-family: $Raleway;
+      letter-spacing: 0rem;
+      text-align: left;
+      color: $octavo;
+    }
+    textarea{
+      margin: 0.3125rem 0;
+      width: 100%;
+      padding: 0.5rem 0.75rem;
+      max-width: 100%;
+      min-height: 150px;
+      border-radius: 0.25rem;
+      border: 0.0625rem solid $once;
+      background-color: $letrasPrimario;
+      color:$tercero;
+      outline: none;
+    }
+    input[type="text"],
+    input[type="email"]{
+      border-radius: 0.25rem;
+      width: 100%;
+      margin: 5px 0;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid $once;
+      background-color: $letrasPrimario;
+      color:$tercero;
+    }
+    input[type="checkbox"]{
+      display: none;
+    }
+    label{
+      margin: 15px 0;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.643;
+      font-family: $Raleway;
+      letter-spacing: 0px;
+      text-align: left;
+      color: $octavo;
+    }
+    input[type=ckeckbox] + label{
+      cursor: pointer;
+    }
+    label:before{
+      content: '';
+      background: transparent;
+      border: 1px solid $once;
+      border-radius: 0.3125rem;
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      text-align: center;
+      margin-right:8px;
+      vertical-align: middle;
+      transition: all .35s ease;
+    }
+    input[type=checkbox]:checked + label:before{
+      content: '✔';
+      color: $letrasPrimario;
+      font-size: 1rem;
+      background-color: $principal;
+      line-height: 1rem;
+    }
+    input[type="submit"]{
+      border: none;
+      width: 100%;
+      margin:10px 0;
+      padding: 6px 20px;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 1;
+      font-family: $Roboto;
+      letter-spacing: 1px;
+      color: $secundario;
+      background-color: $principal;
+      transition: all .5s ease;
+      &:hover{
+        cursor: pointer;
+        color: $principal;
+        background-color: $secundario;
+      }
+    }
+  }
   img{
     width: 90%;
     max-width: 600px;
@@ -39,4 +143,11 @@
       line-height: 50px;
     }
   }
+}
+@media only screen and (max-width:1050px){
+ .modal{
+   .form-mi-rutina{
+     width: 90%;
+   }
+ }
 }

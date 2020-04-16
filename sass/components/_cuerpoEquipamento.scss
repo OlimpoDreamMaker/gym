@@ -40,16 +40,17 @@ main{
                 text-align: center;
                 text-transform: uppercase;
                 color:$letrasPrimario;
-                font-family: $Roboto;
-                font-size: 52px;
+                // font-family: $Roboto;
+                font-family: $antonioBold;
+                font-size: 56px;
                 font-weight: 400;
               }
             }
             .slider-contenido{
               .contenido-descripcion{
                 color: $letrasPrimario;
-                font-family: $Raleway;
-                font-size: 18px;
+                // font-family: $Raleway;
+                font-size: 20px;
                 font-weight: 400;
                 line-height: 29px;
               }
@@ -57,8 +58,8 @@ main{
                 margin-top: 10px;
                 li{
                   list-style: none;
-                  font-family: $Raleway;
-                  font-size: 18px;
+                  // font-family: $Raleway;
+                  font-size: 20px;
                   font-weight: 500;
                   line-height: 34px;
                   color:$principal;

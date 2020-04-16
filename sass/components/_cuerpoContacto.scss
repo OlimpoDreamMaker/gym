@@ -10,13 +10,14 @@ main{
         padding: 45px 0;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 55px repeat(2, 1fr);
-        grid-gap: 20px;
+        grid-gap: 30px;
         .contacto-titulo{
           grid-column: span 12;
           text-align: center;
           h3{
-            font-family: $Righteous;
-            font-size: 24px;
+            // font-family: $Righteous;
+            font-family: $antonioBold;
+            font-size: 30px;
             font-weight: 400;
             text-transform: uppercase;
           }

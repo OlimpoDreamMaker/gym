@@ -1,4 +1,13 @@
 @charset "UTF-8";
+@font-face {
+  font-family: antonioBold;
+  src: url(../fonts/Antonio-Bold.ttf); }
+@font-face {
+  font-family: antonioLight;
+  src: url(../fonts/Antonio-Light.ttf); }
+@font-face {
+  font-family: antonioRegular;
+  src: url(../fonts/Antonio-Regular.ttf); }
 header .nav .contenedor, header .banner .contenedor, main .nuestros-programas .contenedor, main .entrenadores .contenedor, main .testimonios .contenedor, main .especial .contenedor, main .contacto .contenedor, main .horarios .contenedor, footer .contenedor {
   width: 90%;
   max-width: 1200px;
@@ -29,15 +38,15 @@ main .contacto .contenedor.contenedor-contacto .direccion .contacto-icono, main 
 
 main .contacto .contenedor.contenedor-contacto .direccion .contacto-titulo p, main .contacto .contenedor.contenedor-contacto .telefono .contacto-titulo p, main .horarios .contenedor.contenedor-horarios .tiempo .titulo-tiempo .contacto-titulo p {
   color: #272b2d;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-weight: 700; }
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 5px 5px 10px white; }
 
 main .contacto .contenedor.contenedor-contacto .direccion .contacto-info p, main .contacto .contenedor.contenedor-contacto .telefono .contacto-info p {
   color: #272b2d;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-weight: 700; }
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 5px 5px 10px white; }
 
 * {
   margin: 0;
@@ -57,24 +66,26 @@ header {
     min-height: 100vh; }
 
 main {
-  width: 100%; }
+  width: 100%;
+  font-size: 16px;
+  font-family: antonioRegular; }
 
 .btn-scroll {
   opacity: 0;
   position: fixed;
   z-index: 99999999999999999999999999999999999999999999999999999999;
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   background-color: black;
   color: white;
-  bottom: 20px;
-  right: 20px;
+  bottom: 1.25rem;
+  right: 1.25rem;
   text-align: center;
-  line-height: 50px;
+  line-height: 3.125rem;
   cursor: pointer;
   transition: all .5s ease; }
   .btn-scroll i {
-    font-size: 20px;
+    font-size: 1.25rem;
     transition: all .35s ease; }
   .btn-scroll:hover i {
     color: #fbe23c; }
@@ -107,7 +118,7 @@ header .nav {
           color: #fbe23c; }
     header .nav .contenedor.contenedor-nav .menu {
       display: grid;
-      grid-template-columns: minmax(45px, 65px) minmax(155px, 200px) minmax(110px, 125px) minmax(110px, 125px) 115px minmax(75px, 90px) minmax(45px, 55px) minmax(75px, 90px);
+      grid-template-columns: minmax(218px, 232px) minmax(160px, 167px) minmax(132px, 147px) minmax(95px, 107px) minmax(88px, 97px) minmax(108px, 117px);
       justify-items: center;
       align-items: center; }
       header .nav .contenedor.contenedor-nav .menu li {
@@ -115,8 +126,8 @@ header .nav {
         header .nav .contenedor.contenedor-nav .menu li a {
           color: #fff;
           text-decoration: none;
-          font-family: "Montserrat", sans-serif;
-          font-size: 16px;
+          font-size: 17px;
+          text-transform: uppercase;
           font-weight: 600;
           letter-spacing: 0.56px;
           transition: all .35s ease; }
@@ -169,21 +180,22 @@ header .nav {
 @media only screen and (max-width: 1133px) {
   header .nav .contenedor.contenedor-nav {
     width: 95%;
-    grid-template-columns: 180px minmax(650px, 840px) 30px 60px;
+    grid-template-columns: 180px minmax(650px, 840px) 50px;
     justify-content: center; }
     header .nav .contenedor.contenedor-nav .redes {
-      grid-template-columns: repeat(3, 20px); }
+      grid-template-columns: repeat(2, 25px); }
     header .nav .contenedor.contenedor-nav .menu {
-      grid-template-columns: minmax(45px, 60px) minmax(160px, 180px) repeat(2, minmax(110px, 125px)) 90px 82.5px 50px minmax(75px, 80px);
-      justify-content: space-between; } }
+      grid-template-columns: minmax(211px, 218px) minmax(143px, 160px) minmax(121px, 132px) minmax(87px, 95px) minmax(82px, 88px) 108px; }
+      header .nav .contenedor.contenedor-nav .menu li a {
+        font-size: 16px; } }
 @media only screen and (max-width: 1025px) {
   header .nav {
     height: 110px; }
     header .nav .contenedor.contenedor-nav {
       width: 90%;
       grid-template-rows: 50% 50%;
-      grid-template-columns: 165px minmax(450px, 570px) 55px 100px;
-      grid-template-areas: "titulo espacio buscador  redes" "menu   menu    menu      menu";
+      grid-template-columns: 165px minmax(450px, 670px) 55px;
+      grid-template-areas: "titulo espacio   redes" "menu   menu      menu";
       justify-content: space-between; }
       header .nav .contenedor.contenedor-nav .logo {
         grid-area: titulo;
@@ -193,7 +205,7 @@ header .nav {
         width: 100%;
         grid-area: menu;
         justify-content: space-between;
-        grid-template-columns: minmax(45px, 60px) minmax(150px, 180px) repeat(2, minmax(100px, 125px)) 90px minmax(50px, 90px) minmax(20px, 50px) minmax(72.5px, 80px); }
+        grid-template-columns: 210px 145px 125px 90px 80px 105px; }
       header .nav .contenedor.contenedor-nav .buscar {
         grid-area: buscador;
         border: none;
@@ -201,7 +213,7 @@ header .nav {
       header .nav .contenedor.contenedor-nav .redes {
         align-self: end;
         grid-area: redes;
-        grid-template-columns: repeat(3, 30px); }
+        grid-template-columns: repeat(2, 30px); }
         header .nav .contenedor.contenedor-nav .redes li a {
           font-size: 16px; } }
 @media only screen and (max-width: 868px) {
@@ -239,11 +251,11 @@ header .nav {
         .menu-mobile .menu-vertical li a {
           color: #fff;
           text-decoration: none;
-          font-family: "Montserrat", sans-serif;
-          font-size: 18px;
+          font-size: 20px;
           font-weight: 600;
           letter-spacing: 0.56px;
-          transition: all .35s ease; }
+          transition: all .35s ease;
+          text-transform: uppercase; }
         .menu-mobile .menu-vertical li:hover {
           cursor: pointer; }
           .menu-mobile .menu-vertical li:hover a {
@@ -300,9 +312,8 @@ header .banner {
     align-content: space-between; }
     header .banner .contenedor.contenedor-banner .bienvenida {
       color: #fff;
-      font-family: "Montserrat", sans-serif;
+      font-family: antonioLight;
       font-size: 50px;
-      font-weight: 200;
       text-transform: uppercase; }
     header .banner .contenedor.contenedor-banner .nombre-gym .logo {
       margin: auto;
@@ -314,13 +325,13 @@ header .banner {
     header .banner .contenedor.contenedor-banner .nombre-gym .titulo-gym {
       text-transform: uppercase;
       color: #fbe23c;
-      font-family: "Righteous", sans-serif;
-      font-size: 120px;
+      font-family: antonioBold;
+      font-size: 140px;
       font-weight: 400; }
     header .banner .contenedor.contenedor-banner .descripcion {
       color: #fff;
-      font-family: "Raleway", sans-serif;
-      font-size: 18px;
+      font-family: antonioLight;
+      font-size: 30px;
       font-weight: 400;
       line-height: 30px; }
     header .banner .contenedor.contenedor-banner .btn-leer-mas {
@@ -377,8 +388,8 @@ main .nuestros-programas {
       justify-self: center;
       color: #000; }
       main .nuestros-programas .contenedor.contenedor-nuestros-programas .nuestros-programas-titulo h3 {
-        font-family: "Righteous", sans-serif;
-        font-size: 24px;
+        font-family: antonioBold;
+        font-size: 30px;
         font-weight: 400;
         text-transform: uppercase; }
       main .nuestros-programas .contenedor.contenedor-nuestros-programas .nuestros-programas-titulo .linea-titulo {
@@ -412,8 +423,8 @@ main .nuestros-programas {
         main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta .carta-frente .carta-titulo {
           align-self: center;
           color: #fff;
-          font-family: "Righteous", sans-serif;
-          font-size: 34px;
+          font-family: antonioBold;
+          font-size: 40px;
           font-weight: 400;
           line-height: 1.2em;
           text-transform: uppercase;
@@ -451,7 +462,7 @@ main .nuestros-programas {
           align-self: center;
           text-align: center;
           color: #fbe23c;
-          font-family: "Righteous", sans-serif;
+          font-family: antonioBold;
           font-size: 34px;
           font-weight: 400;
           text-transform: uppercase;
@@ -459,8 +470,8 @@ main .nuestros-programas {
         main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta .carta-atras .carta-descripcion {
           text-align: justify;
           color: rgba(255, 255, 255, 0.64);
-          font-family: "Raleway", sans-serif;
-          font-size: 14px;
+          font-family: antonioRegular;
+          font-size: 18px;
           padding: 0px 27px; }
         main .nuestros-programas .contenedor.contenedor-nuestros-programas .carta .carta-atras .btn-leer-mas {
           align-self: end;
@@ -495,8 +506,8 @@ main .entrenadores {
       text-align: center; }
       main .entrenadores .contenedor.contenedor-entrenadores .entrenadores-titulo h3 {
         color: #fff;
-        font-family: "Righteous", sans-serif;
-        font-size: 24px;
+        font-family: antonioBold;
+        font-size: 30px;
         font-weight: 400;
         text-transform: uppercase; }
       main .entrenadores .contenedor.contenedor-entrenadores .entrenadores-titulo .linea-titulo {
@@ -511,22 +522,15 @@ main .entrenadores {
       height: 500px;
       display: grid;
       grid-template-columns: minmax(200px, 270px) auto; }
-      main .entrenadores .contenedor.contenedor-entrenadores .entrenador:nth-child(2) .entrenador-foto {
-        background-image: url(../../img/entrenadora.jpeg); }
-      main .entrenadores .contenedor.contenedor-entrenadores .entrenador:nth-child(3) .entrenador-foto {
-        background-image: url(../../img/coach-2.jpg); }
-      main .entrenadores .contenedor.contenedor-entrenadores .entrenador:nth-child(4) .entrenador-foto {
-        background-image: url(../../img/coach-3.jpg); }
-      main .entrenadores .contenedor.contenedor-entrenadores .entrenador:nth-child(5) .entrenador-foto {
-        background-image: url(../../img/coach-4.jpg); }
       main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-foto {
+        background-image: url(../../img/entrenadora.jpeg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover; }
       main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 75px 15px 270px 50px;
+        grid-template-rows: 75px auto 270px 50px;
         justify-content: start;
         justify-items: start;
         grid-row-gap: 20px;
@@ -534,7 +538,7 @@ main .entrenadores {
         padding-left: 10px; }
         main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-nombre {
           color: #fbe23c;
-          font-family: "Righteous", sans-serif;
+          font-family: antonioBold;
           font-size: 34px;
           font-weight: 400;
           line-height: 40px;
@@ -542,15 +546,14 @@ main .entrenadores {
           text-transform: uppercase; }
         main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-roll {
           color: #fff;
-          font-family: "Montserrat", sans-serif;
-          font-size: 16px;
+          font-family: antonioBold;
+          font-size: 20px;
           font-weight: 700;
           line-height: 18px;
           text-align: left; }
         main .entrenadores .contenedor.contenedor-entrenadores .entrenador .entrenador-informacion .entrenador-descripcion {
           color: #aaaaaa;
-          font-family: "Raleway", sans-serif;
-          font-size: 14px;
+          font-size: 18px;
           padding-right: 29px;
           text-align: left;
           line-height: 22px; }
@@ -650,21 +653,19 @@ main .equipamento {
             text-align: center;
             text-transform: uppercase;
             color: #fff;
-            font-family: "Roboto", sans-serif;
-            font-size: 52px;
+            font-family: antonioBold;
+            font-size: 56px;
             font-weight: 400; }
           main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-contenido .contenido-descripcion {
             color: #fff;
-            font-family: "Raleway", sans-serif;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 400;
             line-height: 29px; }
           main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-contenido .equipamento-lista {
             margin-top: 10px; }
             main .equipamento .slider .equipamento-slider .contenedor.contenedor-slider .slider-contenido .equipamento-lista li {
               list-style: none;
-              font-family: "Raleway", sans-serif;
-              font-size: 18px;
+              font-size: 20px;
               font-weight: 500;
               line-height: 34px;
               color: #fbe23c; }
@@ -771,8 +772,8 @@ main .testimonios {
       grid-column: span 6;
       text-align: center; }
       main .testimonios .contenedor.contenedor-testimonios .testimonio-titulo h3 {
-        font-family: "Righteous", sans-serif;
-        font-size: 24px;
+        font-family: antonioBold;
+        font-size: 30px;
         font-weight: 400;
         text-transform: uppercase; }
       main .testimonios .contenedor.contenedor-testimonios .testimonio-titulo .linea-titulo {
@@ -792,7 +793,7 @@ main .testimonios {
         margin-bottom: 2px; }
       main .testimonios .contenedor.contenedor-testimonios .testimonio-dos-tercios .testimonio-titulo h5 {
         text-align: left;
-        font-family: "Righteous", sans-serif;
+        font-family: antonioBold;
         font-size: 24px;
         font-weight: 400;
         line-height: 35px; }
@@ -801,8 +802,7 @@ main .testimonios {
         main .testimonios .contenedor.contenedor-testimonios .testimonio-dos-tercios .testimonio .texto-testimonio {
           text-align: left;
           color: #7a7a7a;
-          font-family: "Raleway", sans-serif;
-          font-size: 14px;
+          font-size: 16px;
           line-height: 1.6em;
           background-color: #33393e;
           padding: 46px 10px 39px 20px; }
@@ -823,18 +823,16 @@ main .testimonios {
       main .testimonios .contenedor.contenedor-testimonios .testimonio-dos-tercios .testimonio-nombre p {
         text-align: left;
         color: #000;
-        font-family: "Montserrat", sans-serif;
-        font-size: 14px;
-        font-weight: 700;
+        font-family: antonioBold;
+        font-size: 16px;
         text-transform: uppercase;
         line-height: 2em;
         margin-top: 15px; }
       main .testimonios .contenedor.contenedor-testimonios .testimonio-dos-tercios .testimonio-fecha {
         text-align: left;
         color: #000;
-        font-family: "Raleway", sans-serif;
+        font-family: antonioLight;
         font-size: 14px;
-        font-weight: 500;
         text-transform: uppercase; }
     main .testimonios .contenedor.contenedor-testimonios .testimonio-un-tercio {
       grid-column: span 2; }
@@ -848,7 +846,7 @@ main .testimonios {
         margin-bottom: 2px; }
       main .testimonios .contenedor.contenedor-testimonios .testimonio-un-tercio .testimonio-titulo h5 {
         text-align: left;
-        font-family: "Righteous", sans-serif;
+        font-family: antonioBold;
         font-size: 24px;
         font-weight: 400;
         line-height: 35px; }
@@ -857,8 +855,7 @@ main .testimonios {
         main .testimonios .contenedor.contenedor-testimonios .testimonio-un-tercio .testimonio .texto-testimonio {
           text-align: left;
           color: #7a7a7a;
-          font-family: "Raleway", sans-serif;
-          font-size: 14px;
+          font-size: 16px;
           line-height: 1.6em;
           background-color: #33393e;
           padding: 46px 10px 39px 20px; }
@@ -879,18 +876,16 @@ main .testimonios {
       main .testimonios .contenedor.contenedor-testimonios .testimonio-un-tercio .testimonio-nombre p {
         text-align: left;
         color: #000;
-        font-family: "Montserrat", sans-serif;
-        font-size: 14px;
-        font-weight: 700;
+        font-family: antonioBold;
+        font-size: 16px;
         text-transform: uppercase;
         line-height: 2em;
         margin-top: 15px; }
       main .testimonios .contenedor.contenedor-testimonios .testimonio-un-tercio .testimonio-fecha {
         text-align: left;
         color: #000;
-        font-family: "Raleway", sans-serif;
+        font-family: antonioLight;
         font-size: 14px;
-        font-weight: 500;
         text-transform: uppercase; }
     main .testimonios .contenedor.contenedor-testimonios .testimonio-mitad {
       grid-column: span 3; }
@@ -904,7 +899,7 @@ main .testimonios {
         margin-bottom: 2px; }
       main .testimonios .contenedor.contenedor-testimonios .testimonio-mitad .testimonio-titulo h5 {
         text-align: left;
-        font-family: "Righteous", sans-serif;
+        font-family: antonioBold;
         font-size: 24px;
         font-weight: 400;
         line-height: 35px; }
@@ -913,8 +908,7 @@ main .testimonios {
         main .testimonios .contenedor.contenedor-testimonios .testimonio-mitad .testimonio .texto-testimonio {
           text-align: left;
           color: #7a7a7a;
-          font-family: "Raleway", sans-serif;
-          font-size: 14px;
+          font-size: 16px;
           line-height: 1.6em;
           background-color: #33393e;
           padding: 46px 10px 39px 20px; }
@@ -935,18 +929,16 @@ main .testimonios {
       main .testimonios .contenedor.contenedor-testimonios .testimonio-mitad .testimonio-nombre p {
         text-align: left;
         color: #000;
-        font-family: "Montserrat", sans-serif;
-        font-size: 14px;
-        font-weight: 700;
+        font-family: antonioBold;
+        font-size: 16px;
         text-transform: uppercase;
         line-height: 2em;
         margin-top: 15px; }
       main .testimonios .contenedor.contenedor-testimonios .testimonio-mitad .testimonio-fecha {
         text-align: left;
         color: #000;
-        font-family: "Raleway", sans-serif;
+        font-family: antonioLight;
         font-size: 14px;
-        font-weight: 500;
         text-transform: uppercase; }
 
 @media only screen and (max-width: 1025px) {
@@ -1019,6 +1011,98 @@ main .galeria {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .modal .form-mi-rutina {
+    width: 70%;
+    height: 60%;
+    background-color: #fff;
+    padding: 5%; }
+    .modal .form-mi-rutina .titulo-formulario {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 2.125rem;
+      font-family: "Righteous", sans-serif;
+      margin-bottom: 0.875rem;
+      color: #3b3d42; }
+    .modal .form-mi-rutina .subtitulo-formulario {
+      margin-bottom: 1rem;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 0.875rem;
+      line-height: 1.643;
+      font-family: "Raleway", sans-serif;
+      letter-spacing: 0rem;
+      text-align: left;
+      color: #3b3d42; }
+    .modal .form-mi-rutina textarea {
+      margin: 0.3125rem 0;
+      width: 100%;
+      padding: 0.5rem 0.75rem;
+      max-width: 100%;
+      min-height: 150px;
+      border-radius: 0.25rem;
+      border: 0.0625rem solid #ebeced;
+      background-color: #fff;
+      color: #191919;
+      outline: none; }
+    .modal .form-mi-rutina input[type="text"],
+    .modal .form-mi-rutina input[type="email"] {
+      border-radius: 0.25rem;
+      width: 100%;
+      margin: 5px 0;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid #ebeced;
+      background-color: #fff;
+      color: #191919; }
+    .modal .form-mi-rutina input[type="checkbox"] {
+      display: none; }
+    .modal .form-mi-rutina label {
+      margin: 15px 0;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.643;
+      font-family: "Raleway", sans-serif;
+      letter-spacing: 0px;
+      text-align: left;
+      color: #3b3d42; }
+    .modal .form-mi-rutina input[type=ckeckbox] + label {
+      cursor: pointer; }
+    .modal .form-mi-rutina label:before {
+      content: '';
+      background: transparent;
+      border: 1px solid #ebeced;
+      border-radius: 0.3125rem;
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      text-align: center;
+      margin-right: 8px;
+      vertical-align: middle;
+      transition: all .35s ease; }
+    .modal .form-mi-rutina input[type=checkbox]:checked + label:before {
+      content: '✔';
+      color: #fff;
+      font-size: 1rem;
+      background-color: #fbe23c;
+      line-height: 1rem; }
+    .modal .form-mi-rutina input[type="submit"] {
+      border: none;
+      width: 100%;
+      margin: 10px 0;
+      padding: 6px 20px;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 1;
+      font-family: "Roboto", sans-serif;
+      letter-spacing: 1px;
+      color: #33393e;
+      background-color: #fbe23c;
+      transition: all .5s ease; }
+      .modal .form-mi-rutina input[type="submit"]:hover {
+        cursor: pointer;
+        color: #fbe23c;
+        background-color: #33393e; }
   .modal img {
     width: 90%;
     max-width: 600px; }
@@ -1046,6 +1130,9 @@ main .galeria {
       font-size: 16px;
       line-height: 50px; }
 
+@media only screen and (max-width: 1050px) {
+  .modal .form-mi-rutina {
+    width: 90%; } }
 main .especial {
   width: 100%;
   background: #191919; }
@@ -1060,7 +1147,7 @@ main .especial {
     align-content: space-around; }
     main .especial .contenedor.contenedor-especial .especial-titulo h2 {
       color: #fbe23c;
-      font-family: "Righteous", sans-serif;
+      font-family: antonioBold;
       font-size: 100px;
       font-weight: 400;
       text-transform: uppercase;
@@ -1068,14 +1155,12 @@ main .especial {
       letter-spacing: 2px; }
     main .especial .contenedor.contenedor-especial .especial-subtitulo h3 {
       color: #fff;
-      font-family: "Montserrat", sans-serif;
+      font-family: antonioLight;
       font-size: 50px;
-      font-weight: 200;
       text-transform: uppercase;
       line-height: 0.9em; }
     main .especial .contenedor.contenedor-especial .especial-descripcion p {
-      font-family: "Raleway", sans-serif;
-      font-size: 18px;
+      font-size: 24px;
       font-weight: 400;
       color: #fff; }
     main .especial .contenedor.contenedor-especial .btn-leer-mas {
@@ -1108,13 +1193,13 @@ main .contacto {
     padding: 45px 0;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 55px repeat(2, 1fr);
-    grid-gap: 20px; }
+    grid-gap: 30px; }
     main .contacto .contenedor.contenedor-contacto .contacto-titulo {
       grid-column: span 12;
       text-align: center; }
       main .contacto .contenedor.contenedor-contacto .contacto-titulo h3 {
-        font-family: "Righteous", sans-serif;
-        font-size: 24px;
+        font-family: antonioBold;
+        font-size: 30px;
         font-weight: 400;
         text-transform: uppercase; }
       main .contacto .contenedor.contenedor-contacto .contacto-titulo .linea-titulo {
@@ -1215,14 +1300,16 @@ main .horarios {
         flex-direction: row;
         justify-content: center;
         text-align: center;
-        line-height: 15px; }
+        line-height: 30px;
+        text-transform: uppercase; }
         main .horarios .contenedor.contenedor-horarios .tiempo .titulo-tiempo .contacto-icono i {
           color: #fff; }
         main .horarios .contenedor.contenedor-horarios .tiempo .titulo-tiempo .contacto-titulo {
           margin-left: 10px;
           line-height: 40px; }
           main .horarios .contenedor.contenedor-horarios .tiempo .titulo-tiempo .contacto-titulo p {
-            color: #fff; }
+            color: #fff;
+            text-shadow: none; }
       main .horarios .contenedor.contenedor-horarios .tiempo .tabla-horarios {
         width: 100%;
         grid-area: tabla;
@@ -1239,7 +1326,9 @@ main .horarios {
           background-color: #a1a2a4; }
         main .horarios .contenedor.contenedor-horarios .tiempo .tabla-horarios th {
           background-color: #33393e;
-          color: #fbe23c; }
+          color: #fbe23c;
+          font-family: antonioBold;
+          text-transform: uppercase; }
         main .horarios .contenedor.contenedor-horarios .tiempo .tabla-horarios .horario {
           background-color: #fbe23c;
           color: #33393e; }
@@ -1285,32 +1374,32 @@ main {
   width: 100%; }
   main.blog {
     width: 95%;
-    padding: 45px 0;
+    padding: 2.8125rem 0;
     background-color: #fff;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 35px;
+    grid-gap: 2.1875rem;
     margin: auto; }
     main.blog .titulo-blog {
       grid-column: span 12;
       text-align: center;
       font-style: normal;
       font-weight: 400;
-      font-size: 40px;
+      font-size: 2.5rem;
       font-family: "Righteous", sans-serif;
       letter-spacing: 0.02px;
       color: #3b3d42; }
     main.blog .contenido {
       grid-column: span 8; }
       main.blog .contenido .post-resumido {
-        padding-bottom: 28px;
-        border-bottom: 1px solid #ebeced; }
+        padding-bottom: 1.75rem;
+        border-bottom: 0.0625rem solid #ebeced; }
         main.blog .contenido .post-resumido .titulo-post {
           font-style: normal;
           font-weight: 400;
-          font-size: 34px;
+          font-size: 2.125rem;
           font-family: "Righteous", sans-serif;
-          margin-bottom: 14px; }
+          margin-bottom: 0.875rem; }
           main.blog .contenido .post-resumido .titulo-post a {
             text-decoration: none;
             color: #3b3d42;
@@ -1320,17 +1409,17 @@ main {
         main.blog .contenido .post-resumido .datos-post {
           display: flex;
           flex-direction: row;
-          margin-bottom: 18px; }
+          margin-bottom: 1.125rem; }
           main.blog .contenido .post-resumido .datos-post .autor {
             font-style: normal;
             font-weight: 300;
-            font-size: 14px;
+            font-size: 0.875rem;
             line-height: 1.643;
             font-family: "Raleway", sans-serif;
-            letter-spacing: 0px;
+            letter-spacing: 0rem;
             text-align: left;
             color: #a1a2a4;
-            margin-right: 15px; }
+            margin-right: 0.9375rem; }
             main.blog .contenido .post-resumido .datos-post .autor a {
               color: #fbe23c;
               text-decoration: none;
@@ -1340,10 +1429,10 @@ main {
           main.blog .contenido .post-resumido .datos-post .fecha {
             font-style: normal;
             font-weight: 300;
-            font-size: 14px;
+            font-size: 0.875rem;
             line-height: 1.643;
             font-family: "Raleway", sans-serif;
-            letter-spacing: 0px;
+            letter-spacing: 0rem;
             text-align: left;
             color: #a1a2a4; }
             main.blog .contenido .post-resumido .datos-post .fecha a {
@@ -1351,35 +1440,35 @@ main {
               text-decoration: none; }
         main.blog .contenido .post-resumido .foto-portada {
           width: 100%;
-          margin-bottom: 18px; }
+          margin-bottom: 1.125rem; }
           main.blog .contenido .post-resumido .foto-portada img {
             width: 100%; }
         main.blog .contenido .post-resumido .descripcion-post {
-          margin-bottom: 18px; }
+          margin-bottom: 1.125rem; }
           main.blog .contenido .post-resumido .descripcion-post p {
             font-style: normal;
             font-weight: 300;
-            font-size: 18px;
-            line-height: 24px;
+            font-size: 1.125rem;
+            line-height: 1.5rem;
             font-family: "Raleway", sans-serif;
-            letter-spacing: 0px;
+            letter-spacing: 0rem;
             text-align: left;
             color: #3b3d42; }
         main.blog .contenido .post-resumido .tags-post {
           font-style: normal;
           font-weight: 300;
-          font-size: 14px;
+          font-size: 0.875rem;
           line-height: 1.643;
           font-family: "Raleway", sans-serif;
-          letter-spacing: 0px;
+          letter-spacing: 0rem;
           text-align: left;
           color: #a1a2a4;
-          margin-bottom: 18px; }
+          margin-bottom: 1.125rem; }
           main.blog .contenido .post-resumido .tags-post a {
             text-decoration: none;
-            border-radius: 5px;
-            padding: 5px 7px;
-            border: 0.5px solid #ebeced;
+            border-radius: 0.3125rem;
+            padding: 0.3125rem 0.4375rem;
+            border: 0.03125rem solid #ebeced;
             background-color: #fff;
             color: #fbe23c;
             transition: all .35s ease; }
@@ -1394,33 +1483,33 @@ main {
           flex-direction: row;
           justify-content: space-between; }
           main.blog .contenido .post-resumido .ultima-fila-post .comentarios {
-            border-radius: 5px;
-            width: 50px;
-            padding: 10px 12px;
-            font-size: 11px;
+            border-radius: 0.3125rem;
+            width: 3.125rem;
+            padding: 0.625rem 0.75rem;
+            font-size: 0.6875rem;
             line-height: 1.2;
             background-color: #f1f4f6;
             color: #a1a2a4; }
             main.blog .contenido .post-resumido .ultima-fila-post .comentarios .cantidad-de-comentarios {
-              margin-left: 8px;
+              margin-left: 0.5rem;
               text-decoration: none;
-              font-size: 12px;
+              font-size: 0.75rem;
               color: #a1a2a4; }
           main.blog .contenido .post-resumido .ultima-fila-post .leer-mas-post {
             display: inline-block;
             max-width: 100%;
-            padding: 12px 20px;
+            padding: 0.75rem 1.25rem;
             cursor: pointer;
             text-align: center;
             text-transform: uppercase;
-            border-radius: 4px;
+            border-radius: 0.25rem;
             transition: all .3s ease;
             font-style: normal;
             font-weight: 900;
-            font-size: 11px;
+            font-size: 0.6875rem;
             line-height: 1;
             font-family: "Roboto", sans-serif;
-            letter-spacing: 1px;
+            letter-spacing: 0.0625rem;
             background-color: #fbe23c; }
             main.blog .contenido .post-resumido .ultima-fila-post .leer-mas-post a {
               color: #33393e;
@@ -1432,39 +1521,39 @@ main {
                 color: #fbe23c; }
       main.blog .contenido .form-comentario {
         width: 100%;
-        margin-top: 18px; }
+        margin-top: 1.125rem; }
         main.blog .contenido .form-comentario .titulo-formulario {
           font-style: normal;
           font-weight: 400;
-          font-size: 34px;
+          font-size: 2.125rem;
           font-family: "Righteous", sans-serif;
-          margin-bottom: 14px;
+          margin-bottom: 0.875rem;
           color: #3b3d42; }
         main.blog .contenido .form-comentario .subtitulo-formulario {
-          margin-bottom: 16px;
+          margin-bottom: 1rem;
           font-style: normal;
           font-weight: 300;
-          font-size: 14px;
+          font-size: 0.875rem;
           line-height: 1.643;
           font-family: "Raleway", sans-serif;
-          letter-spacing: 0px;
+          letter-spacing: 0rem;
           text-align: left;
           color: #3b3d42; }
         main.blog .contenido .form-comentario textarea {
-          margin: 5px 0;
+          margin: 0.3125rem 0;
           width: 100%;
-          padding: 8px 12px;
+          padding: 0.5rem 0.75rem;
           max-width: 100%;
           min-height: 150px;
-          border-radius: 4px;
-          border: 1px solid #ebeced;
+          border-radius: 0.25rem;
+          border: 0.0625rem solid #ebeced;
           background-color: #fff; }
         main.blog .contenido .form-comentario input[type="text"],
         main.blog .contenido .form-comentario input[type="email"] {
-          border-radius: 4px;
+          border-radius: 0.25rem;
           width: 100%;
           margin: 5px 0;
-          padding: 8px 12px;
+          padding: 0.5rem 0.75rem;
           border: 1px solid #ebeced;
           background-color: #fff; }
         main.blog .contenido .form-comentario input[type="checkbox"] {
@@ -1485,7 +1574,7 @@ main {
           content: '';
           background: transparent;
           border: 1px solid #ebeced;
-          border-radius: 5px;
+          border-radius: 0.3125rem;
           display: inline-block;
           width: 15px;
           height: 15px;
@@ -1496,9 +1585,9 @@ main {
         main.blog .contenido .form-comentario input[type=checkbox]:checked + label:before {
           content: '✔';
           color: #fff;
-          font-size: 16px;
+          font-size: 1rem;
           background-color: #fbe23c;
-          line-height: 16px; }
+          line-height: 1rem; }
         main.blog .contenido .form-comentario input[type="submit"] {
           border: none;
           width: 100%;
@@ -1533,7 +1622,7 @@ main {
           letter-spacing: 0.02px;
           text-align: inherit;
           color: #3b3d42;
-          margin-bottom: 16px; }
+          margin-bottom: 1rem; }
         main.blog .aside .buscador-widget .widget-buscar {
           display: flex;
           flex-direction: row;
@@ -1582,16 +1671,16 @@ main {
           letter-spacing: 0.02px;
           text-align: inherit;
           color: #3b3d42;
-          margin-bottom: 16px; }
+          margin-bottom: 1rem; }
         main.blog .aside .calendario-widget .widget-calendario {
           height: 350px;
           width: 100%;
           border: 1px solid #ebeced;
-          padding: 5px;
-          border-radius: 5px; }
+          padding: 0.3125rem;
+          border-radius: 0.3125rem; }
           main.blog .aside .calendario-widget .widget-calendario caption {
             text-align: center;
-            padding: 5px 10px;
+            padding: 0.3125rem 10px;
             background-color: #fff;
             color: #fbe23c;
             font-weight: bold;
@@ -1611,7 +1700,7 @@ main {
           main.blog .aside .calendario-widget .widget-calendario thead tr th {
             color: #fbe23c;
             width: 40px;
-            padding: 5px;
+            padding: 0.3125rem;
             font-size: 16px; }
           main.blog .aside .calendario-widget .widget-calendario tr td {
             font-family: "Raleway", sans-serif;
@@ -1639,9 +1728,9 @@ main {
           margin-bottom: 16px; }
         main.blog .aside .tags-widget .widget-tags .tag {
           text-decoration: none;
-          border-radius: 5px;
-          padding: 5px 7px;
-          border: 0.5px solid #ebeced;
+          border-radius: 0.3125rem;
+          padding: 0.3125rem 0.4375rem;
+          border: 0.03125rem solid #ebeced;
           background-color: #fff;
           color: #fbe23c;
           transition: all .35s ease; }
@@ -1671,7 +1760,7 @@ footer {
         height: 32px; }
         footer .contenedor.contenedor-footer .footer-fila-1 .logo h2 {
           color: #fbe23c;
-          font-family: "Righteous", sans-serif;
+          font-family: antonioBold;
           font-size: 28px;
           line-height: 30px;
           text-transform: uppercase; }
@@ -1680,8 +1769,7 @@ footer {
       justify-content: space-between; }
       footer .contenedor.contenedor-footer .footer-fila-2 .copyright p {
         color: #9aa0a4;
-        font-family: "Montserrat", sans-serif;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 600;
         line-height: 28px; }
         footer .contenedor.contenedor-footer .footer-fila-2 .copyright p a {

@@ -18,8 +18,9 @@ main{
           justify-self: center;    
           color: $letrasSecundario;
           h3{
-            font-family: $Righteous;
-            font-size: 24px;
+            // font-family: $Righteous;
+            font-family: $antonioBold;
+            font-size: 30px;
             font-weight: 400;
             text-transform: uppercase;
           }
@@ -57,8 +58,9 @@ main{
             .carta-titulo{
               align-self: center;
               color: $letrasPrimario;
-              font-family: $Righteous;
-              font-size: 34px;
+              // font-family: $Righteous;
+              font-family: $antonioBold;
+              font-size: 40px;
               font-weight: 400;
               line-height: 1.2em;
               text-transform: uppercase;
@@ -100,7 +102,8 @@ main{
               align-self: center;
               text-align: center;
               color: $principal;
-              font-family: $Righteous;
+              // font-family: $Righteous;
+              font-family: $antonioBold;
               font-size: 34px;
               font-weight: 400;
               text-transform: uppercase;
@@ -109,8 +112,9 @@ main{
             .carta-descripcion{
               text-align: justify;
               color: $letrasEspecial;
-              font-family: $Raleway;
-              font-size: 14px;
+              // font-family: $Raleway;
+              font-family: $antonioMedium;
+              font-size: 18px;
               padding: 0px 27px;
             }
             .btn-leer-mas{

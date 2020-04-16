@@ -2,18 +2,18 @@ main{
   width: 100%;
   &.blog{
     width: 95%;
-    padding: 45px 0;
+    padding: 2.8125rem 0;
     background-color: $letrasPrimario;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap:35px;
+    grid-gap:2.1875rem;
     margin:auto;
     .titulo-blog{
       grid-column: span 12;
       text-align: center;
       font-style: normal;
       font-weight: 400;
-      font-size: 40px;
+      font-size: 2.5rem;
       font-family: $Righteous;
       letter-spacing: 0.02px;
       color: $octavo;
@@ -21,14 +21,14 @@ main{
     .contenido{
       grid-column: span 8;
       .post-resumido{
-        padding-bottom: 28px;
-        border-bottom: 1px solid $once;
+        padding-bottom: 1.75rem;
+        border-bottom: 0.0625rem solid $once;
         .titulo-post{
           font-style: normal;
           font-weight: 400;
-          font-size: 34px;
+          font-size: 2.125rem;
           font-family: $Righteous;
-          margin-bottom: 14px;
+          margin-bottom: 0.875rem;
           a{
             text-decoration: none;
             color: $octavo;
@@ -41,17 +41,17 @@ main{
         .datos-post{
           display: flex;
           flex-direction: row;
-          margin-bottom: 18px;
+          margin-bottom: 1.125rem;
           .autor{
             font-style: normal;
             font-weight: 300;
-            font-size: 14px;
+            font-size: 0.875rem;
             line-height: 1.643;
             font-family: $Raleway;
-            letter-spacing: 0px;
+            letter-spacing: 0rem;
             text-align: left;
             color: $noveno;
-            margin-right:15px;
+            margin-right:0.9375rem;
             a{
               color:$principal;
               text-decoration: none;
@@ -64,10 +64,10 @@ main{
           .fecha{
             font-style: normal;
             font-weight: 300;
-            font-size: 14px;
+            font-size: 0.875rem;
             line-height: 1.643;
             font-family: $Raleway;
-            letter-spacing: 0px;
+            letter-spacing: 0rem;
             text-align: left;
             color: $noveno;
             a{
@@ -81,17 +81,17 @@ main{
           img{
             width: 100%;
           }
-          margin-bottom: 18px;
+          margin-bottom: 1.125rem;
         }
         .descripcion-post{
-          margin-bottom: 18px;
+          margin-bottom: 1.125rem;
           p{
             font-style: normal;
             font-weight: 300;
-            font-size: 18px;
-            line-height: 24px;
+            font-size: 1.125rem;
+            line-height: 1.5rem;
             font-family: $Raleway;
-            letter-spacing: 0px;
+            letter-spacing: 0rem;
             text-align: left;
             color: $octavo;
           }
@@ -99,18 +99,18 @@ main{
         .tags-post{
           font-style: normal;
           font-weight: 300;
-          font-size: 14px;
+          font-size: 0.875rem;
           line-height: 1.643;
           font-family: $Raleway;
-          letter-spacing: 0px;
+          letter-spacing: 0rem;
           text-align: left;
           color: $noveno;
-          margin-bottom:18px;
+          margin-bottom:1.125rem;
           a{
             text-decoration: none;
-            border-radius: 5px;
-            padding: 5px 7px;
-            border:0.5px solid $once;
+            border-radius: 0.3125rem;
+            padding: 0.3125rem 0.4375rem;
+            border:0.03125rem solid $once;
             background-color: $letrasPrimario;
             color: $principal;
             transition: all .35s ease;
@@ -128,35 +128,35 @@ main{
           flex-direction: row;
           justify-content: space-between;
           .comentarios{
-            border-radius: 5px;
-            width: 50px;
-            padding: 10px 12px;
-            font-size: 11px;
+            border-radius: 0.3125rem;
+            width: 3.125rem;
+            padding: 0.625rem 0.75rem;
+            font-size: 0.6875rem;
             line-height: 1.2;
             background-color: $decimo;
             color: $noveno;
             .cantidad-de-comentarios{
-              margin-left:8px;
+              margin-left:0.5rem;
               text-decoration: none;
-              font-size: 12px;
+              font-size: 0.75rem;
               color: $noveno;
             }
           }
           .leer-mas-post{
             display: inline-block;
             max-width: 100%;
-            padding: 12px 20px;
+            padding: 0.75rem 1.25rem;
             cursor: pointer;
             text-align: center;
             text-transform: uppercase;
-            border-radius: 4px;
+            border-radius: 0.25rem;
             transition: all .3s ease;
             font-style: normal;
             font-weight: 900;
-            font-size: 11px;
+            font-size: 0.6875rem;
             line-height: 1;
             font-family: $Roboto;
-            letter-spacing: 1px;
+            letter-spacing: 0.0625rem;
             background-color: $principal;
             a{
               color: $secundario;
@@ -174,42 +174,42 @@ main{
       }
       .form-comentario{
         width: 100%;
-        margin-top: 18px;
+        margin-top: 1.125rem;
         .titulo-formulario{
           font-style: normal;
           font-weight: 400;
-          font-size: 34px;
+          font-size: 2.125rem;
           font-family: $Righteous;
-          margin-bottom: 14px;
+          margin-bottom: 0.875rem;
           color: $octavo;
         }
         .subtitulo-formulario{
-          margin-bottom: 16px;
+          margin-bottom: 1rem;
           font-style: normal;
           font-weight: 300;
-          font-size: 14px;
+          font-size: 0.875rem;
           line-height: 1.643;
           font-family: $Raleway;
-          letter-spacing: 0px;
+          letter-spacing: 0rem;
           text-align: left;
           color: $octavo;
         }
         textarea{
-          margin: 5px 0;
+          margin: 0.3125rem 0;
           width: 100%;
-          padding: 8px 12px;
+          padding: 0.5rem 0.75rem;
           max-width: 100%;
           min-height: 150px;
-          border-radius: 4px;
-          border: 1px solid $once;
+          border-radius: 0.25rem;
+          border: 0.0625rem solid $once;
           background-color: $letrasPrimario;
         }
         input[type="text"],
         input[type="email"]{
-          border-radius: 4px;
+          border-radius: 0.25rem;
           width: 100%;
           margin: 5px 0;
-          padding: 8px 12px;
+          padding: 0.5rem 0.75rem;
           border: 1px solid $once;
           background-color: $letrasPrimario;
         }
@@ -234,7 +234,7 @@ main{
           content: '';
           background: transparent;
           border: 1px solid $once;
-          border-radius: 5px;
+          border-radius: 0.3125rem;
           display: inline-block;
           width: 15px;
           height: 15px;
@@ -246,9 +246,9 @@ main{
         input[type=checkbox]:checked + label:before{
           content: '✔';
           color: $letrasPrimario;
-          font-size: 16px;
+          font-size: 1rem;
           background-color: $principal;
-          line-height: 16px;
+          line-height: 1rem;
         }
         input[type="submit"]{
           border: none;
@@ -288,7 +288,7 @@ main{
           letter-spacing: 0.02px;
           text-align: inherit;
           color: $octavo;
-          margin-bottom: 16px;
+          margin-bottom: 1rem;
         }
         .widget-buscar{
           display: flex;
@@ -345,17 +345,17 @@ main{
           letter-spacing: 0.02px;
           text-align: inherit;
           color: $octavo;
-          margin-bottom: 16px;
+          margin-bottom: 1rem;
         }
         .widget-calendario{
           height: 350px;
           width: 100%;
           border:1px solid $once;
-          padding: 5px;
-          border-radius: 5px;
+          padding: 0.3125rem;
+          border-radius: 0.3125rem;
           caption{
             text-align:center;
-            padding:5px 10px;
+            padding:0.3125rem 10px;
             background-color:$letrasPrimario;
             color: $principal;
             font-weight:bold;
@@ -384,7 +384,7 @@ main{
               th{
                 color:$principal;
                 width:40px;
-                padding: 5px;
+                padding: 0.3125rem;
                 font-size: 16px;
               }
             }
@@ -423,9 +423,9 @@ main{
         .widget-tags{
           .tag{
             text-decoration: none;
-            border-radius: 5px;
-            padding: 5px 7px;
-            border:0.5px solid $once;
+            border-radius: 0.3125rem;
+            padding: 0.3125rem 0.4375rem;
+            border:0.03125rem solid $once;
             background-color: $letrasPrimario;
             color: $principal;
             transition: all .35s ease;

@@ -16,9 +16,9 @@ header{
         align-content: space-between;
         .bienvenida{
           color:$letrasPrimario;
-          font-family: $Montserrat;
+          // font-family: $Montserrat;
+          font-family: $antonioLight;
           font-size: 50px;
-          font-weight: 200;
           text-transform: uppercase;
         }
         .nombre-gym{
@@ -34,15 +34,17 @@ header{
           .titulo-gym{
             text-transform: uppercase;
             color:$principal;
-            font-family: $Righteous;
-            font-size: 120px;
+            // font-family: $Righteous;
+            font-family: $antonioBold;
+            font-size: 140px;
             font-weight: 400;
           }
         }
         .descripcion{
           color:$letrasPrimario;      
-          font-family: $Raleway;
-          font-size: 18px;
+          // font-family: $Raleway;
+          font-family: $antonioLight;
+          font-size: 30px;
           font-weight: 400;
           line-height: 30px;
         }
