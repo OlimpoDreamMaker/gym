@@ -6,8 +6,8 @@
   animaciones de nurestro programa
   #justificar textos 
   #sacar leer mas de nuestros programas
-  agrandar fuentes
-  usar antonio de fuentes
+  #agrandar fuentes
+  #usar antonio de fuentes
   ~en vez de contacto Ubicacion
   #sacar btn de tw de entrenadores
   #oferta especial = consegui tu rutina personalizada (en vez de especial Tu Rutina)
